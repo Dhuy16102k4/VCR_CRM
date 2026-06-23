@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Net_Leasing_Area_NLA__c</fullName>
+    <label>Net Leasing Area (NLA)</label>
+    <type>Number</type>
+    <precision>16</precision>
+    <scale>2</scale>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <inlineHelpText>Auto-calculated by total RO area of this project</inlineHelpText>
+</CustomField>

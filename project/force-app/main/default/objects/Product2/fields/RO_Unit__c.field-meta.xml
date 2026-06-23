@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RO_Unit__c</fullName>
+    <externalId>false</externalId>
+    <label>RO Unit</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <value>
+                <fullName>m2</fullName>
+                <default>true</default>
+                <label>m2</label>
+            </value>
+            <value>
+                <fullName>booth</fullName>
+                <default>false</default>
+                <label>booth</label>
+            </value>
+            <value>
+                <fullName>kiosk</fullName>
+                <default>false</default>
+                <label>kiosk</label>
+            </value>
+            <value>
+                <fullName>unit</fullName>
+                <default>false</default>
+                <label>unit</label>
+            </value>
+            <value>
+                <fullName>location</fullName>
+                <default>false</default>
+                <label>location</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

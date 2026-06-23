@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Liquidation_Type</fullName>
+    <active>true</active>
+    <description>Liquidation Type is required when Stage is Approval or Closed Liquidation</description>
+    <errorConditionFormula>AND(
+    OR(
+        ISPICKVAL(Stage__c, &quot;Approval&quot;),
+        ISPICKVAL(Stage__c, &quot;Closed Liquidation&quot;)
+    ),
+    ISBLANK(TEXT(Liquidation_Type__c))
+)</errorConditionFormula>
+    <errorDisplayField>Liquidation_Type__c</errorDisplayField>
+    <errorMessage>Liquidation Type is required when Stage is Approval or Closed Liquidation</errorMessage>
+</ValidationRule>

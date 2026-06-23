@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Liquidation_Type__c</fullName>
+    <label>Liquidation Type</label>
+    <type>Picklist</type>
+    <required>true</required>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Early Liquidation</fullName>
+                <default>false</default>
+                <label>Early Liquidation</label>
+            </value>
+            <value>
+                <fullName>On-time Liquidation</fullName>
+                <default>false</default>
+                <label>On-time Liquidation</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <trackHistory>true</trackHistory>
+</CustomField>

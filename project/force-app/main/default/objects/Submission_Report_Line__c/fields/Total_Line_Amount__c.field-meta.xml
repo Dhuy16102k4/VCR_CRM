@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Line_Amount__c</fullName>
+    <description>- Công thức sẽ bằng Tổng của các giá sau đây và * Thời Hạn Giá
+- Các Giá Tiền bao gồm: 
++ Tổng Giá Tiền Thuê (VNĐ/Tháng)
++ Tổng Giá Thuê Ngoài Trời (VNĐ/Tháng)
++ Tổng Phí Dịch Vụ (VNĐ/Tháng)
+Help Text: (VNĐ)</description>
+    <externalId>false</externalId>
+    <formula>(Total_Rent_Price_VND_Month__c + Total_Outdoor_Price_VND_Month__c + Total_Service_Fee_VND_Month__c) * Price_Duration__c - Voucher_Sales__c - Capex_Sales_VND__c</formula>
+    <label>Total Line Amount</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

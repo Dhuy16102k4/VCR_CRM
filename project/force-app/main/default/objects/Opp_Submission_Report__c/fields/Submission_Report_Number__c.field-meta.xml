@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Submission_Report_Number__c</fullName>
+    <label>Submission Report Number</label>
+    <type>MasterDetail</type>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    <referenceTo>Submission_Report__c</referenceTo>
+    <relationshipLabel>Submission_Report_Number_Opp_Submission</relationshipLabel>
+    <relationshipName>Submission_Report_Number_Opp_Submission</relationshipName>
+</CustomField>

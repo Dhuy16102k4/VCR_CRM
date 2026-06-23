@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>End_Date_Required_When_Inactive</fullName>
+    <active>true</active>
+    <description>Requires End Date when Status is Inactive or Transferred</description>
+    <errorConditionFormula>AND(
+    OR(
+        ISPICKVAL(Status__c, &apos;Inactive&apos;),
+        ISPICKVAL(Status__c, &apos;Transferred&apos;)
+    ),
+    ISBLANK(End_Date__c)
+)</errorConditionFormula>
+    <errorDisplayField>End_Date__c</errorDisplayField>
+    <errorMessage>End Date is required when Status is Inactive or Transferred</errorMessage>
+</ValidationRule>

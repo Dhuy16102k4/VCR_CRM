@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Company_Code__c</fullName>
+    <description>Mã Công ty của VIN;
+Hiển thị dữ liệu Mã Công Ty từ Business Entity;
+Chú thích:
+- Company Code của Account trên Business Entity từ RO;
+- Company Code trên Account Pháp Nhân nếu có RO đã tạo bên SAP thì sẽ khoá mã &amp; không cho chỉnh sửa</description>
+    <formula>Business_Entity__r.Company_Code__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <type>Text</type>
+    <label>Company Code</label>
+</CustomField>

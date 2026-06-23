@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Air_Conditioning_Fee_USD_m2_Month__c</fullName>
+    <description>Chỉ hiển thị trong trường hợp Opportunity là Thuê Mới - Gian Hàng và có Đơn Giá Phí Điều Hoà
+- Luôn bằng Đơn Giá Phí Điều Hòa trên Opportunity</description>
+    <externalId>false</externalId>
+    <label>Air Conditioning Fee (USD/m2/Month)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

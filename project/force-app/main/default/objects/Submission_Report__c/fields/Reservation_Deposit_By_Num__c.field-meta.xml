@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reservation_Deposit_By_Num__c</fullName>
+    <label>Reservation Deposit (By Number)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+    <precision>18</precision>
+    <scale>0</scale>
+    <formula>0</formula>
+</CustomField>

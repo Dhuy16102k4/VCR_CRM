@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opening_Date_By_Sales__c</fullName>
+    <label>Opening Date (By Sales)</label>
+    <description>Bắt buộc nhập sau khi có báo cáo chốt</description>
+    <type>Date</type>
+</CustomField>

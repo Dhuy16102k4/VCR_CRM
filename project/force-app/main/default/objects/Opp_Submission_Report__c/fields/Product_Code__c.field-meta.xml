@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Code__c</fullName>
+    <description>- Dạng URL
+- Field cho BCC
+- Read Only
+- Lấy thông tin từ Cơ Hội.RO.Tên RO</description>
+    <label>RO Name</label>
+    <type>Text</type>
+    <formula>""</formula>
+    <unique>false</unique>
+</CustomField>

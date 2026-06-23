@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BCC_Approval_Date__c</fullName>
+    <label>BCC Approval Date</label>
+    <description>Read Only tự động cập nhật từ Báo Cáo Chốt khi được duyệt</description>
+    <type>Date</type>
+</CustomField>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Present_Outdoor_Price__c</fullName>
+    <description>Help Text: VNĐ/m2/Tháng (có translate)
+Không hiện thị layout
+Roll-Up Summary (Contract Line)
+Max (Price)
+Filter Is Present Contract Line = TRUE AND
+Condition Type = S100 AND
+Formula = Differing Measurement, Sales-Based Rent</description>
+    <label>Present Outdoor Price</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <length>255</length>
+</CustomField>

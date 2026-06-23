@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_Present_Contract_Line__c</fullName>
+    <label>Is Present Contract Line</label>
+    <type>Checkbox</type>
+    <defaultValue>false</defaultValue>
+    <trackHistory>false</trackHistory>
+</CustomField>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Brand_Relationship_Compact_Layout</fullName>
+    <fields>Account__c</fields>
+    <fields>Brand__c</fields>
+    <fields>Relationship_Type__c</fields>
+    <fields>Status__c</fields>
+    <label>Account Brand Relationship Compact Layout</label>
+</CompactLayout>

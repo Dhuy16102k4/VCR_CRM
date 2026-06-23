@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Active_Status_For_Vincom</fullName>
+    <active>true</active>
+    <description>Vincom Legal Entity must have Active status.</description>
+    <errorConditionFormula>AND(
+  ISPICKVAL(Type, &apos;Vincom Legal Entity&apos;),
+  NOT(ISPICKVAL(Status__c, &apos;Active&apos;))
+)</errorConditionFormula>
+    <errorDisplayField>Status__c</errorDisplayField>
+    <errorMessage>Status must be Active for Vincom Legal Entity.</errorMessage>
+</ValidationRule>

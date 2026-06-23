@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stage__c</fullName>
+    <label>Stage</label>
+    <type>Picklist</type>
+    <required>true</required>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>RO Handover</fullName>
+                <default>false</default>
+                <label>RO Handover</label>
+            </value>
+            <value>
+                <fullName>RO Design Approval</fullName>
+                <default>false</default>
+                <label>RO Design Approval</label>
+            </value>
+            <value>
+                <fullName>RO Construction Control</fullName>
+                <default>false</default>
+                <label>RO Construction Control</label>
+            </value>
+            <value>
+                <fullName>RO Acceptance</fullName>
+                <default>false</default>
+                <label>RO Acceptance</label>
+            </value>
+            <value>
+                <fullName>RO Completed</fullName>
+                <default>false</default>
+                <label>RO Completed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <trackHistory>true</trackHistory>
+</CustomField>

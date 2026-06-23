@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>Sales_Advertising_Target__c.Revenue_Achievement__c:AVG</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Avg Achievement %</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>IF(Sales_Advertising_Target__c.Revenue_Achievement__c:AVG &gt;= 1, 1, 0)</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA2</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Targets Met Count</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Sales_Advertising_Target__c.Business_Entity__c</field>
+    </columns>
+    <columns>
+        <field>Sales_Advertising_Target__c.Sales_Man__c</field>
+    </columns>
+    <columns>
+        <field>Sales_Advertising_Target__c.Time_Metrics__c</field>
+    </columns>
+    <columns>
+        <field>Sales_Advertising_Target__c.Target_Revenue__c</field>
+    </columns>
+    <columns>
+        <field>Sales_Advertising_Target__c.Actual_Revenue__c</field>
+    </columns>
+    <columns>
+        <field>Sales_Advertising_Target__c.Revenue_Achievement__c</field>
+    </columns>
+    <columns>
+        <field>Sales_Advertising_Target__c.Status__c</field>
+    </columns>
+    <description>Overall target achievement summary across all Business Entities - quick dashboard view</description>
+    <filter>
+        <criteriaItems>
+            <column>Sales_Advertising_Target__c.Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Month</dateGranularity>
+        <field>Sales_Advertising_Target__c.Start_Date__c</field>
+        <sortOrder>Desc</sortOrder>
+    </groupingsDown>
+    <name>Target Achievement Summary</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Sales_Advertising_Target__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Sales_Advertising_Target__c.Start_Date__c</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

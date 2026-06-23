@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Business and Product Admin</label>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Business_Entity__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <applicationVisibilities>
+        <application>VCR_CRM</application>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <tabSettings>
+        <tab>Business_Entity__c</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+    
+    <!-- Record Types -->
+    <recordTypeVisibilities>
+        <recordType>Business_Entity__c.KDQC</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <recordType>Business_Entity__c.KPTM</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <recordType>Business_Entity__c.TTTM</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <recordType>Product2.Ad_Location</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <recordType>Product2.RO_TTTM</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <recordType>Product2.Shop_KPTM</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <!-- Account Fields -->
+    <fieldPermissions><editable>true</editable><field>Account.Account_Bank_Number__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Account.Account_Holder__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Account.Bankey_Name__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Account.Brand__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Account.Company_Code__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Account.Customer_Type__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Account.Email__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Account.Enterprise_Code_Certificate__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Account.ID_Number_Passport__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Account.Issued_Date__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Account.Issued_Place__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Account.Number_Of_RO_In_Vietnam__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Account.Number_Of_RO_Worldwide__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Account.SAP_Account_ID__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Account.Salutation__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Account.Tax_Code__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Account.Total_Brands__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Account.Trading_Partner__c</field><readable>true</readable></fieldPermissions>
+    
+    <!-- Opportunity Fields -->
+    <fieldPermissions><editable>false</editable><field>Opportunity.Account_Tax_Code__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Opportunity.Lease_Term__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Opportunity.Lost_Reason__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Opportunity.Negotiation_History__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Opportunity.RO__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Opportunity.Rental_Area__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Opportunity.Rental_Price__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Opportunity.SAP_Opportunity_ID__c</field><readable>true</readable></fieldPermissions>
+
+    <!-- Business Entity Fields (exclude required BE_Type__c) -->
+    <fieldPermissions><editable>true</editable><field>Business_Entity__c.Address_1__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Business_Entity__c.Car_Slots__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Business_Entity__c.GFA__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Business_Entity__c.Land_Area__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Business_Entity__c.Motorbike_Slots__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Business_Entity__c.NLA_Indoor__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Business_Entity__c.NLA_Outdoor__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Business_Entity__c.Opening_Date__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Business_Entity__c.Parking_Area__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Business_Entity__c.Province_1__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Business_Entity__c.SAP_BE_ID__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Business_Entity__c.Shopping_Mall_Model__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Business_Entity__c.Company_Code__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Business_Entity__c.VCR_Tax_Code__c</field><readable>true</readable></fieldPermissions>
+    <!-- Product2 Fields -->
+    <fieldPermissions><editable>true</editable><field>Product2.Area_Indoor__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Product2.Area_Outdoor__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Product2.Floor__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Product2.Industry__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Product2.RO_Code__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Product2.RO_Type__c</field><readable>true</readable></fieldPermissions>
+</PermissionSet>

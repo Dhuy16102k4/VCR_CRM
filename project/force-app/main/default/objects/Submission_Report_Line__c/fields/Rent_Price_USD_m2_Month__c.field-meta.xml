@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rent_Price_USD_m2_Month__c</fullName>
+    <description>Khi tạo Báo Cáo Chốt, thông tin sẽ được lấy dữ liệu theo các trường hợp tương ứng:
+- Opportunity là Thuê Mới - Gian Hàng:
++ Loại Chia Sẻ Doanh Thu Theo Không Chặn Dưới thì sẽ bằng giá trị rỗng 
++ Loại Chia Sẻ Doanh Thu Có Chặn Dưới thì sẽ bằng Mức Chặn Dưới
++ Loại Giá Cố Định; Chia Sẻ Doanh Thu Cộng Giá Cố Định thì sẽ bằng Giá Cố Định
+- Opportunity là Thuê Mới - Shophouse:
++ Loại Chia Sẻ Doanh Thu Theo Không Chặn Dưới thì sẽ bằng giá trị rỗng 
++ Loại Chia Sẻ Doanh Thu Có Chặn Dưới thì sẽ bằng Mức Chặn Dưới
++ Loại Giá Cố Định; Chia Sẻ Doanh Thu Cộng Giá Cố Định thì sẽ bằng Giá Cố Định
+
+Quy tắc chỉnh sửa trường dữ liệu này sẽ có ảnh hưởng đến % Tăng từng năm:
++ Nếu sửa giá chốt tiền thuê, tự động so sánh với giá chốt thuê của năm trước để tính ra % tăng từng năm và apply đến các năm sau
++ Nếu sửa % tăng từng năm, tự động lấy giá chốt thuê của năm trước để tính ra giá chốt thuê của năm hiện tại và apply đến các năm sau
++ Nếu thay đổi cả 2 thông tin, tự động so sánh với giá chốt thuê củ...</description>
+    <externalId>false</externalId>
+    <label>Rent Price (USD/m2/Month)</label>
+    <precision>18</precision>
+    <required>true</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

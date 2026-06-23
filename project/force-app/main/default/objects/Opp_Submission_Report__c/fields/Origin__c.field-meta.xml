@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Origin__c</fullName>
+    <description>- Field cho BCC
+- Read Only
+- Lấy thông tin từ Cơ Hội.Thương Hiệu.Xuất Xứ Thương Hiệu</description>
+    <label>Origin</label>
+    <type>Text</type>
+    <length>255</length>
+    <unique>false</unique>
+</CustomField>

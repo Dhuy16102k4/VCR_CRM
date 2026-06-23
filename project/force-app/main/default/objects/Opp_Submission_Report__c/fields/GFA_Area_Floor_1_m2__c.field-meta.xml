@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GFA_Area_Floor_1_m2__c</fullName>
+    <description>- Field cho BCC
+- Read Only
+- Lấy thông tin từ Opportunity Product.Product.OutdoorArea()</description>
+    <label>Outdoor Area (In Of Boundaries)</label>
+    <type>Number</type>
+    <precision>18</precision>
+    <scale>2</scale>
+</CustomField>

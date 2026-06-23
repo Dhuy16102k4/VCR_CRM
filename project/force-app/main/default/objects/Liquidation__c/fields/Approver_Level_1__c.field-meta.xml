@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Approver_Level_1__c</fullName>
+    <label>Approver Level 1</label>
+    <type>Lookup</type>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Approver_Level_1s</relationshipName>
+    <trackHistory>false</trackHistory>
+</CustomField>

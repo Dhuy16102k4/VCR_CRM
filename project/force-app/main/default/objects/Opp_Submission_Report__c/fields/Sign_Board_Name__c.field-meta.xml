@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sign_Board_Name__c</fullName>
+    <description>- Field cho BCC
+- Cho phép nhập thông tin Tên Bảng Hiệu trên BCC</description>
+    <label>Sign Board Name</label>
+    <type>Text</type>
+    <length>255</length>
+    <unique>false</unique>
+</CustomField>

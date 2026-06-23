@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Account-Brand Relationship</label>
+    <pluralLabel>Account-Brand Relationships</pluralLabel>
+    <nameField>
+        <displayFormat>ABR-{0000000}</displayFormat>
+        <label>Account-Brand Relationship Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <sharingModel>ControlledByParent</sharingModel>
+    <enableActivities>true</enableActivities>
+    <enableReports>true</enableReports>
+    <enableHistory>true</enableHistory>
+    <enableBulkApi>true</enableBulkApi>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <enableFeeds>false</enableFeeds>
+    <description>Junction object to manage many-to-many relationships between Accounts and Brands</description>
+</CustomObject>

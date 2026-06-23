@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Fee_Sales_Price_VND_Month__c</fullName>
+    <description>- Field cho OTL
+- Công thức = Đơn Giá Phí Dịch Vụ (VND/m2/tháng) * Diện tích
+Phải có 1 field thực hiện lưu thông tin diện tích của RO. field CFA Area Floor 1</description>
+    <label>Total Fee Sales Price (VND/Month)</label>
+    <type>Currency</type>
+    <formula>0</formula>
+    <precision>18</precision>
+    <scale>2</scale>
+</CustomField>

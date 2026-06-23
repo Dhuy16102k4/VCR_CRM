@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Floor_3rd_Capex_Price__c</fullName>
+    <label>Floor 3rd Capex Price</label>
+    <description>Nhập và chỉnh sửa bằng USD
+Chỉ hiện nếu chọn &quot;Có Hỗ Trợ&quot;
+Help Text: (VNĐ/m2)</description>
+    <type>Currency</type>
+    <precision>16</precision>
+    <scale>2</scale>
+</CustomField>

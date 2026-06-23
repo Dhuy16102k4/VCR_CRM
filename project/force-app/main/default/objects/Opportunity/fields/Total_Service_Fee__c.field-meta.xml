@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Service_Fee__c</fullName>
+    <label>Total Service Fee</label>
+    <description>- Nhập và chỉnh sửa bằng USD
+- KPTM: 
++ Tổng Phí Dịch Vụ =  Đơn Giá Phí Dịch Vụ * (Diện Tích Đất Sử Dụng + Diện Tích Ngoài Trời) nếu Thuê Ngoài Trời = Check
++ Tổng Phí Dịch Vụ = Đơn Giá Phí Dịch Vụ * Diện Tích Đất Sử Dụng nếu Thuê Ngoài Trời = UnCheck
+- TTTM: 
++ Tổng Phí Dịch Vụ = Đơn Giá Phí Dịch Vụ * Diện Tích (m2)
+- Help Text: USD/Tháng</description>
+    <type>Number</type>
+    <precision>18</precision>
+    <scale>0</scale>
+</CustomField>

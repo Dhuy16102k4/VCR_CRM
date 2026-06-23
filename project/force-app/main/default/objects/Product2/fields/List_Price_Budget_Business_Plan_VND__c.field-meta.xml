@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>List_Price_Budget_Business_Plan_VND__c</fullName>
+    <description>Read Only;
+ = Đơn Giá NS Theo Kế Hoạch Kinh Doanh (USD) * Tỉ giá</description>
+    <externalId>false</externalId>
+    <formula>/* TODO: Update formula expression manually */
+0</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>List Price Budget Business Plan (VND)</label>
+    <precision>18</precision>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

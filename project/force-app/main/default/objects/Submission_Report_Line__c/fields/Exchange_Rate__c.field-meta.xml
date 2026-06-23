@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Exchange_Rate__c</fullName>
+    <description>Read Only
+Lấy thông tin từ Opportunity 
++ Nếu Currency trên Opportunity là VND thì sẽ bằng Exchange Rate trên Opportunity
++ Nếu Currency trên Opportunity là USD thì sẽ bằng 1/Exchange Rate trên Opportunity</description>
+    <externalId>false</externalId>
+    <label>Exchange Rate</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

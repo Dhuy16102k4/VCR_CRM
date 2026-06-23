@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>Brand__c</members>
+        <members>Business_Entity__c</members>
+        <members>Bankey__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>VCR_CRM</members>
+        <name>CustomApplication</name>
+    </types>
+    <version>59.0</version>
+</Package>

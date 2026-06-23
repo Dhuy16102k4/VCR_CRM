@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Legal_Type_Level_1__c</fullName>
+    <label>Legal Type Level 1</label>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>TBD</fullName>
+                <default>false</default>
+                <label>TBD</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <trackHistory>false</trackHistory>
+</CustomField>

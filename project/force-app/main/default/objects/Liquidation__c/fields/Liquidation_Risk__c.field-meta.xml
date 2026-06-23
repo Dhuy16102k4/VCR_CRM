@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Liquidation_Risk__c</fullName>
+    <label>Liquidation Risk</label>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Thấp</fullName>
+                <default>false</default>
+                <label>Thấp</label>
+            </value>
+            <value>
+                <fullName>Cao</fullName>
+                <default>false</default>
+                <label>Cao</label>
+            </value>
+            <value>
+                <fullName>Chắc chắn thanh lý</fullName>
+                <default>false</default>
+                <label>Chắc chắn thanh lý</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <trackHistory>true</trackHistory>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Legal_Type__c</fullName>
+    <label>Legal Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>false</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value><fullName>Certificate of Brand Ownership/Distribution</fullName><default>false</default><label>Certificate of Brand Ownership/Distribution</label></value><value><fullName>Business Registration</fullName><default>false</default><label>Business Registration</label></value><value><fullName>OTL</fullName><default>false</default><label>OTL</label></value><value><fullName>Accreditation</fullName><default>false</default><label>Accreditation</label></value><value><fullName>RO Design</fullName><default>false</default><label>RO Design</label></value><value><fullName>Pre-opening Records</fullName><default>false</default><label>Pre-opening Records</label></value><value><fullName>Entity Legal</fullName><default>false</default><label>Entity Legal</label></value><value><fullName>Goods Legal</fullName><default>false</default><label>Goods Legal</label></value><value><fullName>Firefighting Legal</fullName><default>false</default><label>Firefighting Legal</label></value><value><fullName>Shopping Center Legal</fullName><default>false</default><label>Shopping Center Legal</label></value><value><fullName>Construction Documents</fullName><default>false</default><label>Construction Documents</label></value><value><fullName>Relocation Proposal</fullName><default>false</default><label>Relocation Proposal</label></value><value><fullName>Administration</fullName><default>false</default><label>Administration</label></value><value><fullName>Service Quality</fullName><default>false</default><label>Service Quality</label></value><value><fullName>Renovation Costs</fullName><default>false</default><label>Renovation Costs</label></value></valueSetDefinition>
+    </valueSet>
+</CustomField>

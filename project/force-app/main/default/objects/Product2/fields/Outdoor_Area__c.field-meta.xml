@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Outdoor_Area__c</fullName>
+    <description>Read Only;
+Diện Tích Ngoài Trời = Diện Tích Sử Dụng Bổ Sung + Diện Tích Sử Dụng Mở + Diện Tích Vỉa Hè
+Help Text: (m2)</description>
+    <externalId>false</externalId>
+    <formula>Additional_Usable_Area__c + Open_Use_Area__c + Sidewalk_Area__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Outdoor Area</label>
+    <precision>18</precision>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+</CustomField>

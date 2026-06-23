@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Outdoor_Price_USD_Month__c</fullName>
+    <description>Chỉ hiển thị trong trường hợp Opportunity là Thuê Mới - Shophouse và có Đơn Giá Thuê Ngoài Trời
+= Đơn Giá Thuê Ngoài Trời * Diện Tích Ngoài Trời</description>
+    <externalId>false</externalId>
+    <formula>0</formula>
+    <label>Total Outdoor Price (USD/Month)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

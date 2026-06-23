@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Actual_Amount_Support_Rent_Price__c</fullName>
+    <label>Actual Amount Support Rent Price</label>
+    <description>- Read only 
+-  Help Text: Tổng Tiền Hỗ Trợ Tiền Thuê Thực Tế = Đơn Giá Thuê * Số Tháng Hỗ Trợ Tiền Thuê Thực Tế * Tổng DT GFA</description>
+    <type>Number</type>
+    <precision>18</precision>
+    <scale>0</scale>
+</CustomField>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contract_Expired_Date_If_Not_Confirmed__c</fullName>
+    <label>Contract Expired Date If Not Confirmed</label>
+    <type>Date</type>
+</CustomField>

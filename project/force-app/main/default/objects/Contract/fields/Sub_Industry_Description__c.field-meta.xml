@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub_Industry_Description__c</fullName>
+    <description>Read Only
+Tích hợp từ SAP</description>
+    <label>Sub Industry Description</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <length>32768</length>
+    <visibleLines>3</visibleLines>
+</CustomField>

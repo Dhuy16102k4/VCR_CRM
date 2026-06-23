@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Service_Fee_Include_Air_Conditioning_Fee__c</fullName>
+    <label>Service Fee Include Air Conditioning Fee</label>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Included;</fullName>
+                <default>false</default>
+                <label>Included;</label>
+            </value>
+            <value>
+                <fullName>Not included</fullName>
+                <default>false</default>
+                <label>Not included</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

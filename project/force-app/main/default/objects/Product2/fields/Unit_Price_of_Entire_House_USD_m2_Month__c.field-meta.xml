@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unit_Price_of_Entire_House_USD_m2_Month__c</fullName>
+    <externalId>false</externalId>
+    <label>Unit Price of Entire House(USD/m2/Month)</label>
+    <precision>16</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+</CustomField>

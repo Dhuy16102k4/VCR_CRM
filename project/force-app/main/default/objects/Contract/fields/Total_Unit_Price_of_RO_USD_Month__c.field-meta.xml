@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Unit_Price_of_RO_USD_Month__c</fullName>
+    <description>Help Text:
+- (USD/Month)
+- Tiền Thuê Ngân Sách Tương Ứng với loại thuê trên Hợp Đồng
+= Tiền Thuê NS (USD/ Tháng) tương ứng với điều kiện
+Nếu RO là Advertising thì bằng 0
+Nếu RO là Shopping Mall thì Tiền Thuê NS (USD/ Tháng) sẽ bằng Tiền Thuê NS (USD/Tháng) trên RO
+Nếu RO là Shophouse thì Tiền Thuê NS (USD/ Tháng) sẽ chia thành 3 trường hợp
+  + Lựa Chọn Thuê trên Hợp Đồng = Thuê Nguyên Căn =&gt; Tiền Thuê NS (USD/ Tháng)  = Tiền Thuê NS Nguyên Căn (USD/Tháng)
+  + Lựa Chọn Thuê trên Hợp Đồng = Thuê Tằng 1 =&gt; Tiền Thuê NS (USD/ Tháng) = Tiền Thuê NS Tầng 1 (USD/Tháng)
+  + Lựa Chọn Thuê trên Hợp Đồng = Thuê Tằng 1 &amp; 2 =&gt; Tiền Thuê NS (USD/ Tháng) = Tiền Thuê NS Tầng 1 + 2 (USD/Tháng)</description>
+    <label>Total Unit Price of RO (USD/Month)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <formula>0</formula>
+    <scale>2</scale>
+    <precision>18</precision>
+</CustomField>

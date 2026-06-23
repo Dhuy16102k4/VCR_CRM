@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Official_Confirmation_Status__c</fullName>
+    <description>Tích hợp trả về API thành công thì cập nhật là Đã Tạo; Default là Chưa Tạo
+Help Text: 
+Gian Hàng và Vị Trí Quảng Cáo là Trạng Thái SAP Shophouse là dữ liệu được xác nhận bởi Sales Admin</description>
+    <externalId>false</externalId>
+    <label>Official Confirmation Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <value>
+                <fullName>Created</fullName>
+                <default>true</default>
+                <label>Created</label>
+            </value>
+            <value>
+                <fullName>Not Created</fullName>
+                <default>false</default>
+                <label>Not Created</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Action_Plan__c</fullName>
+    <label>Action Plan</label>
+    <type>Lookup</type>
+    <referenceTo>Action_Plan__c</referenceTo>
+    <relationshipLabel>Action Plan Details</relationshipLabel>
+    <relationshipName>Action_Plan_Details</relationshipName>
+    <trackHistory>false</trackHistory>
+</CustomField>

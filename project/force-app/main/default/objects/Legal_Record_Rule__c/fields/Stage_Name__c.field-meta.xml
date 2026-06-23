@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stage_Name__c</fullName>
+    <label>Stage Name</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>false</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value><fullName>RO Handover Stage</fullName><default>false</default><label>RO Handover Stage</label></value><value><fullName>RO Design Approval Stage</fullName><default>false</default><label>RO Design Approval Stage</label></value><value><fullName>Construction Control Stage</fullName><default>false</default><label>Construction Control Stage</label></value><value><fullName>Acceptance Stage</fullName><default>false</default><label>Acceptance Stage</label></value><value><fullName>Request Reception</fullName><default>false</default><label>Request Reception</label></value><value><fullName>Negotiation</fullName><default>false</default><label>Negotiation</label></value><value><fullName>Approval</fullName><default>false</default><label>Approval</label></value><value><fullName>Customer Response</fullName><default>false</default><label>Customer Response</label></value><value><fullName>Contract</fullName><default>false</default><label>Contract</label></value><value><fullName>Request Following</fullName><default>false</default><label>Request Following</label></value></valueSetDefinition>
+    </valueSet>
+</CustomField>

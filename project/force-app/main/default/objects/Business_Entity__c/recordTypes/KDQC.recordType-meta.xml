@@ -1,0 +1,296 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>KDQC</fullName>
+    <active>true</active>
+    <description>Ad Leasing</description>
+    <label>Ad Leasing</label>
+    <picklistValues>
+        <picklist>BE_Type__c</picklist>
+        <values>
+            <fullName>KDQC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KPTM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TTTM</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Province_1__c</picklist>
+        <values>
+            <fullName>An Giang</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bà Rịa - Vũng Tàu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bình Dương</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bình Phước</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bình Thuận</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bình Định</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bạc Liêu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bắc Giang</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bắc Kạn</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bắc Ninh</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bến Tre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cao Bằng</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cà Mau</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cần Thơ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gia Lai</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hà Giang</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hà Nam</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hà Nội</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hà Tĩnh</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hòa Bình</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hưng Yên</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hải Dương</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hải Phòng</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hậu Giang</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hồ Chí Minh</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Khánh Hòa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kiên Giang</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kon Tum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lai Châu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Long An</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lào Cai</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lâm Đồng</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lạng Sơn</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nam Định</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nghệ An</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ninh Bình</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ninh Thuận</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phú Thọ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phú Yên</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quảng Bình</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quảng Nam</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quảng Ngãi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quảng Ninh</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quảng Trị</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sóc Trăng</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sơn La</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thanh Hóa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thái Bình</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thái Nguyên</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thừa Thiên Huế</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tiền Giang</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trà Vinh</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tuyên Quang</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tây Ninh</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vĩnh Long</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vĩnh Phúc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yên Bái</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Điện Biên</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Đà Nẵng</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Đắk Lắk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Đắk Nông</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Đồng Nai</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Đồng Tháp</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Shopping_Mall_Model__c</picklist>
+        <values>
+            <fullName>Vincom Center</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vincom Megamall</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vincom Plaza</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vincom Plus</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

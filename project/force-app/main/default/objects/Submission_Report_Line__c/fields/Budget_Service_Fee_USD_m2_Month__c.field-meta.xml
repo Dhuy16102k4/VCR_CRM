@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Budget_Service_Fee_USD_m2_Month__c</fullName>
+    <description>Number nhưng không được sửa trực tiếp (Read Only)
+Hiển thị trong trường hợp Opportunity là Thuê mới - Shophouse, Thuê mới - Gian Hàng
+Khi tạo Báo Cáo Chốt, dữ liệu sẽ được lấy tương ứng với thông tin trên RO
++ Tất cả đều bằng Giá NS Phí Dịch trên RO
+Khi thay đổi thông tin trên Báo Cáo Chốt, sửa % tăng từng năm thì giá này sẽ không đổi. chỉ được đổi khi thay đổi field
+Thông tin giá Ngân Sách này sẽ không được sửa và cũng sẽ không đổi dù có thay đổi % Tăng Từng Năm hay Giá Chốt Tiền Thuê (USD/m2/Month)</description>
+    <externalId>false</externalId>
+    <label>Budget Service Fee (USD/m2/Month)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

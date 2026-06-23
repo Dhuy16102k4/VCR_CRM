@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Submission_Report_Number__c</fullName>
+    <externalId>false</externalId>
+    <label>Submission Report Number</label>
+    <referenceTo>Submission_Report__c</referenceTo>
+    <relationshipLabel>Submission_Report_Number_Submission_Repo</relationshipLabel>
+    <relationshipName>Submission_Report_Number_Submission_Repo</relationshipName>
+    <relationshipOrder>1</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

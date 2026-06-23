@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ad_Lease</fullName>
+    <active>true</active>
+    <businessProcess>Ad_Lease</businessProcess>
+    <label>Lease Ad Location</label>
+    <picklistValues>
+        <picklist>Lost_Reason__c</picklist>
+        <values>
+            <fullName>High rental price</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer changed mind</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incompatible industry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lost to competitor</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

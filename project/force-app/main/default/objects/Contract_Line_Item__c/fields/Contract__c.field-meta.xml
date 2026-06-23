@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contract__c</fullName>
+    <label>Contract</label>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    <reparentableMasterDetail>true</reparentableMasterDetail>
+    <referenceTo>Contract</referenceTo>
+    <relationshipName>Contract_Line_Item_Contracts</relationshipName>
+    <trackHistory>false</trackHistory>
+</CustomField>

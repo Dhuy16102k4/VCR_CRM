@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rental_Area_Including_ShopWindow__c</fullName>
+    <label>Rental Area Including Shop-Window</label>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Included;</fullName>
+                <default>false</default>
+                <label>Included;</label>
+            </value>
+            <value>
+                <fullName>Not included</fullName>
+                <default>false</default>
+                <label>Not included</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

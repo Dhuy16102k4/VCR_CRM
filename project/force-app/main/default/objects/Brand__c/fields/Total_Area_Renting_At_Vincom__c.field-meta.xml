@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Area_Renting_At_Vincom__c</fullName>
+    <label>Total Area Renting at Vincom</label>
+    <type>Number</type>
+    <precision>8</precision>
+    <scale>0</scale>
+</CustomField>

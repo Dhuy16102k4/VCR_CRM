@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Discovery_Status__c</fullName>
+    <label>Discovery Status</label>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Surveyed;</fullName>
+                <default>false</default>
+                <label>Surveyed;</label>
+            </value>
+            <value>
+                <fullName>Not Surveyed;</fullName>
+                <default>false</default>
+                <label>Not Surveyed;</label>
+            </value>
+            <value>
+                <fullName>Customers Not Surveyed</fullName>
+                <default>false</default>
+                <label>Customers Not Surveyed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

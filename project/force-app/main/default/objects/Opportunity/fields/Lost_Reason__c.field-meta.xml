@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lost_Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Lost Reason</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>High rental price</fullName>
+                <default>false</default>
+                <label>High rental price</label>
+            </value>
+            <value>
+                <fullName>Incompatible industry</fullName>
+                <default>false</default>
+                <label>Incompatible industry</label>
+            </value>
+            <value>
+                <fullName>Customer changed mind</fullName>
+                <default>false</default>
+                <label>Customer changed mind</label>
+            </value>
+            <value>
+                <fullName>Lost to competitor</fullName>
+                <default>false</default>
+                <label>Lost to competitor</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

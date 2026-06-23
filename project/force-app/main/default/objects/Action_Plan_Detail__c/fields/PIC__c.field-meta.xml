@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PIC__c</fullName>
+    <label>PIC</label>
+    <type>Text</type>
+    <length>255</length>
+    <trackHistory>false</trackHistory>
+    <description>Queue Name or User Name assigned to this task</description>
+</CustomField>

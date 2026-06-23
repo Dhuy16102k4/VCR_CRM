@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Rent_Budget_and_SF_VND_Month__c</fullName>
+    <description>Read Only;
+= Tổng Tiền Thuê &amp; PDV * Tỉ Giá</description>
+    <externalId>false</externalId>
+    <formula>/* TODO: Update formula expression manually */
+0</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Total Rent Budget and SF (VND/Month)</label>
+    <precision>18</precision>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

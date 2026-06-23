@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_EnterpriseCode_Coc</fullName>
+    <active>true</active>
+    <description>Enterprise_Code on Account is required when Stage = Deposit for Business</description>
+    <errorConditionFormula>ISPICKVAL(StageName, 'Contract Deposit') 
+&amp;&amp; ISBLANK(Account.Enterprise_Code_Certificate__c) 
+&amp;&amp; Account.RecordType.DeveloperName = 'Business_Tenant'</errorConditionFormula>
+    <errorMessage>Enterprise code of Tenant cannot be empty when depositing.</errorMessage>
+</ValidationRule>

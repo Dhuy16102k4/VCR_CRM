@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unit_Price_USD_m2_Month__c</fullName>
+    <description>Number nhưng không được sửa trực tiếp (Read Only)
+Hiển thị trong trường hợp Opportunity là Thuê mới - Shophouse, Thuê mới - Gian Hàng
+Khi tạo Báo Cáo Chốt, dữ liệu sẽ được lấy tương ứng với thông tin trên RO
+- Opportunity là Thuê Mới - Gian Hàng:
++ Luôn sẽ bằng giá trị rỗng Đơn Giá NS (USD/m2/Tháng)
+- Opportunity là Thuê Mới - Shophouse:
++ Lựa Chọn Thuê là Thuê Nguyên Căn thì sẽ bằng Đơn Giá NS Nguyên Căn (USD/m2/Tháng)
++ Lựa Chọn Thuê là Thuê Tầng 1 thì sẽ bằng Đơn Giá NS Tầng 1 (USD/m2/Tháng)
++ Lựa Chọn Thuê là Thuê Tầng 1 + 2 thì sẽ bằng Đơn Giá NS Tầng 1 + 2 (USD/m2/Tháng)
+Thông tin giá Ngân Sách này sẽ không được sửa và sẽ tự tăng khi agent sửa % tăng mỗi năm hoặc giá chốt thuê của từng năm (xem thông tin quy tắc để biết cách thức thay đổi % tăng từng năm như thế nào từ 2 field Giá Chốt Tiên Thuê (USD/m2/Tháng) và % Tăng Từng Năm)</description>
+    <externalId>false</externalId>
+    <label>Unit Price (USD/m2/Month)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

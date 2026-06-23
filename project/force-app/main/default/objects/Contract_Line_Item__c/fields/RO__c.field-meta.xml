@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RO__c</fullName>
+    <label>RO</label>
+    <type>Lookup</type>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <referenceTo>Product2</referenceTo>
+    <relationshipName>Contract_Line_Item_ROs</relationshipName>
+    <trackHistory>false</trackHistory>
+</CustomField>

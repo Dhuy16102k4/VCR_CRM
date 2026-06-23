@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Month_Rent_Price__c</fullName>
+    <description>Tổng Tháng Tiền Thuê = Tổng Tháng trên Contract Line, Có Condition Type = V001  hoặc V020</description>
+    <label>Total Month Rent Price</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <length>255</length>
+</CustomField>

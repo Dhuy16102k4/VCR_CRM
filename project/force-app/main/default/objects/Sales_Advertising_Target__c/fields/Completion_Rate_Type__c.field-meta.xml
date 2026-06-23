@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Completion_Rate_Type__c</fullName>
+    <label>Completion Rate Type</label>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Month</fullName>
+                <default>false</default>
+                <label>Month</label>
+            </value>
+            <value>
+                <fullName>Accumulated Month</fullName>
+                <default>false</default>
+                <label>Accumulated Month</label>
+            </value>
+            <value>
+                <fullName>Accumulated Year</fullName>
+                <default>false</default>
+                <label>Accumulated Year</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <trackHistory>false</trackHistory>
+</CustomField>

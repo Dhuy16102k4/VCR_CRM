@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Outdoor_Area_Within_The_Land_Boundary__c</fullName>
+    <label>Outdoor Area Out of Boundaries</label>
+    <type>Number</type>
+    <precision>8</precision>
+    <scale>2</scale>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+</CustomField>

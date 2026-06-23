@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Trading_Partner</fullName>
+    <active>true</active>
+    <description>Trading Partner is required when Tenant Type is Internal for Business Tenants.</description>
+    <errorConditionFormula>AND(
+  ISPICKVAL(Customer_Type__c, &apos;Internal&apos;),
+  ISBLANK(TEXT(Trading_Partner__c)),
+  RecordType.DeveloperName = &apos;Business_Tenant&apos;
+)</errorConditionFormula>
+    <errorDisplayField>Trading_Partner__c</errorDisplayField>
+    <errorMessage>Please select Trading Partner when Customer is Internal.</errorMessage>
+</ValidationRule>

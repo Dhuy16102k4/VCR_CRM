@@ -1,0 +1,862 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Business_Tenant</fullName>
+    <active>true</active>
+    <businessProcess>Master</businessProcess>
+    <description>Business / Internal / Legal Entity Tenant</description>
+    <label>Business Tenant</label>
+    <picklistValues>
+        <picklist>AccountSource</picklist>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Purchased List</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Active__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Contact_Role__c</picklist>
+        <values>
+            <fullName>CEO</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CustomerPriority__c</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Customer_Type__c</picklist>
+        <values>
+            <fullName>External</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Internal</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Industry</picklist>
+        <values>
+            <fullName>Agriculture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Apparel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Banking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Biotechnology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chemicals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Communications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consulting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electronics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entertainment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Environmental</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Food %26 Beverage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Healthcare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hospitality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insurance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Machinery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Media</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not For Profit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recreation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shipping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telecommunications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transportation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utilities</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Ownership</picklist>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Private</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Subsidiary</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Rating</picklist>
+        <values>
+            <fullName>Cold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warm</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SLA__c</picklist>
+        <values>
+            <fullName>Bronze</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Platinum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Silver</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Salutation__c</picklist>
+        <values>
+            <fullName>Mr%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mrs%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ms%2E</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Active</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inactive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Trading_Partner__c</picklist>
+        <values>
+            <fullName>3D Printing %26 Printers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Berjaya VN INT University Town</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bq-Mundo Rader%2C Unipessoal Lda</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT 1DC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT Adayroi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT An Thịnh</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT BDS Hà Thành</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT BĐS Phú Gia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT BĐS Thăng Long</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT BĐS Tây Tăng Long</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT BĐS Xavinco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT Bảo vệ Vincom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT Bệnh viện ĐKQT Vinmec</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT CP Gphap CNTT%26HTTD Vinitis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT CP KD%26 PT Sinh Thái</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT CP NC UD Tr%2Etuệ Ntao VinAI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT CP PT TP Xanh</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT Công viên trung tâm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT Delta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT Du lịch Phú Quốc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT Du lịch Phúc An</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT GD và ĐT VinAcademy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT Giống vật nuôi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT Hội chợ Triển lãm VN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT In sách VN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT Metropolis Hà Nội</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT NN VINECO SAGRI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT NN Đồng Nai %E2%80%93 VinEco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT Nông nghiệp Vineco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT OMG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT P%26S</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT Smart solution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT TM ĐT%26PT Thời Đại</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT TNHH KDTM %26 DV Vinfast</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT TNHH MTV Vinschool</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT TNHH VN Grand Prix</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT TP Hương Hải-Qngãi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT TTTC Berjaya VN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT TVĐT và ĐT VN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT Thái Sơn</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT Tập đoàn ĐTVN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT VCM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT VINDFS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT VINFAST</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT VinFA PP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT VinTech Korea</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT Vincom Retail Miền Bắc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT Vincom Retail Miền Nam</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT Vincommerce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT Vineco- Tam Đảo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT Vinfast Pin Lithium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT Vinfast-AnPhat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT Vingroup Global</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT Vinpearl Travel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT Vintech Ventures</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT Đô Thị Gia Lâm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT Đô thị Nam Hà Nội</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT Đô thị Suối Hoa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT Đô thị Sài Đồng</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT Địa ốc TP Hoàng Gia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT đô thị du lịch Cần Giờ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CTCP Cảng Nha Trang</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CTCP PT TS TOÀN CẦU V-GREEN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CTCP TMDV FGF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CTCP VinTech</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CTCP VinWonders Nha Trang</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CTCP Vincom Retail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CTCP Vincom Retail Landmark 81</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CTCP Vinpearl</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CTCP sách Việt Nam</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CTCP ĐT%26PT Sinh Thái</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CTY CP GSM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CTY CP Vinbigdata</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CTY CP ĐT BDS VMI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CTY Công nghệ VinConnect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contact Services For Satisfact</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cty CP 1MG Housing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cty CP Hàng Không Vinpearl Air</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cty CP KD BĐS S-Vin Việt Nam</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cty CP KD TM SADO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cty CP KD%26TMDV VinPro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cty CP Phát triển GS Củ Chi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cty CP Th%2Eăn Chnuôi Việt Thắng</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cty CP ĐTPT BĐS Trường Thịnh</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cty CP Đầu tư xây dựng Đại An</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cty SX%26KD HMS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cty TNHH DV AN mạng VINCSS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cty TNHH DV vtải SThái Vinbus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cty TNHH TVGPTĐH Qtrị Vinbrain</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cty TNHH triển khai vinsoft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cty Vingroup Ventures</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CÔNG TY CỔ PHẦN GENESTORY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Công Ty VinTech - Hoa Kỳ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Công Ty VinTech - Nga</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Công Ty VinTech - Nhật Bản</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Công ty CP VINFA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Công ty CP Vinfast leasing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Công ty CP Vinpearl Cửa Hội</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Công ty CP Vinpearl Invest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Công ty Cổ phần VinID</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Công ty Cổ phần Đầu tư Vincom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Công ty TNHH BĐS Vincom NCT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Công ty TNHH Vui Vui</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Công ty TNHH Xalivico</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Công ty Thiên Niên Kỷ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Công ty VINDIGIX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Công ty VinSmart</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deep Technology %26 Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Educación Y Robótica S%2EL%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electronic 2 Trade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fundación Para La Educación Y</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inteligencia Operacional Para</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Iot %26 Mobility Y Commerce%2C S%2EL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Luarna Ediciones S%2EL%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Làng Hoa Thụy Khuê</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marcha Technology S%2EL%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mundo Reader France S%2EA%2ER%2EL%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mundo Reader Gmbh</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mundo Reader S%2EL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mundo Reader S%2ER%2EL%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Trading Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PEOPLE CARE%2E%2CJSC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quỹ Thiện Tâm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Related Individual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Smart European Devices Limited</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TNHH Nam Hà Nội</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tập đoàn Vingroup</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VinFast Auto Pte%2E Ltd%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vinfast Germany GmbH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vinpearl Làng Vân</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Xibantronics Trading Company L</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Channel Partner %2F Reseller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer - Channel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer - Direct</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installation Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technology Partner</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>UpsellOpportunity__c</picklist>
+        <values>
+            <fullName>Maybe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Voucher_Sales__c</fullName>
+    <description>- Field cho Report
+- Công thức = Số Tháng Hỗ Trợ Thực Tế * Tiền Voucher Hỗ Trợ/Tháng Thực Tế (VNĐ/Tháng)</description>
+    <label>Voucher Sales</label>
+    <type>Currency</type>
+    <formula>0</formula>
+    <precision>18</precision>
+    <scale>2</scale>
+</CustomField>

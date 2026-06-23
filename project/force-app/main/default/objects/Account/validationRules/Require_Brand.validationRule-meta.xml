@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Brand</fullName>
+    <active>true</active>
+    <description>Brand is required, except for Ad Leasing role.</description>
+    <errorConditionFormula>AND(
+  ISBLANK(Brand__c),
+  $UserRole.Name &lt;&gt; &apos;Ad Leasing&apos;
+)</errorConditionFormula>
+    <errorDisplayField>Brand__c</errorDisplayField>
+    <errorMessage>Please select a Brand. (Required except for Ad Leasing department)</errorMessage>
+</ValidationRule>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_Director__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Sales Director</label>
+    <referenceTo>User</referenceTo>
+    <relationshipLabel>Sales T+3 Achievement Targets (Sales_Director)</relationshipLabel>
+    <relationshipName>Sales_T_3_Achievemen_Sales_Director</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

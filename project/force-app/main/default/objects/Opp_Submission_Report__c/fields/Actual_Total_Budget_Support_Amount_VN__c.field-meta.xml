@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Actual_Total_Budget_Support_Amount_VN__c</fullName>
+    <description>- Chỉ hiển thị đối với RO KPTM</description>
+    <label>Total Actual Support Amount (VND)</label>
+    <type>Currency</type>
+    <precision>18</precision>
+    <scale>2</scale>
+</CustomField>

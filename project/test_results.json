@@ -1,0 +1,361 @@
+﻿{
+  "status": 100,
+  "result": {
+    "summary": {
+      "failRate": "24%",
+      "failing": 5,
+      "hostname": "https://orgfarm-3fa5d2381b-dev-ed.develop.my.salesforce.com",
+      "orgId": "00DgK00000Qr96EUAR",
+      "outcome": "Failed",
+      "passRate": "76%",
+      "passing": 16,
+      "skipped": 0,
+      "testRunId": "707gK00000fNSfa",
+      "testStartTime": "2026-06-18T06:36:42.000Z",
+      "testsRan": 21,
+      "userId": "005gK00004jCfZhQAK",
+      "username": "dhuy1610z.6169fc65f8a7@agentforce.com",
+      "commandTime": "362 ms",
+      "testExecutionTime": "4400 ms",
+      "testTotalTime": "4400 ms"
+    },
+    "tests": [
+      {
+        "Id": "07MgK000006mf5RUAQ",
+        "QueueItemId": "709gK00000EtiOlQAJ",
+        "StackTrace": null,
+        "Message": null,
+        "AsyncApexJobId": "707gK00000fNSfaQAG",
+        "MethodName": "testActionPlanBulkInsert",
+        "Outcome": "Pass",
+        "ApexClass": {
+          "Id": "01pgK00000CRpqjQAD",
+          "Name": "NewObjectsTest",
+          "NamespacePrefix": null
+        },
+        "RunTime": 124,
+        "FullName": "NewObjectsTest.testActionPlanBulkInsert"
+      },
+      {
+        "Id": "07MgK000006mf5SUAQ",
+        "QueueItemId": "709gK00000EtiOlQAJ",
+        "StackTrace": null,
+        "Message": null,
+        "AsyncApexJobId": "707gK00000fNSfaQAG",
+        "MethodName": "testActionPlanCreate",
+        "Outcome": "Pass",
+        "ApexClass": {
+          "Id": "01pgK00000CRpqjQAD",
+          "Name": "NewObjectsTest",
+          "NamespacePrefix": null
+        },
+        "RunTime": 44,
+        "FullName": "NewObjectsTest.testActionPlanCreate"
+      },
+      {
+        "Id": "07MgK000006mf5TUAQ",
+        "QueueItemId": "709gK00000EtiOlQAJ",
+        "StackTrace": null,
+        "Message": null,
+        "AsyncApexJobId": "707gK00000fNSfaQAG",
+        "MethodName": "testActionPlanDetailBulkInsert",
+        "Outcome": "Pass",
+        "ApexClass": {
+          "Id": "01pgK00000CRpqjQAD",
+          "Name": "NewObjectsTest",
+          "NamespacePrefix": null
+        },
+        "RunTime": 139,
+        "FullName": "NewObjectsTest.testActionPlanDetailBulkInsert"
+      },
+      {
+        "Id": "07MgK000006mf5UUAQ",
+        "QueueItemId": "709gK00000EtiOlQAJ",
+        "StackTrace": null,
+        "Message": null,
+        "AsyncApexJobId": "707gK00000fNSfaQAG",
+        "MethodName": "testActionPlanDetailCreate",
+        "Outcome": "Pass",
+        "ApexClass": {
+          "Id": "01pgK00000CRpqjQAD",
+          "Name": "NewObjectsTest",
+          "NamespacePrefix": null
+        },
+        "RunTime": 93,
+        "FullName": "NewObjectsTest.testActionPlanDetailCreate"
+      },
+      {
+        "Id": "07MgK000006mf5VUAQ",
+        "QueueItemId": "709gK00000EtiOlQAJ",
+        "StackTrace": null,
+        "Message": null,
+        "AsyncApexJobId": "707gK00000fNSfaQAG",
+        "MethodName": "testActionPlanDetailMultiselectPicklist",
+        "Outcome": "Pass",
+        "ApexClass": {
+          "Id": "01pgK00000CRpqjQAD",
+          "Name": "NewObjectsTest",
+          "NamespacePrefix": null
+        },
+        "RunTime": 76,
+        "FullName": "NewObjectsTest.testActionPlanDetailMultiselectPicklist"
+      },
+      {
+        "Id": "07MgK000006mf5WUAQ",
+        "QueueItemId": "709gK00000EtiOlQAJ",
+        "StackTrace": null,
+        "Message": null,
+        "AsyncApexJobId": "707gK00000fNSfaQAG",
+        "MethodName": "testActionPlanDetailNoParent",
+        "Outcome": "Pass",
+        "ApexClass": {
+          "Id": "01pgK00000CRpqjQAD",
+          "Name": "NewObjectsTest",
+          "NamespacePrefix": null
+        },
+        "RunTime": 45,
+        "FullName": "NewObjectsTest.testActionPlanDetailNoParent"
+      },
+      {
+        "Id": "07MgK000006mf5XUAQ",
+        "QueueItemId": "709gK00000EtiOlQAJ",
+        "StackTrace": null,
+        "Message": null,
+        "AsyncApexJobId": "707gK00000fNSfaQAG",
+        "MethodName": "testActionPlanExternalIdUnique",
+        "Outcome": "Pass",
+        "ApexClass": {
+          "Id": "01pgK00000CRpqjQAD",
+          "Name": "NewObjectsTest",
+          "NamespacePrefix": null
+        },
+        "RunTime": 55,
+        "FullName": "NewObjectsTest.testActionPlanExternalIdUnique"
+      },
+      {
+        "Id": "07MgK000006mf5YUAQ",
+        "QueueItemId": "709gK00000EtiOlQAJ",
+        "StackTrace": null,
+        "Message": null,
+        "AsyncApexJobId": "707gK00000fNSfaQAG",
+        "MethodName": "testActionPlanToDetailChain",
+        "Outcome": "Pass",
+        "ApexClass": {
+          "Id": "01pgK00000CRpqjQAD",
+          "Name": "NewObjectsTest",
+          "NamespacePrefix": null
+        },
+        "RunTime": 83,
+        "FullName": "NewObjectsTest.testActionPlanToDetailChain"
+      },
+      {
+        "Id": "07MgK000006mf5ZUAQ",
+        "QueueItemId": "709gK00000EtiOlQAJ",
+        "StackTrace": null,
+        "Message": null,
+        "AsyncApexJobId": "707gK00000fNSfaQAG",
+        "MethodName": "testCampaignAllStatuses",
+        "Outcome": "Pass",
+        "ApexClass": {
+          "Id": "01pgK00000CRpqjQAD",
+          "Name": "NewObjectsTest",
+          "NamespacePrefix": null
+        },
+        "RunTime": 192,
+        "FullName": "NewObjectsTest.testCampaignAllStatuses"
+      },
+      {
+        "Id": "07MgK000006mf5aUAA",
+        "QueueItemId": "709gK00000EtiOlQAJ",
+        "StackTrace": null,
+        "Message": null,
+        "AsyncApexJobId": "707gK00000fNSfaQAG",
+        "MethodName": "testCampaignAllTypes",
+        "Outcome": "Pass",
+        "ApexClass": {
+          "Id": "01pgK00000CRpqjQAD",
+          "Name": "NewObjectsTest",
+          "NamespacePrefix": null
+        },
+        "RunTime": 143,
+        "FullName": "NewObjectsTest.testCampaignAllTypes"
+      },
+      {
+        "Id": "07MgK000006mf5bUAA",
+        "QueueItemId": "709gK00000EtiOlQAJ",
+        "StackTrace": null,
+        "Message": null,
+        "AsyncApexJobId": "707gK00000fNSfaQAG",
+        "MethodName": "testCampaignCreate",
+        "Outcome": "Pass",
+        "ApexClass": {
+          "Id": "01pgK00000CRpqjQAD",
+          "Name": "NewObjectsTest",
+          "NamespacePrefix": null
+        },
+        "RunTime": 77,
+        "FullName": "NewObjectsTest.testCampaignCreate"
+      },
+      {
+        "Id": "07MgK000006mf5cUAA",
+        "QueueItemId": "709gK00000EtiOlQAJ",
+        "StackTrace": "Class.NewObjectsTest.testCampaignInvalidStatus: line 473, column 1",
+        "Message": "System.AssertException: Assertion Failed: Should have thrown exception for invalid Status",
+        "AsyncApexJobId": "707gK00000fNSfaQAG",
+        "MethodName": "testCampaignInvalidStatus",
+        "Outcome": "Fail",
+        "ApexClass": {
+          "Id": "01pgK00000CRpqjQAD",
+          "Name": "NewObjectsTest",
+          "NamespacePrefix": null
+        },
+        "RunTime": 83,
+        "FullName": "NewObjectsTest.testCampaignInvalidStatus"
+      },
+      {
+        "Id": "07MgK000006mf5dUAA",
+        "QueueItemId": "709gK00000EtiOlQAJ",
+        "StackTrace": null,
+        "Message": null,
+        "AsyncApexJobId": "707gK00000fNSfaQAG",
+        "MethodName": "testCaseBulkInsert",
+        "Outcome": "Pass",
+        "ApexClass": {
+          "Id": "01pgK00000CRpqjQAD",
+          "Name": "NewObjectsTest",
+          "NamespacePrefix": null
+        },
+        "RunTime": 995,
+        "FullName": "NewObjectsTest.testCaseBulkInsert"
+      },
+      {
+        "Id": "07MgK000006mf5eUAA",
+        "QueueItemId": "709gK00000EtiOlQAJ",
+        "StackTrace": "Class.NewObjectsTest.makeBusiness: line 53, column 1\nClass.NewObjectsTest.testCaseCustomFieldsCreate: line 310, column 1",
+        "Message": "System.DmlException: Insert failed. First exception on row 0; first error: REQUIRED_FIELD_MISSING, Required fields are missing: [BE_Type__c]: [BE_Type__c]",
+        "AsyncApexJobId": "707gK00000fNSfaQAG",
+        "MethodName": "testCaseCustomFieldsCreate",
+        "Outcome": "Fail",
+        "ApexClass": {
+          "Id": "01pgK00000CRpqjQAD",
+          "Name": "NewObjectsTest",
+          "NamespacePrefix": null
+        },
+        "RunTime": 272,
+        "FullName": "NewObjectsTest.testCaseCustomFieldsCreate"
+      },
+      {
+        "Id": "07MgK000006mf5fUAA",
+        "QueueItemId": "709gK00000EtiOlQAJ",
+        "StackTrace": null,
+        "Message": null,
+        "AsyncApexJobId": "707gK00000fNSfaQAG",
+        "MethodName": "testCaseLiquidationType",
+        "Outcome": "Pass",
+        "ApexClass": {
+          "Id": "01pgK00000CRpqjQAD",
+          "Name": "NewObjectsTest",
+          "NamespacePrefix": null
+        },
+        "RunTime": 308,
+        "FullName": "NewObjectsTest.testCaseLiquidationType"
+      },
+      {
+        "Id": "07MgK000006mf5gUAA",
+        "QueueItemId": "709gK00000EtiOlQAJ",
+        "StackTrace": null,
+        "Message": null,
+        "AsyncApexJobId": "707gK00000fNSfaQAG",
+        "MethodName": "testCaseStoppingOldRONotificationDate",
+        "Outcome": "Pass",
+        "ApexClass": {
+          "Id": "01pgK00000CRpqjQAD",
+          "Name": "NewObjectsTest",
+          "NamespacePrefix": null
+        },
+        "RunTime": 296,
+        "FullName": "NewObjectsTest.testCaseStoppingOldRONotificationDate"
+      },
+      {
+        "Id": "07MgK000006mf5hUAA",
+        "QueueItemId": "709gK00000EtiOlQAJ",
+        "StackTrace": "Class.NewObjectsTest.makeBusiness: line 53, column 1\nClass.NewObjectsTest.testDebtBuildingDeleteRestrict: line 238, column 1",
+        "Message": "System.DmlException: Insert failed. First exception on row 0; first error: REQUIRED_FIELD_MISSING, Required fields are missing: [BE_Type__c]: [BE_Type__c]",
+        "AsyncApexJobId": "707gK00000fNSfaQAG",
+        "MethodName": "testDebtBuildingDeleteRestrict",
+        "Outcome": "Fail",
+        "ApexClass": {
+          "Id": "01pgK00000CRpqjQAD",
+          "Name": "NewObjectsTest",
+          "NamespacePrefix": null
+        },
+        "RunTime": 209,
+        "FullName": "NewObjectsTest.testDebtBuildingDeleteRestrict"
+      },
+      {
+        "Id": "07MgK000006mf5iUAA",
+        "QueueItemId": "709gK00000EtiOlQAJ",
+        "StackTrace": null,
+        "Message": null,
+        "AsyncApexJobId": "707gK00000fNSfaQAG",
+        "MethodName": "testDebtBulkInsert",
+        "Outcome": "Pass",
+        "ApexClass": {
+          "Id": "01pgK00000CRpqjQAD",
+          "Name": "NewObjectsTest",
+          "NamespacePrefix": null
+        },
+        "RunTime": 366,
+        "FullName": "NewObjectsTest.testDebtBulkInsert"
+      },
+      {
+        "Id": "07MgK000006mf5jUAA",
+        "QueueItemId": "709gK00000EtiOlQAJ",
+        "StackTrace": "Class.NewObjectsTest.makeBusiness: line 53, column 1\nClass.NewObjectsTest.testDebtCreate: line 194, column 1",
+        "Message": "System.DmlException: Insert failed. First exception on row 0; first error: REQUIRED_FIELD_MISSING, Required fields are missing: [BE_Type__c]: [BE_Type__c]",
+        "AsyncApexJobId": "707gK00000fNSfaQAG",
+        "MethodName": "testDebtCreate",
+        "Outcome": "Fail",
+        "ApexClass": {
+          "Id": "01pgK00000CRpqjQAD",
+          "Name": "NewObjectsTest",
+          "NamespacePrefix": null
+        },
+        "RunTime": 215,
+        "FullName": "NewObjectsTest.testDebtCreate"
+      },
+      {
+        "Id": "07MgK000006mf5kUAA",
+        "QueueItemId": "709gK00000EtiOlQAJ",
+        "StackTrace": "Class.NewObjectsTest.makeProduct: line 47, column 1\nClass.NewObjectsTest.testDebtROSetNullOnDelete: line 263, column 1",
+        "Message": "System.DmlException: Insert failed. First exception on row 0; first error: REQUIRED_FIELD_MISSING, Required fields are missing: [Area__c, Total_Area__c, Used_Area__c]: [Area__c, Total_Area__c, Used_Area__c]",
+        "AsyncApexJobId": "707gK00000fNSfaQAG",
+        "MethodName": "testDebtROSetNullOnDelete",
+        "Outcome": "Fail",
+        "ApexClass": {
+          "Id": "01pgK00000CRpqjQAD",
+          "Name": "NewObjectsTest",
+          "NamespacePrefix": null
+        },
+        "RunTime": 343,
+        "FullName": "NewObjectsTest.testDebtROSetNullOnDelete"
+      },
+      {
+        "Id": "07MgK000006mf5lUAA",
+        "QueueItemId": "709gK00000EtiOlQAJ",
+        "StackTrace": null,
+        "Message": null,
+        "AsyncApexJobId": "707gK00000fNSfaQAG",
+        "MethodName": "testDebtWithoutRO",
+        "Outcome": "Pass",
+        "ApexClass": {
+          "Id": "01pgK00000CRpqjQAD",
+          "Name": "NewObjectsTest",
+          "NamespacePrefix": null
+        },
+        "RunTime": 242,
+        "FullName": "NewObjectsTest.testDebtWithoutRO"
+      }
+    ]
+  }
+}

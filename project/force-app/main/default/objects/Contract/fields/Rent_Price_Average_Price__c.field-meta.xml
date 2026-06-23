@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rent_Price_Average_Price__c</fullName>
+    <description>Giá Thuê Trung Bình (Tổng Giá) = Tổng Giá/(Tổng Tháng (Tổng Giá) * Diện Tích)</description>
+    <label>Rent Price Average (Price)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <length>255</length>
+</CustomField>

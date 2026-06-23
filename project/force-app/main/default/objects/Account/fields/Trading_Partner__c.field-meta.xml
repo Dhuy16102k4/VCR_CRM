@@ -1,0 +1,677 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Trading_Partner__c</fullName>
+    <description>Đối Tác Thương Mại - Required when Type = Nội Bộ for Business</description>
+    <externalId>false</externalId>
+    <label>Trading Partner</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Tập đoàn Vingroup</fullName>
+                <default>false</default>
+                <label>Tập đoàn Vingroup</label>
+            </value>
+            <value>
+                <fullName>CT Đô thị Nam Hà Nội</fullName>
+                <default>false</default>
+                <label>CT Đô thị Nam Hà Nội</label>
+            </value>
+            <value>
+                <fullName>CT Đô thị Sài Đồng</fullName>
+                <default>false</default>
+                <label>CT Đô thị Sài Đồng</label>
+            </value>
+            <value>
+                <fullName>CT Địa ốc TP Hoàng Gia</fullName>
+                <default>false</default>
+                <label>CT Địa ốc TP Hoàng Gia</label>
+            </value>
+            <value>
+                <fullName>CT BĐS Xavinco</fullName>
+                <default>false</default>
+                <label>CT BĐS Xavinco</label>
+            </value>
+            <value>
+                <fullName>CT BĐS Thăng Long</fullName>
+                <default>false</default>
+                <label>CT BĐS Thăng Long</label>
+            </value>
+            <value>
+                <fullName>CT BĐS Tây Tăng Long</fullName>
+                <default>false</default>
+                <label>CT BĐS Tây Tăng Long</label>
+            </value>
+            <value>
+                <fullName>Công ty TNHH Xalivico</fullName>
+                <default>false</default>
+                <label>Công ty TNHH Xalivico</label>
+            </value>
+            <value>
+                <fullName>CT Metropolis Hà Nội</fullName>
+                <default>false</default>
+                <label>CT Metropolis Hà Nội</label>
+            </value>
+            <value>
+                <fullName>CT đô thị du lịch Cần Giờ</fullName>
+                <default>false</default>
+                <label>CT đô thị du lịch Cần Giờ</label>
+            </value>
+            <value>
+                <fullName>CTCP sách Việt Nam</fullName>
+                <default>false</default>
+                <label>CTCP sách Việt Nam</label>
+            </value>
+            <value>
+                <fullName>CT TVĐT và ĐT VN</fullName>
+                <default>false</default>
+                <label>CT TVĐT và ĐT VN</label>
+            </value>
+            <value>
+                <fullName>CT In sách VN</fullName>
+                <default>false</default>
+                <label>CT In sách VN</label>
+            </value>
+            <value>
+                <fullName>CT Công viên trung tâm</fullName>
+                <default>false</default>
+                <label>CT Công viên trung tâm</label>
+            </value>
+            <value>
+                <fullName>CT BĐS Phú Gia</fullName>
+                <default>false</default>
+                <label>CT BĐS Phú Gia</label>
+            </value>
+            <value>
+                <fullName>CT Đô Thị Gia Lâm</fullName>
+                <default>false</default>
+                <label>CT Đô Thị Gia Lâm</label>
+            </value>
+            <value>
+                <fullName>Berjaya VN INT University Town</fullName>
+                <default>false</default>
+                <label>Berjaya VN INT University Town</label>
+            </value>
+            <value>
+                <fullName>TNHH Nam Hà Nội</fullName>
+                <default>false</default>
+                <label>TNHH Nam Hà Nội</label>
+            </value>
+            <value>
+                <fullName>CT TTTC Berjaya VN</fullName>
+                <default>false</default>
+                <label>CT TTTC Berjaya VN</label>
+            </value>
+            <value>
+                <fullName>CT Thái Sơn</fullName>
+                <default>false</default>
+                <label>CT Thái Sơn</label>
+            </value>
+            <value>
+                <fullName>CT Delta</fullName>
+                <default>false</default>
+                <label>CT Delta</label>
+            </value>
+            <value>
+                <fullName>Cty CP Phát triển GS Củ Chi</fullName>
+                <default>false</default>
+                <label>Cty CP Phát triển GS Củ Chi</label>
+            </value>
+            <value>
+                <fullName>CT P&amp;S</fullName>
+                <default>false</default>
+                <label>CT P&amp;S</label>
+            </value>
+            <value>
+                <fullName>CT CP KD&amp; PT Sinh Thái</fullName>
+                <default>false</default>
+                <label>CT CP KD&amp; PT Sinh Thái</label>
+            </value>
+            <value>
+                <fullName>Cty CP Đầu tư xây dựng Đại An</fullName>
+                <default>false</default>
+                <label>Cty CP Đầu tư xây dựng Đại An</label>
+            </value>
+            <value>
+                <fullName>Cty CP KD BĐS S-Vin Việt Nam</fullName>
+                <default>false</default>
+                <label>Cty CP KD BĐS S-Vin Việt Nam</label>
+            </value>
+            <value>
+                <fullName>Cty CP KD TM SADO</fullName>
+                <default>false</default>
+                <label>Cty CP KD TM SADO</label>
+            </value>
+            <value>
+                <fullName>Cty CP ĐTPT BĐS Trường Thịnh</fullName>
+                <default>false</default>
+                <label>Cty CP ĐTPT BĐS Trường Thịnh</label>
+            </value>
+            <value>
+                <fullName>CT TM ĐT&amp;PT Thời Đại</fullName>
+                <default>false</default>
+                <label>CT TM ĐT&amp;PT Thời Đại</label>
+            </value>
+            <value>
+                <fullName>Công ty Thiên Niên Kỷ</fullName>
+                <default>false</default>
+                <label>Công ty Thiên Niên Kỷ</label>
+            </value>
+            <value>
+                <fullName>CT Nông nghiệp Vineco</fullName>
+                <default>false</default>
+                <label>CT Nông nghiệp Vineco</label>
+            </value>
+            <value>
+                <fullName>CT Vineco- Tam Đảo</fullName>
+                <default>false</default>
+                <label>CT Vineco- Tam Đảo</label>
+            </value>
+            <value>
+                <fullName>CT NN Đồng Nai – VinEco</fullName>
+                <default>false</default>
+                <label>CT NN Đồng Nai – VinEco</label>
+            </value>
+            <value>
+                <fullName>CT NN VINECO SAGRI</fullName>
+                <default>false</default>
+                <label>CT NN VINECO SAGRI</label>
+            </value>
+            <value>
+                <fullName>CT Bệnh viện ĐKQT Vinmec</fullName>
+                <default>false</default>
+                <label>CT Bệnh viện ĐKQT Vinmec</label>
+            </value>
+            <value>
+                <fullName>Công ty CP VINFA</fullName>
+                <default>false</default>
+                <label>Công ty CP VINFA</label>
+            </value>
+            <value>
+                <fullName>CT VinFA PP</fullName>
+                <default>false</default>
+                <label>CT VinFA PP</label>
+            </value>
+            <value>
+                <fullName>CT TNHH MTV Vinschool</fullName>
+                <default>false</default>
+                <label>CT TNHH MTV Vinschool</label>
+            </value>
+            <value>
+                <fullName>CT GD và ĐT VinAcademy</fullName>
+                <default>false</default>
+                <label>CT GD và ĐT VinAcademy</label>
+            </value>
+            <value>
+                <fullName>CT An Thịnh</fullName>
+                <default>false</default>
+                <label>CT An Thịnh</label>
+            </value>
+            <value>
+                <fullName>CT Bảo vệ Vincom</fullName>
+                <default>false</default>
+                <label>CT Bảo vệ Vincom</label>
+            </value>
+            <value>
+                <fullName>CT Vincommerce</fullName>
+                <default>false</default>
+                <label>CT Vincommerce</label>
+            </value>
+            <value>
+                <fullName>CT Giống vật nuôi</fullName>
+                <default>false</default>
+                <label>CT Giống vật nuôi</label>
+            </value>
+            <value>
+                <fullName>CT Hội chợ Triển lãm VN</fullName>
+                <default>false</default>
+                <label>CT Hội chợ Triển lãm VN</label>
+            </value>
+            <value>
+                <fullName>CTCP Cảng Nha Trang</fullName>
+                <default>false</default>
+                <label>CTCP Cảng Nha Trang</label>
+            </value>
+            <value>
+                <fullName>Cty CP KD&amp;TMDV VinPro</fullName>
+                <default>false</default>
+                <label>Cty CP KD&amp;TMDV VinPro</label>
+            </value>
+            <value>
+                <fullName>CT Adayroi</fullName>
+                <default>false</default>
+                <label>CT Adayroi</label>
+            </value>
+            <value>
+                <fullName>CT VCM</fullName>
+                <default>false</default>
+                <label>CT VCM</label>
+            </value>
+            <value>
+                <fullName>CT VINFAST</fullName>
+                <default>false</default>
+                <label>CT VINFAST</label>
+            </value>
+            <value>
+                <fullName>Công ty VinSmart</fullName>
+                <default>false</default>
+                <label>Công ty VinSmart</label>
+            </value>
+            <value>
+                <fullName>Vinfast Germany GmbH</fullName>
+                <default>false</default>
+                <label>Vinfast Germany GmbH</label>
+            </value>
+            <value>
+                <fullName>CTCP VinTech</fullName>
+                <default>false</default>
+                <label>CTCP VinTech</label>
+            </value>
+            <value>
+                <fullName>Cty TNHH DV AN mạng VINCSS</fullName>
+                <default>false</default>
+                <label>Cty TNHH DV AN mạng VINCSS</label>
+            </value>
+            <value>
+                <fullName>CTY Công nghệ VinConnect</fullName>
+                <default>false</default>
+                <label>CTY Công nghệ VinConnect</label>
+            </value>
+            <value>
+                <fullName>Cty SX&amp;KD HMS</fullName>
+                <default>false</default>
+                <label>Cty SX&amp;KD HMS</label>
+            </value>
+            <value>
+                <fullName>CT VinTech Korea</fullName>
+                <default>false</default>
+                <label>CT VinTech Korea</label>
+            </value>
+            <value>
+                <fullName>Công Ty VinTech - Hoa Kỳ</fullName>
+                <default>false</default>
+                <label>Công Ty VinTech - Hoa Kỳ</label>
+            </value>
+            <value>
+                <fullName>Công Ty VinTech - Nga</fullName>
+                <default>false</default>
+                <label>Công Ty VinTech - Nga</label>
+            </value>
+            <value>
+                <fullName>Công Ty VinTech - Nhật Bản</fullName>
+                <default>false</default>
+                <label>Công Ty VinTech - Nhật Bản</label>
+            </value>
+            <value>
+                <fullName>CT Vinfast-AnPhat</fullName>
+                <default>false</default>
+                <label>CT Vinfast-AnPhat</label>
+            </value>
+            <value>
+                <fullName>Công ty VINDIGIX</fullName>
+                <default>false</default>
+                <label>Công ty VINDIGIX</label>
+            </value>
+            <value>
+                <fullName>Cty TNHH triển khai vinsoft</fullName>
+                <default>false</default>
+                <label>Cty TNHH triển khai vinsoft</label>
+            </value>
+            <value>
+                <fullName>Mundo Reader S.L</fullName>
+                <default>false</default>
+                <label>Mundo Reader S.L</label>
+            </value>
+            <value>
+                <fullName>Luarna Ediciones S.L.</fullName>
+                <default>false</default>
+                <label>Luarna Ediciones S.L.</label>
+            </value>
+            <value>
+                <fullName>Marcha Technology S.L.</fullName>
+                <default>false</default>
+                <label>Marcha Technology S.L.</label>
+            </value>
+            <value>
+                <fullName>Iot &amp; Mobility Y Commerce, S.L</fullName>
+                <default>false</default>
+                <label>Iot &amp; Mobility Y Commerce, S.L</label>
+            </value>
+            <value>
+                <fullName>Inteligencia Operacional Para</fullName>
+                <default>false</default>
+                <label>Inteligencia Operacional Para</label>
+            </value>
+            <value>
+                <fullName>Deep Technology &amp; Engineering</fullName>
+                <default>false</default>
+                <label>Deep Technology &amp; Engineering</label>
+            </value>
+            <value>
+                <fullName>Contact Services For Satisfact</fullName>
+                <default>false</default>
+                <label>Contact Services For Satisfact</label>
+            </value>
+            <value>
+                <fullName>Educación Y Robótica S.L.</fullName>
+                <default>false</default>
+                <label>Educación Y Robótica S.L.</label>
+            </value>
+            <value>
+                <fullName>3D Printing &amp; Printers</fullName>
+                <default>false</default>
+                <label>3D Printing &amp; Printers</label>
+            </value>
+            <value>
+                <fullName>Bq-Mundo Rader, Unipessoal Lda</fullName>
+                <default>false</default>
+                <label>Bq-Mundo Rader, Unipessoal Lda</label>
+            </value>
+            <value>
+                <fullName>Mundo Reader France S.A.R.L.</fullName>
+                <default>false</default>
+                <label>Mundo Reader France S.A.R.L.</label>
+            </value>
+            <value>
+                <fullName>Mundo Reader Gmbh</fullName>
+                <default>false</default>
+                <label>Mundo Reader Gmbh</label>
+            </value>
+            <value>
+                <fullName>Mundo Reader S.R.L.</fullName>
+                <default>false</default>
+                <label>Mundo Reader S.R.L.</label>
+            </value>
+            <value>
+                <fullName>Smart European Devices Limited</fullName>
+                <default>false</default>
+                <label>Smart European Devices Limited</label>
+            </value>
+            <value>
+                <fullName>Xibantronics Trading Company L</fullName>
+                <default>false</default>
+                <label>Xibantronics Trading Company L</label>
+            </value>
+            <value>
+                <fullName>Electronic 2 Trade</fullName>
+                <default>false</default>
+                <label>Electronic 2 Trade</label>
+            </value>
+            <value>
+                <fullName>Fundación Para La Educación Y</fullName>
+                <default>false</default>
+                <label>Fundación Para La Educación Y</label>
+            </value>
+            <value>
+                <fullName>CT Vintech Ventures</fullName>
+                <default>false</default>
+                <label>CT Vintech Ventures</label>
+            </value>
+            <value>
+                <fullName>Cty TNHH TVGPTĐH Qtrị Vinbrain</fullName>
+                <default>false</default>
+                <label>Cty TNHH TVGPTĐH Qtrị Vinbrain</label>
+            </value>
+            <value>
+                <fullName>CT Vinfast Pin Lithium</fullName>
+                <default>false</default>
+                <label>CT Vinfast Pin Lithium</label>
+            </value>
+            <value>
+                <fullName>CT Vingroup Global</fullName>
+                <default>false</default>
+                <label>CT Vingroup Global</label>
+            </value>
+            <value>
+                <fullName>Công ty CP Vinfast leasing</fullName>
+                <default>false</default>
+                <label>Công ty CP Vinfast leasing</label>
+            </value>
+            <value>
+                <fullName>CT TNHH KDTM &amp; DV Vinfast</fullName>
+                <default>false</default>
+                <label>CT TNHH KDTM &amp; DV Vinfast</label>
+            </value>
+            <value>
+                <fullName>CT TP Hương Hải-Qngãi</fullName>
+                <default>false</default>
+                <label>CT TP Hương Hải-Qngãi</label>
+            </value>
+            <value>
+                <fullName>CT CP Gphap CNTT&amp;HTTD Vinitis</fullName>
+                <default>false</default>
+                <label>CT CP Gphap CNTT&amp;HTTD Vinitis</label>
+            </value>
+            <value>
+                <fullName>VinFast Auto Pte. Ltd.</fullName>
+                <default>false</default>
+                <label>VinFast Auto Pte. Ltd.</label>
+            </value>
+            <value>
+                <fullName>CT CP NC UD Tr.tuệ Ntao VinAI</fullName>
+                <default>false</default>
+                <label>CT CP NC UD Tr.tuệ Ntao VinAI</label>
+            </value>
+            <value>
+                <fullName>CTY CP Vinbigdata</fullName>
+                <default>false</default>
+                <label>CTY CP Vinbigdata</label>
+            </value>
+            <value>
+                <fullName>CÔNG TY CỔ PHẦN GENESTORY</fullName>
+                <default>false</default>
+                <label>CÔNG TY CỔ PHẦN GENESTORY</label>
+            </value>
+            <value>
+                <fullName>Cty CP Th.ăn Chnuôi Việt Thắng</fullName>
+                <default>false</default>
+                <label>Cty CP Th.ăn Chnuôi Việt Thắng</label>
+            </value>
+            <value>
+                <fullName>Cty TNHH DV vtải SThái Vinbus</fullName>
+                <default>false</default>
+                <label>Cty TNHH DV vtải SThái Vinbus</label>
+            </value>
+            <value>
+                <fullName>Cty CP Hàng Không Vinpearl Air</fullName>
+                <default>false</default>
+                <label>Cty CP Hàng Không Vinpearl Air</label>
+            </value>
+            <value>
+                <fullName>Công ty Cổ phần VinID</fullName>
+                <default>false</default>
+                <label>Công ty Cổ phần VinID</label>
+            </value>
+            <value>
+                <fullName>PEOPLE CARE.,JSC</fullName>
+                <default>false</default>
+                <label>PEOPLE CARE.,JSC</label>
+            </value>
+            <value>
+                <fullName>CT OMG</fullName>
+                <default>false</default>
+                <label>CT OMG</label>
+            </value>
+            <value>
+                <fullName>CT 1DC</fullName>
+                <default>false</default>
+                <label>CT 1DC</label>
+            </value>
+            <value>
+                <fullName>Cty CP 1MG Housing</fullName>
+                <default>false</default>
+                <label>Cty CP 1MG Housing</label>
+            </value>
+            <value>
+                <fullName>CT TNHH VN Grand Prix</fullName>
+                <default>false</default>
+                <label>CT TNHH VN Grand Prix</label>
+            </value>
+            <value>
+                <fullName>Cty Vingroup Ventures</fullName>
+                <default>false</default>
+                <label>Cty Vingroup Ventures</label>
+            </value>
+            <value>
+                <fullName>CTCP Vinpearl</fullName>
+                <default>false</default>
+                <label>CTCP Vinpearl</label>
+            </value>
+            <value>
+                <fullName>CT Du lịch Phú Quốc</fullName>
+                <default>false</default>
+                <label>CT Du lịch Phú Quốc</label>
+            </value>
+            <value>
+                <fullName>Làng Hoa Thụy Khuê</fullName>
+                <default>false</default>
+                <label>Làng Hoa Thụy Khuê</label>
+            </value>
+            <value>
+                <fullName>Vinpearl Làng Vân</fullName>
+                <default>false</default>
+                <label>Vinpearl Làng Vân</label>
+            </value>
+            <value>
+                <fullName>CT Du lịch Phúc An</fullName>
+                <default>false</default>
+                <label>CT Du lịch Phúc An</label>
+            </value>
+            <value>
+                <fullName>CT VINDFS</fullName>
+                <default>false</default>
+                <label>CT VINDFS</label>
+            </value>
+            <value>
+                <fullName>CT Vinpearl Travel</fullName>
+                <default>false</default>
+                <label>CT Vinpearl Travel</label>
+            </value>
+            <value>
+                <fullName>Công ty CP Vinpearl Invest</fullName>
+                <default>false</default>
+                <label>Công ty CP Vinpearl Invest</label>
+            </value>
+            <value>
+                <fullName>CTCP VinWonders Nha Trang</fullName>
+                <default>false</default>
+                <label>CTCP VinWonders Nha Trang</label>
+            </value>
+            <value>
+                <fullName>Công ty CP Vinpearl Cửa Hội</fullName>
+                <default>false</default>
+                <label>Công ty CP Vinpearl Cửa Hội</label>
+            </value>
+            <value>
+                <fullName>CTCP Vincom Retail</fullName>
+                <default>false</default>
+                <label>CTCP Vincom Retail</label>
+            </value>
+            <value>
+                <fullName>CT Vincom Retail Miền Nam</fullName>
+                <default>false</default>
+                <label>CT Vincom Retail Miền Nam</label>
+            </value>
+            <value>
+                <fullName>CT Vincom Retail Miền Bắc</fullName>
+                <default>false</default>
+                <label>CT Vincom Retail Miền Bắc</label>
+            </value>
+            <value>
+                <fullName>CT Đô thị Suối Hoa</fullName>
+                <default>false</default>
+                <label>CT Đô thị Suối Hoa</label>
+            </value>
+            <value>
+                <fullName>CT BDS Hà Thành</fullName>
+                <default>false</default>
+                <label>CT BDS Hà Thành</label>
+            </value>
+            <value>
+                <fullName>CTCP Vincom Retail Landmark 81</fullName>
+                <default>false</default>
+                <label>CTCP Vincom Retail Landmark 81</label>
+            </value>
+            <value>
+                <fullName>Công ty Cổ phần Đầu tư Vincom</fullName>
+                <default>false</default>
+                <label>Công ty Cổ phần Đầu tư Vincom</label>
+            </value>
+            <value>
+                <fullName>Công ty TNHH BĐS Vincom NCT</fullName>
+                <default>false</default>
+                <label>Công ty TNHH BĐS Vincom NCT</label>
+            </value>
+            <value>
+                <fullName>Related Individual</fullName>
+                <default>false</default>
+                <label>Related Individual</label>
+            </value>
+            <value>
+                <fullName>Non-Trading Partner</fullName>
+                <default>false</default>
+                <label>Non-Trading Partner</label>
+            </value>
+            <value>
+                <fullName>Công ty TNHH Vui Vui</fullName>
+                <default>false</default>
+                <label>Công ty TNHH Vui Vui</label>
+            </value>
+            <value>
+                <fullName>Quỹ Thiện Tâm</fullName>
+                <default>false</default>
+                <label>Quỹ Thiện Tâm</label>
+            </value>
+            <value>
+                <fullName>CT Tập đoàn ĐTVN</fullName>
+                <default>false</default>
+                <label>CT Tập đoàn ĐTVN</label>
+            </value>
+            <value>
+                <fullName>CTCP ĐT&amp;PT Sinh Thái</fullName>
+                <default>false</default>
+                <label>CTCP ĐT&amp;PT Sinh Thái</label>
+            </value>
+            <value>
+                <fullName>CT CP PT TP Xanh</fullName>
+                <default>false</default>
+                <label>CT CP PT TP Xanh</label>
+            </value>
+            <value>
+                <fullName>CT Smart solution</fullName>
+                <default>false</default>
+                <label>CT Smart solution</label>
+            </value>
+            <value>
+                <fullName>CTY CP ĐT BDS VMI</fullName>
+                <default>false</default>
+                <label>CTY CP ĐT BDS VMI</label>
+            </value>
+            <value>
+                <fullName>CTY CP GSM</fullName>
+                <default>false</default>
+                <label>CTY CP GSM</label>
+            </value>
+            <value>
+                <fullName>CTCP PT TS TOÀN CẦU V-GREEN</fullName>
+                <default>false</default>
+                <label>CTCP PT TS TOÀN CẦU V-GREEN</label>
+            </value>
+            <value>
+                <fullName>CTCP TMDV FGF</fullName>
+                <default>false</default>
+                <label>CTCP TMDV FGF</label>
+            </value>
+            <value>
+                <fullName>Cá nhân là bên liên quan</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Cá nhân là bên liên quan</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

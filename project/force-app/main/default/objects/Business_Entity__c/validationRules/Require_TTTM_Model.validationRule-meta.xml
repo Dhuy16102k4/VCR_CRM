@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_TTTM_Model</fullName>
+    <active>true</active>
+    <description>Shopping Mall Model is required when Record Type is TTTM</description>
+    <errorConditionFormula>AND(
+    RecordType.DeveloperName = 'TTTM',
+    TEXT(Shopping_Mall_Model__c) = ''
+)</errorConditionFormula>
+    <errorDisplayField>Shopping_Mall_Model__c</errorDisplayField>
+    <errorMessage>Shopping Mall Model is required for TTTM type</errorMessage>
+</ValidationRule>

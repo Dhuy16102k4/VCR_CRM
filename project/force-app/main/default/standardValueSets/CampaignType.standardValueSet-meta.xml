@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Marketing Event</fullName>
+        <default>false</default>
+        <label>Marketing Event</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Promotional Program</fullName>
+        <default>false</default>
+        <label>Promotional Program</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Tenant Appreciation</fullName>
+        <default>false</default>
+        <label>Tenant Appreciation</label>
+    </standardValue>
+    <standardValue>
+        <fullName>New Tenant Acquisition</fullName>
+        <default>false</default>
+        <label>New Tenant Acquisition</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+</StandardValueSet>

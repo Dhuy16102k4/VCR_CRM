@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sort_Submission_Line__c</fullName>
+    <description>Không hiển thị layout. Dùng để sắp xếp các line trên BCC
+Quy tắc sắp xếp sẽ là OpportunityId + biến count từng năm trong chức năng tạo Báo Cáo Chốt
+Biến ẩn để quy định khi tạo báo cáo chốt dùng để khi hiển thị BCC Line trong BCC thì hiển thị sẽ sắp xếp các BCC Line có cùng OppId chung lại với nhau và các năms sắp xếp theo thứ tự tăng dần</description>
+    <externalId>false</externalId>
+    <label>Sort Submission Line</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

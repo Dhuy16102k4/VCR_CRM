@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Debt__c</fullName>
+    <label>Total Debt</label>
+    <type>Currency</type>
+    <precision>18</precision>
+    <scale>2</scale>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <description>Tổng Nợ Theo Hợp Đồng - lấy từ SAP ZRE43B2</description>
+</CustomField>

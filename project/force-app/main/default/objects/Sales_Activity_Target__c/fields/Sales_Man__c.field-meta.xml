@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_Man__c</fullName>
+    <label>Sales Man</label>
+    <type>Lookup</type>
+    <required>false</required>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <referenceTo>User</referenceTo>
+    <relationshipLabel>Sales Activity Targets (Sales_Man)</relationshipLabel>
+    <relationshipName>Sales_Activity_Targe_Sales_Man</relationshipName>
+    <trackHistory>false</trackHistory>
+</CustomField>

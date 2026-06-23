@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Order_Contract_Date__c</fullName>
+    <label>Order Contract Date</label>
+    <description>Bắt buộc nhập khi chuyển sang giai đoạn Hợp Đồng</description>
+    <type>Date</type>
+</CustomField>

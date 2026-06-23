@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Brand_Category__c</fullName>
+    <label>Industry/Category</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value><fullName>F&amp;B</fullName><default>false</default><label>Food &amp; Beverage</label></value>
+            <value><fullName>Fashion</fullName><default>false</default><label>Fashion</label></value>
+            <value><fullName>Electronics</fullName><default>false</default><label>Electronics</label></value>
+            <value><fullName>Cosmetics</fullName><default>false</default><label>Cosmetics</label></value>
+            <value><fullName>Sports</fullName><default>false</default><label>Sports</label></value>
+            <value><fullName>Entertainment</fullName><default>false</default><label>Entertainment</label></value>
+            <value><fullName>Jewelry</fullName><default>false</default><label>Jewelry</label></value>
+            <value><fullName>Home_Decor</fullName><default>false</default><label>Interior/Home Decor</label></value>
+            <value><fullName>Supermarket</fullName><default>false</default><label>Supermarket</label></value>
+            <value><fullName>Other</fullName><default>false</default><label>Other</label></value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

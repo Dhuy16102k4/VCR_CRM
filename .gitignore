@@ -1,0 +1,41 @@
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
+
+# Ignore Salesforce DX/Development specific files
+.sfdx/
+.sf/
+.vscode/
+
+# Ignore Excel files
+*.xlsx
+*.xls
+*.csv
+
+# Ignore Document files
+*.docx
+*.doc
+*.pdf
+*.ppt
+*.pptx
+
+# Ignore Report and Documentation directories
+báo cáo tt/
+bc/
+docs/
+
+# Ignore Agent and System directories
+.agents/
+.kiro/
+scratch/
+
+# Ignore temporary and log files
+*.log
+deploy_log.txt
+excel_out.txt
+excel_overview.txt
+docx_content.txt
+acc_fields.txt
+cols.txt
+contact_fields.txt
+obj_names.txt

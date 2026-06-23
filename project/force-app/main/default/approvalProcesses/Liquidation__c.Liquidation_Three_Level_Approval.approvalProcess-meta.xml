@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <allowRecall>true</allowRecall>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>Name</field>
+        <field>Contract__c</field>
+        <field>Product__c</field>
+        <field>Liquidation_Type__c</field>
+        <field>Stage__c</field>
+        <field>Liquidation_Risk__c</field>
+        <field>Compensation_Amount__c</field>
+        <field>Owner</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <type>userHierarchyField</type>
+                <name>Approver_Level_1__c</name>
+            </approver>
+        </assignedApprover>
+        <description>Level 1 Approval - Team Lead or BU Manager (TP, GĐBQL)</description>
+        <entryCriteria>
+            <criteriaItems>
+                <field>Liquidation__c.Liquidation_Type__c</field>
+                <operation>notEqual</operation>
+                <value></value>
+            </criteriaItems>
+
+        </entryCriteria>
+        <ifCriteriaNotMet>RejectRecord</ifCriteriaNotMet>
+        <label>Level 1 Approval</label>
+        <name>Level_1_Approval</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <type>userHierarchyField</type>
+                <name>Approver_Level_2__c</name>
+            </approver>
+        </assignedApprover>
+        <description>Level 2 Approval - Sales Director or Operations Director (GĐKD, GĐV)</description>
+        <entryCriteria>
+            <criteriaItems>
+                <field>Liquidation__c.Approval_Status__c</field>
+                <operation>equals</operation>
+                <value>Approved Level 1</value>
+            </criteriaItems>
+        </entryCriteria>
+        <ifCriteriaNotMet>ApproveRecord</ifCriteriaNotMet>
+        <label>Level 2 Approval</label>
+        <name>Level_2_Approval</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <type>userHierarchyField</type>
+                <name>Approver_Level_3__c</name>
+            </approver>
+        </assignedApprover>
+        <description>Level 3 Approval - Deputy General Director or VP (PTGĐKD, PTGĐVH)</description>
+        <entryCriteria>
+            <criteriaItems>
+                <field>Liquidation__c.Approval_Status__c</field>
+                <operation>equals</operation>
+                <value>Approved Level 2</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Liquidation__c.Liquidation_Risk__c</field>
+                <operation>equals</operation>
+                <value>Cao,Chắc chắn thanh lý</value>
+            </criteriaItems>
+        </entryCriteria>
+        <label>Level 3 Approval</label>
+        <name>Level_3_Approval</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <description>Three-level approval process for Liquidation requests. L1 (Team Lead) → L2 (Director) → L3 (VP/Deputy GD for high-risk cases)</description>
+
+    <enableMobileDeviceAccess>true</enableMobileDeviceAccess>
+    <entryCriteria>
+        <formula>AND(
+    NOT(ISBLANK(TEXT(Stage__c))),
+    ISPICKVAL(Stage__c, &quot;Approval&quot;),
+    NOT(ISBLANK(TEXT(Liquidation_Type__c))),
+    NOT(ISBLANK(Contract__c)),
+    NOT(ISBLANK(Product__c)),
+    NOT(ISBLANK(Approver_Level_1__c))
+)</formula>
+    </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>Update_Approval_Status_to_Final</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Update_Stage_to_Customer_Response</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalApprovalActions>
+    <finalApprovalRecordLock>false</finalApprovalRecordLock>
+    <finalRejectionActions>
+        <action>
+            <name>Update_Approval_Status_to_Denied</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Unlock_Record_on_Rejection</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalRejectionActions>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <initialSubmissionActions>
+        <action>
+            <name>Update_Approval_Status_to_Submitted</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Lock_Record_for_Approval</name>
+            <type>FieldUpdate</type>
+        </action>
+    </initialSubmissionActions>
+    <label>Liquidation Three Level Approval</label>
+    <nextAutomatedApprover>
+        <useApproverFieldOfRecordOwner>false</useApproverFieldOfRecordOwner>
+        <userHierarchyField>Manager</userHierarchyField>
+    </nextAutomatedApprover>
+    <recordEditability>AdminOnly</recordEditability>
+    <showApprovalHistory>true</showApprovalHistory>
+</ApprovalProcess>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Budget_Service_Fee_USD_Month__c</fullName>
+    <description>- Read Only;
+- Đối với Gian hàng = Đơn Giá Phí Dịch Vụ NS (USD/m2/Tháng) * Diện Tích (m2)
+- Đối với Căn = Đơn Giá Phí Dịch Vụ NS (USD/m2/Tháng) * Diện Tích Đất Sử Dụng (m2)</description>
+    <externalId>false</externalId>
+    <formula>/* TODO: Update formula expression manually */
+0</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Total Budget Service Fee (USD/Month)</label>
+    <precision>18</precision>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+</CustomField>

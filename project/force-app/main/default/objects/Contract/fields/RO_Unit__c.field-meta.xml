@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RO_Unit__c</fullName>
+    <description>Read Only
+Tích hợp từ SAP</description>
+    <label>RO Unit</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>false</restricted>
+        <valueSetDefinition>
+            <value>
+                <fullName>m2;</fullName>
+                <default>false</default>
+                <label>m2;</label>
+            </value>
+            <value>
+                <fullName>Months;</fullName>
+                <default>false</default>
+                <label>Months;</label>
+            </value>
+            <value>
+                <fullName>Days;</fullName>
+                <default>false</default>
+                <label>Days;</label>
+            </value>
+            <value>
+                <fullName>Hours;</fullName>
+                <default>false</default>
+                <label>Hours;</label>
+            </value>
+            <value>
+                <fullName>Items</fullName>
+                <default>false</default>
+                <label>Items</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

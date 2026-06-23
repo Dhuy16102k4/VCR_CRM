@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Service_Fee_Sales_Price_VND_m2_Month__c</fullName>
+    <description>- Field cho OTL
+- Công thức = Đơn Giá Phí Dịch Vụ (USD/m2/Tháng)* Tỉ giá (25000)</description>
+    <label>Service Fee Sales Price (VND/m2/Month)</label>
+    <type>Currency</type>
+    <formula>0</formula>
+    <precision>18</precision>
+    <scale>2</scale>
+</CustomField>

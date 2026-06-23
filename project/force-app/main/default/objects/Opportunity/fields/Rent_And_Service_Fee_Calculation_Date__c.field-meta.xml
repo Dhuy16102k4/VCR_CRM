@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rent_And_Service_Fee_Calculation_Date__c</fullName>
+    <label>Rent And Service Fee Calculation Date</label>
+    <type>Date</type>
+</CustomField>

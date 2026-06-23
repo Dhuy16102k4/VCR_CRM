@@ -1,0 +1,20 @@
+{
+    "rename_map": {
+        "Number_Of_Shophouse__c": "Number_Of_RO_In_Shop_House__c",
+        "Bank_Code__c": "Bank_Key_Code__c",
+        "Address__c": "Address_1__c",
+        "Province__c": "Province_1__c",
+        "TTTM_Model__c": "Shopping_Mall_Model__c",
+        "VCR_Legal_Entity__c": "Company_Code__c",
+        "Total_Area__c": "Total_Area_m2__c"
+    },
+    "old_fields_full": [
+        "Account.Number_Of_Shophouse__c",
+        "Bankey__c.Bank_Code__c",
+        "Business_Entity__c.Address__c",
+        "Business_Entity__c.Province__c",
+        "Business_Entity__c.TTTM_Model__c",
+        "Business_Entity__c.VCR_Legal_Entity__c",
+        "Product2.Total_Area__c"
+    ]
+}

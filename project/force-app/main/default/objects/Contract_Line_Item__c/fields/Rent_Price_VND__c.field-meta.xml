@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rent_Price_VND__c</fullName>
+    <label>Rent Price (VND)</label>
+    <type>Number</type>
+    <precision>18</precision>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+</CustomField>

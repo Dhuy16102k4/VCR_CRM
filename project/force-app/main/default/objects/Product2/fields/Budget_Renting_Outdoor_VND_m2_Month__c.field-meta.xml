@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Budget_Renting_Outdoor_VND_m2_Month__c</fullName>
+    <description>Read Only;
+= Đơn Giá NS Ngoài Trời (USD/m2/Tháng) * Tỉ giá</description>
+    <externalId>false</externalId>
+    <formula>/* TODO: Update formula expression manually */
+0</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Budget Renting Outdoor (VND/m2/Month)</label>
+    <precision>18</precision>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

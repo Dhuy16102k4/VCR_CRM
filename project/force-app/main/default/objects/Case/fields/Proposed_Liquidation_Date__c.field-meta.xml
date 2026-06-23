@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Proposed_Liquidation_Date__c</fullName>
+    <label>Proposed Liquidation Date</label>
+    <type>Date</type>
+    <trackHistory>false</trackHistory>
+    <description>Ngày Đề Xuất Thanh Lý - Dynamic Layout khi chọn Phân Loại = Thanh Lý</description>
+</CustomField>

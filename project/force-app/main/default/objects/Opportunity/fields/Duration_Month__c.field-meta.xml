@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Duration_Month__c</fullName>
+    <label>Duration (Month)</label>
+    <description>Có công thức bằng chênh lệch số tháng giữa End Date và Start Date
+Quy tắc sẽ là:
++ Nếu End Date lớn hơn 1 năm so với Start Date thì cứ cách 1 năm sẽ là 12 tháng và cộng dồn lên.
+Vào năm cuối cùng thì sẽ cộng với ((Ngày Kết Thúc - Ngày Bắt Đầu của năm cuối cùng)/365)*12
++ Nếu End Date không lớn hơn Start Date quá 1 năm thì sẽ lấy ((Ngày Kết Thúc - Ngày Bắt Đầu của năm cuối cùng)/365)*12</description>
+    <type>Number</type>
+    <precision>18</precision>
+    <scale>0</scale>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RO__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>RO</label>
+    <referenceTo>Product2</referenceTo>
+    <relationshipLabel>Sales T+3 Achievement Targets (RO)</relationshipLabel>
+    <relationshipName>Sales_T_3_Achievemen_RO</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

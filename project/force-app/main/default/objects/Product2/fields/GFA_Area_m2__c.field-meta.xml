@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GFA_Area_m2__c</fullName>
+    <description>Read Only;
+Tổng Diện Tích GFA = Tổng Diện tích GFA 5 lầu
+Help Text: (m2)</description>
+    <externalId>false</externalId>
+    <formula>GFA_Area_Floor_1__c + GFA_Area_Floor_2__c + GFA_Area_Floor_3__c + GFA_Area_Floor_4__c + GFA_Area_Floor_5__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>GFA Area</label>
+    <precision>18</precision>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+</CustomField>

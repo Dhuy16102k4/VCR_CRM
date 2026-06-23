@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Month_Outdoor_Price__c</fullName>
+    <description>Tổng Tháng của các Line, có:
+- Loại Điều Kiện = S100
+- Kiểu Tính Giá = Fixed Amount</description>
+    <label>Total Month (Outdoor Price)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <length>255</length>
+</CustomField>

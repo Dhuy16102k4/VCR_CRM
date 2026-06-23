@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RO__c</fullName>
+    <label>RO</label>
+    <type>Lookup</type>
+    <referenceTo>Product2</referenceTo>
+    <relationshipLabel>Debts</relationshipLabel>
+    <relationshipName>Debts</relationshipName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <trackHistory>false</trackHistory>
+    <description>Mặt Bằng Cho Thuê - có External Id trên SAP</description>
+</CustomField>

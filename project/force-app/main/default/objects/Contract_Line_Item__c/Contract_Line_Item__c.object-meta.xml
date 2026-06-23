@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <label>Contract Line Item</label>
+    <pluralLabel>Contract Line Items</pluralLabel>
+    <sharingModel>ReadWrite</sharingModel>
+    <nameField>
+        <label>Contract Line Item Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+</CustomObject>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Unit_Service_Price__c</fullName>
+    <description>Tổng Đơn Giá PDV  = Tổng Tổng Đơn Giá Thuê trên Contract Line, Có Conditon Type = V004</description>
+    <label>Total Unit Service Price</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <length>255</length>
+</CustomField>

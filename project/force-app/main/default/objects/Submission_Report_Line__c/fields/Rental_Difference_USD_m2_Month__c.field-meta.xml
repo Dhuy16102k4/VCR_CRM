@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rental_Difference_USD_m2_Month__c</fullName>
+    <description>Trừ Rent Price (USD/m2/Month) và Unit Price (USD/m2/Month)</description>
+    <externalId>false</externalId>
+    <formula>0</formula>
+    <label>Rental Difference (USD/m2/Month)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

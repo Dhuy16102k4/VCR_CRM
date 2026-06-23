@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RO_Name__c</fullName>
+    <label>RO Name</label>
+    <type>Lookup</type>
+    <required>true</required>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <referenceTo>RO_Handover__c</referenceTo>
+    <relationshipName>RO_Names</relationshipName>
+    <trackHistory>true</trackHistory>
+</CustomField>

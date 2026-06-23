@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Capex_Sales_VND__c</fullName>
+    <description>- Field cho Report
+- Công thức = Định Mức Hỗ Trợ Thực Tế (VNĐ/m2) * Diện Tích Hỗ Trợ Capex Thực Tế (m2)</description>
+    <label>Capex Sales (VND)</label>
+    <type>Currency</type>
+    <formula>0</formula>
+    <precision>18</precision>
+    <scale>2</scale>
+</CustomField>

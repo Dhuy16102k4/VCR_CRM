@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Actual_Amount_Support_Service_Fee__c</fullName>
+    <label>Actual Amount Support Service Fee</label>
+    <description>- Read only 
+-  Help Text: Tổng Tiền Hỗ Trợ PDV Thực Tế = Đơn Giá PDV * Số Tháng Hỗ Trợ PDV Thực Tế * Tổng DT GFA</description>
+    <type>Number</type>
+    <precision>18</precision>
+    <scale>0</scale>
+</CustomField>

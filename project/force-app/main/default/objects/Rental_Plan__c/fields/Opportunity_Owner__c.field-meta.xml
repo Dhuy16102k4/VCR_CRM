@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opportunity_Owner__c</fullName>
+    <label>Opportunity Owner</label>
+    <type>Lookup</type>
+    <required>true</required>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <referenceTo>Opportunity</referenceTo>
+    <relationshipName>Opportunity_Owners</relationshipName>
+    <trackHistory>false</trackHistory>
+</CustomField>

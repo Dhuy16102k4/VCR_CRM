@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Debit_Date__c</fullName>
+    <label>Debit Date</label>
+    <description>- Tự động cập nhật khi Phê duyệt BCC
+- Cho phép người dùng sửa lại ngày cọc
+- Help Text: Ngày Cọc = Ngày Duyệt BCC + 14 ngày</description>
+    <inlineHelpText>Hệ thống tự động chọn ngày theo công thức &quot;Ngày Duyệt BCC&quot; + 14 ngày tiếp theo.</inlineHelpText>
+    <type>Date</type>
+</CustomField>

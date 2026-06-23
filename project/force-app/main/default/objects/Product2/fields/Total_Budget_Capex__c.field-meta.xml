@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Budget_Capex__c</fullName>
+    <description>Help Text: (VNĐ)
+Read Only;
+= Tổng (NS Hỗ trợ Capex Tầng X * Diện Tích GFA Tầng X (m2))</description>
+    <externalId>false</externalId>
+    <formula>/* TODO: Update formula expression manually */
+0</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Total Capex Budget</label>
+    <precision>18</precision>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

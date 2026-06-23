@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Increase_by_Year__c</fullName>
+    <label>% Increase by Year</label>
+    <description>Điền % tăng mỗi năm để tính toán khi tạo báo cáo chốt. Nếu không điền thì default là 0%</description>
+    <type>Percent</type>
+    <precision>16</precision>
+    <scale>2</scale>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Service_Fee_Sales_Price_USD_m2_Month__c</fullName>
+    <description>- Field cho OTL
+- Read Only
+- Lấy thông tin bên Opportunity Product</description>
+    <label>Service Fee Sales Price (USD/m2/Month)</label>
+    <type>Number</type>
+    <precision>18</precision>
+    <scale>2</scale>
+    <required>true</required>
+</CustomField>

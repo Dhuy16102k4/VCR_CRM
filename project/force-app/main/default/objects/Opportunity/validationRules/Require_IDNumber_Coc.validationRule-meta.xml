@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_IDNumber_Coc</fullName>
+    <active>true</active>
+    <description>ID_Number on Account is required when Stage = Deposit for Individual</description>
+    <errorConditionFormula>ISPICKVAL(StageName, 'Contract Deposit') 
+&amp;&amp; ISBLANK(Account.ID_Number_Passport__c) 
+&amp;&amp; Account.RecordType.DeveloperName = 'Individual_Tenant'</errorConditionFormula>
+    <errorMessage>ID/Passport of Individual Tenant cannot be empty when depositing.</errorMessage>
+</ValidationRule>

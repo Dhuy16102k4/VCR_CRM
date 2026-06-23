@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Debit_Amount_Sales_Input__c</fullName>
+    <description>- Field cho BCC
+Help Text: (VNĐ)
+Nếu Tiền Đặt Cọc (Sales Nhập) có giá trị thì khi được phê duyệt sẽ giá trị của Tiền Đặt Cọc (Sales Nhập), Nếu không thì sử dụng field Tiền Đặt Cọc để đồng bộ về Tiền Cọc trên Cơ Hội</description>
+    <label>Debit Amount (Sales Input)</label>
+    <type>Currency</type>
+    <precision>18</precision>
+    <scale>2</scale>
+</CustomField>

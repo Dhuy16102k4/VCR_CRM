@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Duration_LED_Screen_Rental_Contracts__c</fullName>
+    <label>Duration (LED Screen Rental Contracts)</label>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <precision>18</precision>
+    <scale>0</scale>
+</CustomField>

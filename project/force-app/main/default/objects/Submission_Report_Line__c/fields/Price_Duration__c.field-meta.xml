@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Price_Duration__c</fullName>
+    <description>Nếu End Date không bằng Start Date + 365 - 1; (End Date - Start Date/365)*12</description>
+    <externalId>false</externalId>
+    <label>Price Duration</label>
+    <precision>18</precision>
+    <required>true</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

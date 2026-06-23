@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Layout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account-Business Tenant Layout</fullName>
+
+    <layoutSections>
+        <customLabel>true</customLabel>
+        <detailHeading>true</detailHeading>
+        <editHeading>true</editHeading>
+        <label>I. Basic Information</label>
+        <layoutColumns>
+            <layoutItems><behavior>Required</behavior><field>Name</field></layoutItems>
+            <layoutItems><behavior>Edit</behavior><field>Account_Short_Name__c</field></layoutItems>
+            <layoutItems><behavior>Edit</behavior><field>Brand__c</field></layoutItems>
+            <layoutItems><behavior>Edit</behavior><field>RecordTypeId</field></layoutItems>
+            <layoutItems><behavior>Edit</behavior><field>Type</field></layoutItems>
+            <layoutItems><behavior>Edit</behavior><field>ParentId</field></layoutItems>
+        </layoutColumns>
+        <layoutColumns>
+            <layoutItems><behavior>Edit</behavior><field>Phone</field></layoutItems>
+            <layoutItems><behavior>Edit</behavior><field>Email__c</field></layoutItems>
+            <layoutItems><behavior>Edit</behavior><field>Website</field></layoutItems>
+            <layoutItems><behavior>Edit</behavior><field>Customer_Type__c</field></layoutItems>
+            <layoutItems><behavior>Edit</behavior><field>Ownership</field></layoutItems>
+        </layoutColumns>
+        <style>TwoColumnsTopToBottom</style>
+    </layoutSections>
+
+    <layoutSections>
+        <customLabel>true</customLabel>
+        <detailHeading>true</detailHeading>
+        <editHeading>true</editHeading>
+        <label>II. Legal Information</label>
+        <layoutColumns>
+            <layoutItems><behavior>Edit</behavior><field>Tax_Code__c</field></layoutItems>
+            <layoutItems><behavior>Edit</behavior><field>Enterprise_Code_Certificate__c</field></layoutItems>
+            <layoutItems><behavior>Edit</behavior><field>Contact_Role__c</field></layoutItems>
+        </layoutColumns>
+        <layoutColumns>
+            <layoutItems><behavior>Edit</behavior><field>Issued_Date__c</field></layoutItems>
+            <layoutItems><behavior>Edit</behavior><field>Issued_Place__c</field></layoutItems>
+            <layoutItems><behavior>Edit</behavior><field>Trading_Partner__c</field></layoutItems>
+        </layoutColumns>
+        <style>TwoColumnsTopToBottom</style>
+    </layoutSections>
+
+    <layoutSections>
+        <customLabel>true</customLabel>
+        <detailHeading>true</detailHeading>
+        <editHeading>true</editHeading>
+        <label>III. Capacity And Growth Strategy</label>
+        <layoutColumns>
+            <layoutItems><behavior>Edit</behavior><field>Number_Of_RO_Worldwide__c</field></layoutItems>
+            <layoutItems><behavior>Edit</behavior><field>Number_Of_RO_In_Vietnam__c</field></layoutItems>
+        </layoutColumns>
+        <layoutColumns />
+        <style>TwoColumnsTopToBottom</style>
+    </layoutSections>
+
+    <layoutSections>
+        <customLabel>true</customLabel>
+        <detailHeading>true</detailHeading>
+        <editHeading>true</editHeading>
+        <label>IV. Banking Information</label>
+        <layoutColumns>
+            <layoutItems><behavior>Edit</behavior><field>Account_Bank_Number__c</field></layoutItems>
+            <layoutItems><behavior>Edit</behavior><field>Account_Holder__c</field></layoutItems>
+        </layoutColumns>
+        <layoutColumns>
+            <layoutItems><behavior>Edit</behavior><field>Bankey_Name__c</field></layoutItems>
+            <layoutItems><behavior>Readonly</behavior><field>Bank_Name__c</field></layoutItems>
+            <layoutItems><behavior>Readonly</behavior><field>Bank_Code__c</field></layoutItems>
+            <layoutItems><behavior>Readonly</behavior><field>Bank_Country__c</field></layoutItems>
+        </layoutColumns>
+        <style>TwoColumnsTopToBottom</style>
+    </layoutSections>
+
+    <layoutSections>
+        <customLabel>true</customLabel>
+        <detailHeading>true</detailHeading>
+        <editHeading>true</editHeading>
+        <label>V. Address Information</label>
+        <layoutColumns>
+            <layoutItems><behavior>Edit</behavior><field>BillingAddress</field></layoutItems>
+        </layoutColumns>
+        <layoutColumns>
+            <layoutItems><behavior>Edit</behavior><field>ShippingAddress</field></layoutItems>
+            <layoutItems><behavior>Edit</behavior><field>Address_1__c</field></layoutItems>
+            <layoutItems><behavior>Edit</behavior><field>Country_1__c</field></layoutItems>
+            <layoutItems><behavior>Edit</behavior><field>Province_1__c</field></layoutItems>
+            <layoutItems><behavior>Edit</behavior><field>District_1__c</field></layoutItems>
+            <layoutItems><behavior>Edit</behavior><field>Ward_1__c</field></layoutItems>
+            <layoutItems><behavior>Edit</behavior><field>Street_1__c</field></layoutItems>
+        </layoutColumns>
+        <style>TwoColumnsTopToBottom</style>
+    </layoutSections>
+
+    <layoutSections>
+        <customLabel>true</customLabel>
+        <detailHeading>true</detailHeading>
+        <editHeading>true</editHeading>
+        <label>VI. Vincom Relationship (Integration)</label>
+        <layoutColumns>
+            <layoutItems><behavior>Edit</behavior><field>Number_Of_RO_In_Vincom__c</field></layoutItems>
+            <layoutItems><behavior>Edit</behavior><field>Total_Area_Renting_At_Vincom__c</field></layoutItems>
+            <layoutItems><behavior>Edit</behavior><field>Vincom_Usual_Rental_Area__c</field></layoutItems>
+        </layoutColumns>
+        <layoutColumns>
+            <layoutItems><behavior>Edit</behavior><field>Number_Of_RO_In_Shop_House__c</field></layoutItems>
+            <layoutItems><behavior>Edit</behavior><field>Revenue__c</field></layoutItems>
+        </layoutColumns>
+        <style>TwoColumnsTopToBottom</style>
+    </layoutSections>
+
+    <layoutSections>
+        <customLabel>true</customLabel>
+        <detailHeading>true</detailHeading>
+        <editHeading>true</editHeading>
+        <label>VII. System Information</label>
+        <layoutColumns>
+            <layoutItems><behavior>Edit</behavior><field>OwnerId</field></layoutItems>
+            <layoutItems><behavior>Edit</behavior><field>Status__c</field></layoutItems>
+            <layoutItems><behavior>Edit</behavior><field>Company_Code__c</field></layoutItems>
+            <layoutItems><behavior>Edit</behavior><field>SAP_Account_ID__c</field></layoutItems>
+        </layoutColumns>
+        <layoutColumns>
+            <layoutItems><behavior>Readonly</behavior><field>CreatedById</field></layoutItems>
+            <layoutItems><behavior>Readonly</behavior><field>LastModifiedById</field></layoutItems>
+        </layoutColumns>
+        <style>TwoColumnsTopToBottom</style>
+    </layoutSections>
+
+    <layoutSections>
+        <customLabel>false</customLabel>
+        <detailHeading>false</detailHeading>
+        <editHeading>false</editHeading>
+        <label>Custom Links</label>
+        <layoutColumns />
+        <layoutColumns />
+        <layoutColumns />
+        <style>CustomLinks</style>
+    </layoutSections>
+
+    <showEmailCheckbox>false</showEmailCheckbox>
+    <showHighlightsPanel>true</showHighlightsPanel>
+    <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
+</Layout>

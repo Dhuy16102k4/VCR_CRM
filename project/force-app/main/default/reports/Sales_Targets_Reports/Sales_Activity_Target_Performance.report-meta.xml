@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>Sales_Activity_Target__c.New_Account_Actual__c:SUM / Sales_Activity_Target__c.New_Account_Target__c:SUM</calculatedFormula>
+        <datatype>percent</datatype>
+        <description>New Account Achievement Rate</description>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>New Account Achievement %</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>Sales_Activity_Target__c.Sales_Call_Actual__c:SUM / Sales_Activity_Target__c.Sales_Call_Target__c:SUM</calculatedFormula>
+        <datatype>percent</datatype>
+        <description>Sales Call Achievement Rate</description>
+        <developerName>FORMULA2</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Sales Call Achievement %</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <acrossGroupingContext>GRAND_SUMMARY</acrossGroupingContext>
+        <calculatedFormula>RowCount</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA3</developerName>
+        <downGroupingContext>Business_Entity__c</downGroupingContext>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Total Records</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>FORMULA1</column>
+        </chartSummaries>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>FORMULA2</column>
+        </chartSummaries>
+        <chartType>VerticalColumnGrouped</chartType>
+        <enableHoverLabels>true</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>Business_Entity__c</groupingColumn>
+        <location>CHART_TOP</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>true</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Sales_Activity_Target__c.Target_Month__c</field>
+    </columns>
+    <columns>
+        <field>Sales_Activity_Target__c.New_Account_Target__c</field>
+    </columns>
+    <columns>
+        <field>Sales_Activity_Target__c.New_Account_Actual__c</field>
+    </columns>
+    <columns>
+        <field>Sales_Activity_Target__c.Sales_Call_Target__c</field>
+    </columns>
+    <columns>
+        <field>Sales_Activity_Target__c.Sales_Call_Actual__c</field>
+    </columns>
+    <columns>
+        <field>Sales_Activity_Target__c.Owner__c</field>
+    </columns>
+    <description>Daily sales activity performance by Business Entity - New Account and Sales Call targets</description>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Sales_Activity_Target__c.Business_Entity__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Sales Activity Target Performance</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Sales_Activity_Target__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Sales_Activity_Target__c.Target_Month__c</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

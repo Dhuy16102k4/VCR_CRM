@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Approval_Status__c</fullName>
+    <label>Approval Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <description>Read Only
+Default Value: Yêu cầu chưa được gửi</description>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Request not submitted</fullName>
+                <default>false</default>
+                <label>Request not submitted</label>
+            </value>
+            <value>
+                <fullName>Request submitted</fullName>
+                <default>false</default>
+                <label>Request submitted</label>
+            </value>
+            <value>
+                <fullName>Approved Level 1</fullName>
+                <default>false</default>
+                <label>Approved Level 1</label>
+            </value>
+            <value>
+                <fullName>Approved Level 2</fullName>
+                <default>false</default>
+                <label>Approved Level 2</label>
+            </value>
+            <value>
+                <fullName>Approved Level 3</fullName>
+                <default>false</default>
+                <label>Approved Level 3</label>
+            </value>
+            <value>
+                <fullName>Denied</fullName>
+                <default>false</default>
+                <label>Denied</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

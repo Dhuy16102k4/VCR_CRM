@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Legal_Records_Status__c</fullName>
+    <description>Read Only</description>
+    <label>Legal Records Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>false</restricted>
+        <valueSetDefinition>
+            <value>
+                <fullName>Within Deadline</fullName>
+                <default>false</default>
+                <label>Within Deadline</label>
+            </value>
+            <value>
+                <fullName>Overdue</fullName>
+                <default>false</default>
+                <label>Overdue</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Not_Determined_Rent_Price_End_Date__c</fullName>
+    <label>Not Determined Rent Price End Date</label>
+    <type>Date</type>
+</CustomField>

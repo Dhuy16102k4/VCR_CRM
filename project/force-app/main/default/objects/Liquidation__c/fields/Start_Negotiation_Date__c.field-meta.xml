@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Start_Negotiation_Date__c</fullName>
+    <label>Start Negotiation Date</label>
+    <type>Date</type>
+    <trackHistory>false</trackHistory>
+</CustomField>

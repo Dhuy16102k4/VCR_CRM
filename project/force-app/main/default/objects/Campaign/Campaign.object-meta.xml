@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Status</fullName>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Planning</fullName>
+                    <default>true</default>
+                    <label>Planning</label>
+                </value>
+                <value>
+                    <fullName>Active</fullName>
+                    <default>false</default>
+                    <label>Active</label>
+                </value>
+                <value>
+                    <fullName>Completed</fullName>
+                    <default>false</default>
+                    <label>Completed</label>
+                </value>
+                <value>
+                    <fullName>Aborted</fullName>
+                    <default>false</default>
+                    <label>Aborted</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Type</fullName>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Marketing Event</fullName>
+                    <default>false</default>
+                    <label>Marketing Event</label>
+                </value>
+                <value>
+                    <fullName>Promotional Program</fullName>
+                    <default>false</default>
+                    <label>Promotional Program</label>
+                </value>
+                <value>
+                    <fullName>Tenant Appreciation</fullName>
+                    <default>false</default>
+                    <label>Tenant Appreciation</label>
+                </value>
+                <value>
+                    <fullName>New Tenant Acquisition</fullName>
+                    <default>false</default>
+                    <label>New Tenant Acquisition</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Campaign</label>
+</CustomObject>

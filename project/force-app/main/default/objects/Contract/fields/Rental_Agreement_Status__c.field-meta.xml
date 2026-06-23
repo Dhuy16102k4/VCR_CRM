@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rental_Agreement_Status__c</fullName>
+    <description>1. Tích hợp E-Office
+2. Tích hợp SAP RE/ HCM
+Note: Phòng thủ tục tham gia khảo sát; Chị Linh cung cấp lại dữ liệu picklist</description>
+    <label>Rental Agreement Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>false</restricted>
+        <valueSetDefinition>
+            <value>
+                <fullName>Hard Copy Agreement Following;</fullName>
+                <default>false</default>
+                <label>Hard Copy Agreement Following;</label>
+            </value>
+            <value>
+                <fullName>Signing Time Agreement Following;</fullName>
+                <default>false</default>
+                <label>Signing Time Agreement Following;</label>
+            </value>
+            <value>
+                <fullName>Contract Is Signed;</fullName>
+                <default>false</default>
+                <label>Contract Is Signed;</label>
+            </value>
+            <value>
+                <fullName>Contract Is Liquidated</fullName>
+                <default>false</default>
+                <label>Contract Is Liquidated</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

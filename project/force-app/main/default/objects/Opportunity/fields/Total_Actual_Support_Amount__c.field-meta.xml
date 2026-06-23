@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Actual_Support_Amount__c</fullName>
+    <label>Total Actual Support Amount</label>
+    <description>- Read Only;
+(1) Đối với Hình Thức Hỗ Trợ NS = Miễn Phí Tiền Thuê: (Đơn Giá NS (VND/m2/Tháng) * Số Tháng Hỗ Trợ NS * Tổng Diện Tích GFA (m2)) + (Đơn Giá NS Ngoài Trời (VND/m2/Tháng) * Diện Tích Ngoài Trời (m2) * Số Tháng Hỗ Trợ NS)
+
+(2) Đối với Hình Thức Hỗ Trợ NS = Miễn Phí Phí Dịch Vụ: Phí Dịch Vụ NS (VND/m2/Tháng) * Số Tháng Hỗ Trợ NS * Tổng Diện Tích 
+
+(3) Đối với Hình Thức Hỗ Trợ NS = Miễn Phí Tiền Thuê &amp; Phí Dịch Vụ: (1) + (2)
+
+- Chỉ hiện nếu chọn &quot;Có Hỗ Trợ&quot;</description>
+    <type>Currency</type>
+    <precision>16</precision>
+    <scale>2</scale>
+</CustomField>

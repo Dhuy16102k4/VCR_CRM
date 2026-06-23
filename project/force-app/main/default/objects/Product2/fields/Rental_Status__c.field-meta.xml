@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rental_Status__c</fullName>
+    <description>Sẽ có Automation trigger trên các đối tượng Cơ Hội, Cơ Hội Hỏi Thuê, Hợp Đồng và Hợp Đồng Chi Tiết
+ + Trống: khi không có Cơ Hội, Cơ Hội Sản Phẩm, Hợp Đồng ở trạng thái Thanh Lý nào
+ + Khảo sát: khi chỉ có Cơ hội, Sản Phẩm Cơ Hội của Cơ Hội đang ở giai đoạn Chào Khách, Khảo Sát
+ + Đang đàm phán: khi chỉ có Cơ hội, Sản Phẩm Cơ Hội của Cơ Hội đang ở giai đoạn Đàm Phán
+ + Chốt: khi chỉ có Cơ hội, Sản Phẩm Cơ Hội của Cơ Hội đang ở giai đoạn Chốt Khách, OTL
+ + Cam kết thuê (cọc): khi chỉ có Cơ hội, Sản Phẩm Cơ Hội của Cơ Hội đang ở giai đoạn Cọc
+ + Đã cho thuê: khi có Hợp Đồng, Hợp Đồng Chi Tiết trong Hợp Đồng không ở trạng thái là Thanh Lý</description>
+    <externalId>false</externalId>
+    <label>Rental Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <value>
+                <fullName>Vacant</fullName>
+                <default>true</default>
+                <label>Vacant</label>
+            </value>
+            <value>
+                <fullName>Surveying</fullName>
+                <default>false</default>
+                <label>Surveying</label>
+            </value>
+            <value>
+                <fullName>Negotiating</fullName>
+                <default>false</default>
+                <label>Negotiating</label>
+            </value>
+            <value>
+                <fullName>Confirmed</fullName>
+                <default>false</default>
+                <label>Confirmed</label>
+            </value>
+            <value>
+                <fullName>Commit</fullName>
+                <default>false</default>
+                <label>Commit</label>
+            </value>
+            <value>
+                <fullName>Leased</fullName>
+                <default>false</default>
+                <label>Leased</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,27 @@
+# Salesforce DX
+.sfdx/
+.sf/
+
+# Node
+node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+*.swp
+*.swo
+
+# Temp / generated files
+describe.json
+temp_*/
+
+# Deploy logs / output
+manifest/deploy_output.txt
+*.log
+
+# AI / IDE internal files
+docs/AI_PROMPTS.md
+.cursor/
+.kiro/

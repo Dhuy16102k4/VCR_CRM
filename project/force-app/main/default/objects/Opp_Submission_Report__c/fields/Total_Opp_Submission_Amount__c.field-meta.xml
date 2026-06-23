@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Opp_Submission_Amount__c</fullName>
+    <description>SUM Field Tổng Tiền Trên Dòng của BCC Line
+Help Text:  (VNĐ)</description>
+    <label>Total Opp Submission Amount</label>
+    <type>Text</type>
+    <length>255</length>
+    <unique>false</unique>
+</CustomField>

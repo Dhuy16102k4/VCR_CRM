@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RO_TTTM</fullName>
+    <label>Shopping Mall RO</label>
+    <description>Retail Outlet in Shopping Mall</description>
+    <active>true</active>
+    <businessProcess>Product2</businessProcess>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+</RecordType>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Approver_Level_2__c</fullName>
+    <label>Approver Level 2</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <description>Filter các user ở các role giám đốc kinh doanh</description>
+    <type>Lookup</type>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Submission_Reports_Approver2</relationshipName>
+</CustomField>

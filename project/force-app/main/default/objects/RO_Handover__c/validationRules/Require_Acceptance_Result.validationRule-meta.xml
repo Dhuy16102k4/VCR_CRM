@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Acceptance_Result</fullName>
+    <active>true</active>
+    <description>If Stage is RO Acceptance or RO Completed, Acceptance Result must be filled</description>
+    <errorConditionFormula>AND(
+    OR(
+        ISPICKVAL(Stage__c, &quot;RO Acceptance&quot;),
+        ISPICKVAL(Stage__c, &quot;RO Completed&quot;)
+    ),
+    ISBLANK(TEXT(Acceptance_Result__c))
+)</errorConditionFormula>
+    <errorDisplayField>Acceptance_Result__c</errorDisplayField>
+    <errorMessage>Acceptance Result is required when Stage is RO Acceptance or RO Completed</errorMessage>
+</ValidationRule>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Rent_Price_USD_Month__c</fullName>
+    <description>Dữ liệu sẽ được tự tính theo thông tin của RO tương ứng:
+- Opportunity là Thuê Mới - Gian Hàng:
++ luôn sẽ bằng Giá Chốt Tiền Thuê (USD/m2/Tháng) * Diện Tích
+- Opportunity là Thuê Mới - Shophouse:
++ Lựa Chọn Thuê là Thuê Nguyên Căn, sẽ bằng Giá Chốt Tiền Thuê (USD/m2/Tháng) * Tổng Diện Tích GFA
++ Lựa Chọn Thuê là Thuê Tầng 1, sẽ bằng Giá Chốt Tiền Thuê (USD/m2/Tháng) * Diện Tích GFA Tầng 1
++ Lựa Chọn Thuê là Thuê Tầng 1 + 2, sẽ bằng Giá Chốt Tiền Thuê (USD/m2/Tháng) * Diện Tích GFA Tầng 1 + Tầng 2</description>
+    <externalId>false</externalId>
+    <formula>0</formula>
+    <label>Total Rent Price (USD/Month)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Budget_Renting_Outdoor_USD_m2_Month__c</fullName>
+    <description>Number nhưng không được sửa trực tiếp (Read Only)
+Chỉ hiển thị trong trường hợp Opportunity là Thuê Mới - Shophouse và có Đơn Giá Thuê Ngoài Trời
+Khi tạo Báo Cáo Chốt, dữ liệu sẽ được lấy tương ứng với thông tin trên RO - Shophouse
++ Tất cả đều bằng Giá NS Ngoài Trời
+Thông tin giá Ngân Sách này sẽ không được sửa và cũng sẽ không đổi dù có thay đổi % Tăng Từng Năm hay Giá Chốt Tiền Thuê (USD/m2/Month)</description>
+    <externalId>false</externalId>
+    <label>Budget Renting Outdoor (USD/m2/Month)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

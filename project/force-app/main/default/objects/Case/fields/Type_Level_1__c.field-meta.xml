@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_Level_1__c</fullName>
+    <label>Type</label>
+    <type>Picklist</type>
+    <trackHistory>false</trackHistory>
+    <description>Phân Loại - tham chiếu SLA</description>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Complaint / Feedback</fullName>
+                <default>false</default>
+                <label>Complaint / Feedback</label>
+            </value>
+            <value>
+                <fullName>Contract Issues</fullName>
+                <default>false</default>
+                <label>Contract Issues</label>
+            </value>
+            <value>
+                <fullName>Marketing Cooperation Proposal</fullName>
+                <default>false</default>
+                <label>Marketing Cooperation Proposal</label>
+            </value>
+            <value>
+                <fullName>Relocation</fullName>
+                <default>false</default>
+                <label>Relocation</label>
+            </value>
+            <value>
+                <fullName>Tenant Violation Handling</fullName>
+                <default>false</default>
+                <label>Tenant Violation Handling</label>
+            </value>
+            <value>
+                <fullName>Administrative Procedure Issues</fullName>
+                <default>false</default>
+                <label>Administrative Procedure Issues</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
