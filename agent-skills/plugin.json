@@ -1,0 +1,8 @@
+{
+  "name": "vcr-crm-agent-skills",
+  "version": "1.0.0",
+  "description": "VCR-CRM Agentic Workflow Setup (Salesforce & Automation)",
+  "skillsDir": "./skills",
+  "hooksDir": "./hooks",
+  "commandsDir": "./commands"
+}

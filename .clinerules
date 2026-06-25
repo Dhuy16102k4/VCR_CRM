@@ -1,0 +1,27 @@
+# VCR-CRM System Rules (The Dispatcher)
+
+## 1. Context First (Mandatory)
+Before starting any user request, YOU MUST ALWAYS read the `MEMORY.md` file in the root directory to understand the project status, completed sprints, and next actions.
+
+## 2. Skill Routing
+Depending on the user's request, YOU MUST read and apply the processes from the corresponding skill files in the `agent-skills/skills/` directory:
+- **Apex Code (Classes, Triggers):** Call `salesforce-apex-dev`
+- **Metadata Audit/Check (XML, Layout, Profile):** Call `salesforce-metadata-auditor`
+- **Testing (Test Classes, E2E):** Call `salesforce-e2e-tester`
+- **Org Management (Wipe/Seed data):** Call `salesforce-org-manager`
+- **Documentation (Docs, Reports):** Call `vcr-crm-docs-generator`
+- **Excel/Python Automations:** Call `python-excel-automation`
+
+## 3. Personas
+To perform deep reviews or audits, assume the Personas defined in `agent-skills/agents/`:
+- Use `salesforce-architect` when designing the Data Model or reviewing the solution architecture.
+- Use `qa-tester` when running tests or reviewing logic errors.
+
+## 4. MCP Tools Integration
+The project system integrates `@salesforce/mcp` via `.mcp.json`.
+- **Always automate using tools:** Use `run_soql_query`, `run_apex_test`, `deploy_metadata` to verify your code works. Never ask the user to perform manual tasks.
+
+## 5. Post-Session Hook
+Every time you complete a chunk of work (e.g., deploying a flow, writing a class), YOU MUST do 2 things:
+1. Read the instructions in `agent-skills/hooks/post-session-memory-update.md`.
+2. Automatically propose the content to update in the `MEMORY.md` file for user review.

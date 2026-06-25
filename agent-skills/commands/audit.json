@@ -1,0 +1,6 @@
+{
+  "type": "prompt",
+  "name": "audit",
+  "description": "Kiểm toán và review Metadata Salesforce trong dự án",
+  "prompt": "1. BẮT BUỘC ĐỌC file `MEMORY.md` ở thư mục gốc để nắm tiến độ mới nhất.\n2. Tải quy trình kiểm toán từ `agent-skills/skills/salesforce-metadata-auditor/SKILL.md`.\n3. Chạy các MCP tools cần thiết (ví dụ: `run_soql_query` hoặc `retrieve_metadata`) để kéo và đối chiếu Metadata trên Org thực tế với file config cục bộ.\n4. Thực hiện yêu cầu kiểm toán sau: {user_input}"
+}

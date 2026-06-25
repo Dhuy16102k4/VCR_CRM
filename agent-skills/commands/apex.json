@@ -1,0 +1,6 @@
+{
+  "type": "prompt",
+  "name": "apex",
+  "description": "Kích hoạt quy trình viết và kiểm thử code Apex chuẩn Salesforce (có Bulkification)",
+  "prompt": "1. BẮT BUỘC ĐỌC file `MEMORY.md` ở thư mục gốc để nắm bối cảnh hiện tại của dự án.\n2. Tải và tuân thủ NGHIÊM NGẶT quy trình trong `agent-skills/skills/salesforce-apex-dev/SKILL.md`.\n3. Nếu viết code mới, phải luôn trình bày suy nghĩ phân tích Governor Limits (SOQL/DML) trước.\n4. Sau khi hoàn thành, bắt buộc dùng MCP tool `run_apex_test` để lấy bằng chứng coverage > 80%.\n5. Thực hiện yêu cầu sau của tôi: {user_input}"
+}
