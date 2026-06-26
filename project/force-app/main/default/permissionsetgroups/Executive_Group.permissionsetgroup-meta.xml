@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Permission Set Group for Executives</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Executive Group</label>
+    <permissionSets>Cross_App_ReadOnly</permissionSets>
+    <permissionSets>Report_PowerUser</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

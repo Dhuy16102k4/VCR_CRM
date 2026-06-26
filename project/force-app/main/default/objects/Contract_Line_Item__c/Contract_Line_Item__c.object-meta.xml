@@ -7,7 +7,7 @@
     <enableSearch>true</enableSearch>
     <label>Contract Line Item</label>
     <pluralLabel>Contract Line Items</pluralLabel>
-    <sharingModel>ReadWrite</sharingModel>
+    <sharingModel>ControlledByParent</sharingModel>
     <nameField>
         <label>Contract Line Item Name</label>
         <type>AutoNumber</type>

@@ -858,10 +858,24 @@
         <enabled>true</enabled>
         <name>WorkCalibrationUser</name>
     </userPermissions>
-    <layoutAssignments>
-        <layout>Submission_Report__c-Submission Report Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Submission_Report_Line__c-Submission Report Line Layout</layout>
-    </layoutAssignments>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Opportunity.Ad_Lease</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Opportunity.New_Lease_KPTM</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>true</default>
+        <recordType>Opportunity.New_Lease_TTTM</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Opportunity.Renewal</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
 </Profile>

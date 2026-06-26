@@ -1,7 +1,57 @@
 # VCR-CRM Project - Context Memory
-**Cập nhật lần cuối:** 18/06/2026
+**Cập nhật lần cuối:** 24/06/2026
 
 ## 1. 🎯 CÔNG VIỆC ĐÃ HOÀN THÀNH GẦN NHẤT
+
+### 📅 25/06/2026 — Vibe Code Architecture Refactoring (✅ COMPLETED)
+
+**Nhiệm vụ:** Tái cấu trúc (Refactor) và quốc tế hóa (English) toàn bộ quy chuẩn lập trình Vibe Code của dự án dựa trên format Agent Skills của Addy Osmani.
+
+**Tóm tắt thành tích:**
+- ✅ **Core Structure:** Refactored all Vibe code structures (`.clinerules`, hooks, references, agents) and custom agent skills to English to optimize token usage.
+- ✅ **Action Workflow Standardization:** Migrated all 6 custom skills in `agent-skills/skills/` to the standardized Addy Osmani Action Workflow format (Overview, When to Use, Process, Anti-Rationalizations, Verification).
+
+---
+
+### 📅 24/06/2026 — Phase 3 (Sprint 3.1 & 3.2): Screen Flow & Record-Triggered Flow (✅ COMPLETED)
+
+**Nhiệm vụ:** Tối ưu hóa UI nhập liệu với Screen Flow và xây dựng tự động hóa (Automation) chuyển đổi trạng thái Closed Won.
+
+**Tóm tắt thành tích:**
+- ✅ **BCC Builder Screen Flow:** Xóa bỏ các trường nhập tay rườm rà (Reservation Deposit) trên flow và sử dụng công thức ánh xạ (mapping) trực tiếp từ Opportunity sang Submission Report. Xóa các custom field dư thừa trên org.
+- ✅ **Closed Won Automation:** Khởi tạo thành công Record-Triggered Flow `Opp_ClosedWon_Automation`. Khi Opp sang `Closed Won`, luồng tự động sinh 1 bản ghi `Contract` (Inactive), 1 bản ghi `RO Handover` (RO Handover), gán quyền sở hữu tự động cho Khối Vận hành (Queue BQL) và cập nhật Lookup ID ngược lại Opp.
+- ✅ **Bổ sung Missing Fields:** Đã code và deploy thêm `Opportunity.Contract__c` (Lookup), `Opportunity.OTL_Contract_Handover_Date__c` (Date), và `RO_Handover__c.RO__c` (Lookup) phục vụ Data Mapping cho Flow.
+- ✅ **Kiến trúc Bulkify:** Khẳng định chuẩn kiến trúc "Clicks Not Code" cho Sprint 3.2 và chốt phương án viết Bulkified Apex Trigger cho các tác vụ Roll-up ở Sprint 3.3.
+
+---
+
+### 📅 23/06/2026 — Phase 2 Closure & Phase 3 Planning (✅ COMPLETED)
+
+**Nhiệm vụ:** Fix lỗi UI/UX cuối cùng của Phase 2 và lập kế hoạch cho Phase 3 (Automation).
+
+**Tóm tắt thành tích:**
+- ✅ **Fix Tab Visibility Bug:** Đã sửa file XML của 2 Permission Sets (`Sales_Console_Full_Access`, `Operations_Console_Full_Access`) để thêm thẻ `<tabSettings>` giúp tab `Business_Entity__c` hiển thị trên Navigation Bar.
+- ✅ **UX Consulting:** Hỗ trợ user giải quyết lỗi "tràn form, mất nút Save" trên giao diện tạo mới Opportunity. Chẩn đoán đây là lỗi Standard UI Layout khi có quá nhiều trường.
+- ✅ **Phase 3 Planning:** Đã tạo file `docs/07_automation/03_phase_3_automation_plan.md` nhằm định hướng chuyển đổi nút "New" thành **Screen Flow (Wizard)** để trị dứt điểm lỗi UI.
+
+---
+
+### 📅 23/06/2026 — Phase 2 UI/UX Configuration & Security Deployment (✅ COMPLETED)
+
+**Nhiệm vụ:** Thiết lập Lightning Console Apps, Record Pages, Path Assistants và Security Model (Permission Sets & Groups).
+
+**Tóm tắt thành tích:**
+- ✅ **Lightning Console Apps (2)**: Tạo và deploy `VCR_Sales_Console` và `VCR_Operations_Console` với đầy đủ Navigation Items và Utility Bar (Notes, History, Recent Items, Macros).
+- ✅ **Lightning Record Pages (4)**: Tạo và deploy FlexiPages cho `Opportunity`, `Liquidation__c`, `RO_Handover__c`, `Case` với Path, Highlights Panel và Related List Quick Links.
+- ✅ **Path Assistants (4)**: Tạo cấu hình Path cho 4 core objects trên. (Đã xử lý lỗi `__MISSING__` recordTypeName bằng cách set `__MASTER__`).
+- ✅ **Permission Sets (6)**: Tạo và deploy 6 permission sets theo chiến lược: `Sales_Console_Full_Access`, `Operations_Console_Full_Access`, `Cross_App_ReadOnly`, `Manager_Full_Access`, `Approval_Authority`, `Report_PowerUser`.
+- ✅ **Permission Set Groups (4)**: Tạo và deploy `Sales_Staff_Group`, `Operations_Staff_Group`, `Manager_Group`, `Executive_Group` để dễ dàng assign theo roles.
+
+**Files created/updated:** ~20 metadata files (Apps, FlexiPages, PathAssistants, PermissionSets, PermissionSetGroups).
+
+**Next Step:** Administrator tiến hành End-to-End Testing trên Org theo checklist.
+
+---
 
 ### 📅 18/06/2026 — Missing Objects & Campaign Configuration (✅ COMPLETED)
 
@@ -127,7 +177,17 @@ Hoàn thành tài liệu nghiệp vụ cho 7 objects:
 
 ## 3. 🚀 NEXT ACTIONS
 
-### 🔴 Priority Critical — Fix Script Bugs
+### 🔴 Sprint 3.2: Tự động hóa nghiệp vụ (Tiếp tục)
+- [ ] **Tạo Queue BQL:** Admin tự cấu hình các Queue trên Setup UI (ví dụ: `BQL_VCR_CRM`) để Flow tự động gán Owner khi bàn giao mặt bằng.
+- [x] **Flow: `Liquidation_Sync_Contract`:** Tạo Record-Triggered Flow tự động đổi Status của Contract thành `Liquidated` khi Liquidation được Approved.
+- [ ] **Flow: `Task_Reminder_Creation`:** Tạo Record-Triggered Flow gửi Task nhắc nhở Sales Rep khi Opportunity kẹt stage quá 14 ngày.
+
+### 🟡 Sprint 3.3: Logic Phức Tạp (Apex Triggers & Bulkification)
+- [x] **Rollup Summary Trigger (Contract -> Account):** Viết Bulkified Apex Trigger tính tổng doanh thu từ tất cả Contract đẩy về Account.
+- [ ] **Rollup Summary Trigger (BCC -> Opportunity):** Viết Bulkified Apex Trigger đếm số lượng Submission Report (BCC) đang Active của 1 Opportunity.
+- [ ] **BCC Approval Process:** Cấu hình quy trình phê duyệt BCC qua nhiều cấp (Sales Manager -> Director).
+
+### 🟢 Priority Critical — Fix Script Bugs (Đã hoàn thành)
 - [x] **[BUG D10 — FIXED]** `generate_contract_fields.py`: `history_count < 0` → `< 20` (HISTORY_TRACKING_LIMIT). Re-generate xong, 18 fields có trackHistory=true.
 - [x] **[BUG D3 — FIXED]** CSV `VH_Bàn_Giao_Mặt_Bằng_(RO_Hand.csv`: `OTL_Contract_Handover_Date` → thêm `__c`. Re-generate xong: OTL field đã có XML.
 - [x] **[BUG S2 — FIXED]** `generate_missing_objects.py`: Picklist placeholder → parse `Picklist EN` col (idx 7) + fallback TBD + WARN.

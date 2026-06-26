@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>60.0</apiVersion>
+    <description>Screen Flow cho phép Sales tự tạo Submission Report (BCC) trực tiếp từ Opportunity, tự động map dữ liệu.</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>BCCNameFormula</name>
+        <dataType>String</dataType>
+        <expression>&quot;BCC - &quot; &amp; {!Get_Opportunity.Brand_Name__r.Name} &amp; &quot; - &quot; &amp; TEXT({!$Flow.CurrentDate})</expression>
+    </formulas>
+    <interviewLabel>BCC Submission Report Builder {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>BCC Submission Report Builder</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    
+    <recordLookups>
+        <name>Get_Opportunity</name>
+        <label>Get Opportunity</label>
+        <locationX>176</locationX>
+        <locationY>134</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Screen_BCC_Details</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Opportunity</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+
+    <screens>
+        <name>Screen_BCC_Details</name>
+        <label>Thông Tin Báo Cáo Chốt (BCC)</label>
+        <locationX>176</locationX>
+        <locationY>242</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Create_Submission_Report</targetReference>
+        </connector>
+        <fields>
+            <name>Input_RO_Name</name>
+            <dataType>String</dataType>
+            <fieldText>RO Name (Tên gian hàng/Mã mặt bằng)</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>Input_Area</name>
+            <dataType>Number</dataType>
+            <fieldText>Area (Diện tích chốt - m2)</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+            <scale>2</scale>
+        </fields>
+
+        <fields>
+            <name>Input_Construction_Fee</name>
+            <dataType>Currency</dataType>
+            <fieldText>Construction Fee (Phí thi công/quản lý)</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+            <scale>0</scale>
+        </fields>
+        <fields>
+            <name>Input_RO_Diagram</name>
+            <fieldText>RO Diagram (Mã sơ đồ gian hàng / URL)</fieldText>
+            <fieldType>LargeTextArea</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>Input_Description</name>
+            <fieldText>Description (Ghi chú/Điều khoản đặc biệt)</fieldText>
+            <fieldType>LargeTextArea</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+
+    <recordCreates>
+        <name>Create_Submission_Report</name>
+        <label>Create Submission Report</label>
+        <locationX>176</locationX>
+        <locationY>350</locationY>
+        <inputAssignments>
+            <field>Opportunity__c</field>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Account__c</field>
+            <value>
+                <elementReference>Get_Opportunity.AccountId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Brand__c</field>
+            <value>
+                <elementReference>Get_Opportunity.Brand_Name__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Submission_Report_Name__c</field>
+            <value>
+                <elementReference>BCCNameFormula</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>RO_Name__c</field>
+            <value>
+                <elementReference>Input_RO_Name</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Area__c</field>
+            <value>
+                <elementReference>Input_Area</elementReference>
+            </value>
+        </inputAssignments>
+
+        <inputAssignments>
+            <field>Construction_Fee_By_Number__c</field>
+            <value>
+                <elementReference>Input_Construction_Fee</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>RO_Diagram__c</field>
+            <value>
+                <elementReference>Input_RO_Diagram</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Description__c</field>
+            <value>
+                <elementReference>Input_Description</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Submission_Report__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Opportunity</targetReference>
+        </connector>
+    </start>
+    
+    <status>Active</status>
+    
+    <variables>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

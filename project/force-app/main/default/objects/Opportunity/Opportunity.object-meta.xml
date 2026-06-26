@@ -29,4 +29,18 @@
         <trackHistory>true</trackHistory>
     </fields>
     <enableHistory>true</enableHistory>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <content>OpportunityNewOverride</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>true</skipRecordTypeSelect>
+        <type>LightningComponent</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <content>OpportunityNewOverride</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>true</skipRecordTypeSelect>
+        <type>LightningComponent</type>
+    </actionOverrides>
 </CustomObject>

@@ -2,10 +2,12 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Total_Submission_Report_Amount__c</fullName>
     <description>Tổng tiền thuê BCC = Tổng tiền thuê tất cả các năm - (Thực Tế Voucher (VNĐ) + Thực Tế Capex (VNĐ))</description>
+    <externalId>false</externalId>
     <label>Total Submission Report Amount</label>
     <summarizedField>Submission_Report_Line__c.Total_Line_Amount__c</summarizedField>
     <summaryForeignKey>Submission_Report_Line__c.Submission_Report_Number__c</summaryForeignKey>
     <summaryOperation>sum</summaryOperation>
     <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
     <type>Summary</type>
 </CustomField>

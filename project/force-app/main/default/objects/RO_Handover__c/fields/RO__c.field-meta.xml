@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RO__c</fullName>
+    <label>Retail Outlet (RO)</label>
+    <type>Lookup</type>
+    <referenceTo>Product2</referenceTo>
+    <relationshipName>RO_Handovers</relationshipName>
+    <required>false</required>
+</CustomField>

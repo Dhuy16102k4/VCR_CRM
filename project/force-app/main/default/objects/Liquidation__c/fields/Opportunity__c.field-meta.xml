@@ -5,6 +5,6 @@
     <type>Lookup</type>
     <deleteConstraint>SetNull</deleteConstraint>
     <referenceTo>Opportunity</referenceTo>
-    <relationshipName>Opportunitys</relationshipName>
+    <relationshipName>Liquidation_Opportunities</relationshipName>
     <trackHistory>false</trackHistory>
 </CustomField>

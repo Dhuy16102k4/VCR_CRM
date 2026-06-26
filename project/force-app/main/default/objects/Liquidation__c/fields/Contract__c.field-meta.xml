@@ -6,6 +6,6 @@
     <required>true</required>
     <deleteConstraint>Restrict</deleteConstraint>
     <referenceTo>Contract</referenceTo>
-    <relationshipName>Contracts</relationshipName>
+    <relationshipName>Liquidation_Contracts</relationshipName>
     <trackHistory>true</trackHistory>
 </CustomField>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#FF9A3C</headerColor>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <description>Operations, service and handover management</description>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <label>VCR Operations Console</label>
+    <navType>Console</navType>
+    <tabs>standard-home</tabs>
+    <tabs>standard-Case</tabs>
+    <tabs>RO_Handover__c</tabs>
+    <tabs>Liquidation__c</tabs>
+    <tabs>Rental_Plan__c</tabs>
+    <tabs>Legal_Record__c</tabs>
+    <tabs>Action_Plan__c</tabs>
+    <tabs>Debt__c</tabs>
+    <tabs>standard-Account</tabs>
+    <tabs>standard-Contract</tabs>
+    <tabs>standard-report</tabs>
+    <uiType>Lightning</uiType>
+</CustomApplication>

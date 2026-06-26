@@ -6,6 +6,6 @@
     <required>true</required>
     <deleteConstraint>Restrict</deleteConstraint>
     <referenceTo>Business_Entity__c</referenceTo>
-    <relationshipName>Business_Entitys</relationshipName>
+    <relationshipName>Sales_Ad_Target_BizEntities</relationshipName>
     <trackHistory>false</trackHistory>
 </CustomField>
