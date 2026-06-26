@@ -19,7 +19,21 @@ Mỗi thành phần trong kiến trúc này đóng một vai trò riêng biệt,
 
 ---
 
-## 3. Hệ Thống Các Lệnh (Slash Commands) và Kỹ Năng (Skills)
+## 3. Cấu Trúc Thư Mục (Directory Structure)
+Cấu trúc cây thư mục phản ánh chính xác kiến trúc hoạt động của dự án:
+
+```text
+agent-skills/
+├── commands/        # Chứa các file JSON kích hoạt lệnh Slash (/apex, /build, /test)
+├── skills/          # Các quy trình thực thi chính (SOPs - Apex Dev, E2E Test, v.v.)
+├── agents/          # Định nghĩa vai trò (Persona) như Senior Architect, QA
+├── references/      # Các bảng Checklist dùng chung (Security, Limits)
+├── hooks/           # Kịch bản tự chạy tự động (VD: Cập nhật MEMORY.md vào cuối phiên)
+├── plugin.json      # File khai báo plugin cho Antigravity/RooCode
+└── README.md        # File tài liệu này
+```
+
+## 4. Hệ Thống Các Lệnh (Slash Commands) và Kỹ Năng (Skills)
 Mọi thao tác với hệ thống giờ đây được điều hướng thông qua thư mục `commands/`. Mỗi lệnh sẽ định hướng AI tải một file `SKILL.md` cụ thể để thực thi.
 
 | Lệnh (Command) | Kỹ Năng Kích Hoạt (Skill) | Mô tả & Cách hoạt động |
@@ -35,7 +49,7 @@ Mọi thao tác với hệ thống giờ đây được điều hướng thông 
 
 ---
 
-## 4. Quy Trình Vận Hành Của AI Khi Người Dùng Gõ Lệnh (Execution & Token Economics)
+## 5. Quy Trình Vận Hành Của AI Khi Người Dùng Gõ Lệnh (Execution & Token Economics)
 
 Vấn đề lớn nhất của các setup Vibe Code đời cũ (dồn toàn bộ vào file `.cursorrules`) là tốn hàng chục nghìn Token Input một cách lãng phí cho mỗi lần gửi tin nhắn. Cấu trúc mới này áp dụng quy tắc **"Lazy Loading" (Tải Lười)** theo RAG.
 
