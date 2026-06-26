@@ -3,37 +3,55 @@
 ## 1. Mục đích và Công dụng (Purpose & Usage)
 Cấu trúc "Vibe Code" này được thiết kế để nâng cấp AI từ một "trợ lý chat" thụ động thành một **Đội ngũ kỹ sư phần mềm chủ động (Agentic Workflow)** chuyên biệt cho nền tảng Salesforce.
 
-Thay vì dựa vào khả năng phán đoán của AI, cấu trúc này ép AI phải làm việc theo một chuỗi dây chuyền công nghiệp: **Lấy Ngữ Cảnh -> Xác định Quy Trình (Skill) -> Thực Thi -> Kiểm Chứng bằng Tool -> Lưu Trữ Bộ Nhớ.**
-
-### 🛠️ Cách Vận Hành (Workflow)
-1. **Khởi động (Context Loading):** Khi bạn giao task, điều đầu tiên AI BẮT BUỘC phải làm là đọc file `MEMORY.md` ở thư mục gốc để nắm trạng thái hiện tại (Đã làm gì, có bug nào, bước tiếp theo là gì).
-2. **Điều phối (Skill Dispatching):** Dựa vào Meta-Skill hoặc `.clinerules`, AI xác định nghiệp vụ cần làm (VD: Viết Apex, Audit Metadata, Cấu hình Flow) và tự động kéo đúng file `SKILL.md` tương ứng trong thư mục `skills/` ra để đọc.
-3. **Thực thi (Execution):** AI không được tự do code theo ý thích. Nó phải làm theo đúng từng bước (Step-by-step Process) được định nghĩa trong `SKILL.md` (Ví dụ: Luôn phải Bulkify code Apex, không đặt SOQL trong vòng lặp).
-4. **Kiểm duyệt (Verification Gates):** AI không được quyền kết thúc task nếu chưa chạy các công cụ MCP (như `@salesforce/mcp` để deploy hoặc run test) và lấy output log làm bằng chứng.
-5. **Đóng phiên (Post-session Hook):** Khi mọi việc hoàn tất, AI sẽ chạy file `hooks/post-session-memory-update.md` để tự động tổng hợp những gì vừa làm và ghi đè vào `MEMORY.md`.
+Thay vì dựa vào khả năng phán đoán của AI, cấu trúc này ép AI phải làm việc theo một chuỗi dây chuyền công nghiệp: **Lấy Ngữ Cảnh -> Kích hoạt Command -> Tải Skill -> Thực Thi -> Kiểm Chứng bằng Tool -> Lưu Trữ Bộ Nhớ.**
 
 ---
 
-## 2. Tối Ưu Hiệu Năng & Mức Tiêu Hao Token
-Cấu trúc này giải quyết được vấn đề lớn nhất của các setup "vibe" đời cũ (như nhồi nhét tất cả vào 1 file `.cursorrules` khổng lồ).
+## 2. Giải Phẫu Cấu Trúc (Architecture Roles)
+Mỗi thành phần trong kiến trúc này đóng một vai trò riêng biệt, kết hợp lại thành một vòng lặp tự trị hoàn chỉnh:
 
-### 📉 Về Token & Chi phí (Tiết kiệm cực lớn)
-*   **Vibe cũ (Monolithic Rules):** Bất kể bạn yêu cầu AI làm gì (dù chỉ đổi màu text), AI cũng phải đọc lại toàn bộ bộ luật (Apex, UI, Flow, Security, Git). Điều này làm mất hàng chục ngàn Token Input vô ích cho mỗi lần enter.
-*   **Vibe mới (Lazy Loading):** Phân mảnh theo nguyên lý RAG. AI chỉ nạp đúng những gì nó cần. Khi code Apex, nó chỉ đọc `skills/salesforce-apex-dev/SKILL.md`. Việc tải ngữ cảnh nhẹ đi **70-80%**, tiết kiệm chi phí API và giúp model sinh text nhanh hơn.
-
-### 🚀 Về Hiệu năng & Chất lượng Code
-*   **Tránh ảo giác (No Hallucination):** Việc áp dụng *Verification Gates* và *Anti-Rationalization* khóa chặt thói quen "code đại, lười test, biện minh" của AI.
-*   **Không suy thoái trí nhớ (Zero Context Degradation):** Khi phiên chat quá dài, AI thường quên luật. Với cấu trúc này, Quy trình được chuẩn hóa ở file tĩnh, còn Bộ nhớ động nằm ở `MEMORY.md`. AI chỉ cần đọc lại 2 file này là reset lại trạng thái minh mẫn 100%.
+*   **`agent-skills/commands/*.json` (Trigger / Instruction):** Đóng vai trò là công tắc kích hoạt và **Chỉ thị ban đầu**. Thay vì viết prompt dài dòng, lệnh Slash (VD: `/apex`) sẽ "ép" AI phải vào đúng form Agentic, không được phép chat lan man.
+*   **`agent-skills/skills/*/SKILL.md` (Standard Operating Procedures - SOPs):** Đây là **Quy trình chuẩn**. Khi được lệnh (command) gọi, AI sẽ tải file này ra đọc. File này quy định các bước 1-2-3-4 bắt buộc phải làm, quy tắc "Anti-Rationalization" (Chống AI lấp liếm/lười biếng), và điều kiện vượt qua Cổng kiểm duyệt (Verification Gate).
+*   **`MEMORY.md` (Persistent Context / Long-term Memory):** Đóng vai trò là **Bộ nhớ dài hạn** và **Bảng quản lý Sprint**. AI bắt buộc phải đọc file này ở đầu mọi phiên để biết bối cảnh tổng thể, và ghi kết quả vào cuối phiên để không bị mất trí nhớ khi chuyển chat.
+*   **`.clinerules` (System Context):** Là **Hiến pháp** nền tảng của hệ thống, cài đặt sâu vào bộ nhớ hệ thống (System Prompt) để AI luôn biết mình là ai và đang làm việc trên loại dự án nào.
+*   **`agent-skills/hooks/` (Automated Actions):** Các kịch bản chạy tự động (Ví dụ: Chạy script cập nhật `MEMORY.md` vào cuối phiên làm việc).
+*   **`agent-skills/plugin.json`**: File manifest khai báo cho Antigravity biết thư mục nào chứa lệnh và skill.
 
 ---
 
-## 3. Cấu trúc Thư mục
+## 3. Hệ Thống Các Lệnh (Slash Commands) và Kỹ Năng (Skills)
+Mọi thao tác với hệ thống giờ đây được điều hướng thông qua thư mục `commands/`. Mỗi lệnh sẽ định hướng AI tải một file `SKILL.md` cụ thể để thực thi.
 
-```text
-agent-skills/
-├── skills/          # Các quy trình thực thi chính (Apex Dev, E2E Test, v.v.)
-├── agents/          # Định nghĩa vai trò (Persona) như Senior Architect, QA
-├── references/      # Các bảng Checklist dùng chung (Security, Limits)
-├── hooks/           # Kịch bản tự chạy (như update MEMORY.md khi kết thúc)
-└── README.md        # File này
-```
+| Lệnh (Command) | Kỹ Năng Kích Hoạt (Skill) | Mô tả & Cách hoạt động |
+|----------------|---------------------------|------------------------|
+| **`/apex`** | `salesforce-apex-dev` | **Lệnh Combo Siêu Tốc:** Yêu cầu AI viết code (Apex/Flow) và bắt buộc phải dùng MCP Tool để Test và Deploy trong cùng 1 phiên. Phù hợp làm các task nhanh. |
+| **`/audit`** | `salesforce-metadata-auditor` | **Lệnh Kiểm toán:** Dùng để rà soát bảo mật (FLS), Profile, Permission Sets. Ép AI dùng SOQL/Metadata API soi dữ liệu Org thực tế thay vì đoán mò. |
+| **`/spec`** | `vcr-crm-docs-generator` | **Phân tích yêu cầu:** Đọc `MEMORY.md`, phân tích Data Model, Limits trước khi code. Đóng vai trò Kiến trúc sư (Architect). |
+| **`/plan`** | `vcr-crm-docs-generator` | **Lên kế hoạch:** Chia nhỏ công việc thành các bước (Task Breakdown), liệt kê các file cần tạo/sửa và cập nhật `MEMORY.md`. |
+| **`/build`** | `salesforce-apex-dev`<br>*(Hoặc `python-excel-automation`)* | **Thực thi Code:** Cắm cúi viết code, tạo file XML hoặc script Python theo đúng kế hoạch. AI sẽ không tự ý Test để tiết kiệm thời gian, chỉ code! |
+| **`/test`** | `salesforce-e2e-tester` | **Xác thực (Verification):** Chạy Unit Test/E2E Test thông qua Terminal hoặc MCP Tools. Phân tích Log lỗi, tự động sửa nếu cần thiết. |
+| **`/review`** | `salesforce-metadata-auditor` | **Kiểm duyệt (Code Review):** Rà soát lại chất lượng code, tìm "Code smell", kiểm tra giới hạn Bulkification và FLS. |
+| **`/ship`** | `salesforce-org-manager` | **Triển khai (Deploy):** Đẩy code lên Org bằng lệnh SF CLI, tick DONE task trong `MEMORY.md` và đóng tính năng. |
+
+---
+
+## 4. Quy Trình Vận Hành Của AI Khi Người Dùng Gõ Lệnh (Execution & Token Economics)
+
+Vấn đề lớn nhất của các setup Vibe Code đời cũ (dồn toàn bộ vào file `.cursorrules`) là tốn hàng chục nghìn Token Input một cách lãng phí cho mỗi lần gửi tin nhắn. Cấu trúc mới này áp dụng quy tắc **"Lazy Loading" (Tải Lười)** theo RAG.
+
+**Mô phỏng những gì xảy ra khi bạn gõ `/build Làm tính năng ABC`:**
+
+1. **Khởi động (Nạp Context Nhẹ):** 
+   - AI đọc `.clinerules` và lệnh `build.json`.
+   - Lệnh `build.json` ép AI đi đọc file `MEMORY.md`.
+   - *Token tiêu hao: Rất ít (~2.000 tokens) vì nó không cần đọc luật về Test hay Audit ở bước này.*
+2. **Nạp Skill Đặc Thù (Lazy Load Skill):**
+   - Lệnh `/build` báo cho AI biết nó phải làm Developer. AI mở thư mục `skills/salesforce-apex-dev/` và chỉ đọc file `SKILL.md` của thư mục đó.
+   - *Token tiêu hao: AI tiết kiệm được ~80% Token vì không phải đọc phần luật của `metadata-auditor` hay `python-automation`.*
+3. **Thực Thi Code Bằng Tool (Action):**
+   - AI dùng tool `write_to_file` để tự tạo/sửa code cục bộ.
+4. **Trả Lời Người Dùng:**
+   - AI báo cáo kết quả: *"Tôi đã tạo xong file, mời bạn gọi lệnh /test để kiểm chứng"*.
+
+**Tổng kết về mặt Tiêu Hao Token (Token Economics):**
+Bằng cách chia nhỏ các file lệnh và skill, AI có một "Context Window" rất sạch sẽ và thông thoáng. Việc này không những giảm từ 30% - 50% phí API cho mỗi prompt, mà còn giúp AI tập trung tuyệt đối vào nhiệm vụ hiện tại, chấm dứt hoàn toàn hiện tượng AI bị "ảo giác" (Hallucination) hoặc quên mất quy tắc Bulkification của Salesforce!
