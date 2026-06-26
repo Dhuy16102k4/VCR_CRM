@@ -2,5 +2,5 @@
   "type": "prompt",
   "name": "review",
   "description": "Kiểm duyệt mã nguồn và bảo mật (Code Review)",
-  "prompt": "1. Nạp SKILL `salesforce-metadata-auditor`.\n2. Rà soát lại code/metadata vừa build. Đảm bảo tuân thủ Bulkification, không có Hardcode ID, đảm bảo phân quyền (FLS) và đúng naming convention.\n3. Chỉ ra các "Code Smell" hoặc rủi ro kỹ thuật (nếu có).\n4. Yêu cầu chi tiết: {user_input}"
+  "prompt": "1. Nạp SKILL `salesforce-metadata-auditor`.\n2. Rà soát lại code/metadata vừa build. Đảm bảo tuân thủ Bulkification, không có Hardcode ID, đảm bảo phân quyền (FLS) và đúng naming convention.\n3. Chỉ ra các \"Code Smell\" hoặc rủi ro kỹ thuật (nếu có).\n4. Yêu cầu chi tiết: {user_input}"
 }
