@@ -1,0 +1,6 @@
+{
+  "type": "prompt",
+  "name": "plan",
+  "description": "Lên kế hoạch và chia nhỏ task (Task Breakdown)",
+  "prompt": "1. Đọc `MEMORY.md`.\n2. Dựa trên bản Spec, chia nhỏ tính năng thành các task kỹ thuật cụ thể (Actionable steps).\n3. Liệt kê chính xác các file XML, file Apex, hoặc Flow cần tạo/sửa.\n4. Cập nhật kế hoạch này vào `MEMORY.md` trước khi code.\n5. Yêu cầu chi tiết: {user_input}"
+}

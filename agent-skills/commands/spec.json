@@ -1,0 +1,6 @@
+{
+  "type": "prompt",
+  "name": "spec",
+  "description": "Định nghĩa yêu cầu (Specification) cho tính năng mới",
+  "prompt": "1. Đọc `MEMORY.md` và tài liệu liên quan.\n2. Đóng vai trò Salesforce Architect.\n3. Phân tích yêu cầu, xác định rõ các ràng buộc hệ thống, Governor Limits, Data Model, và Permissions.\n4. Đưa ra tài liệu Spec tóm tắt trước khi code.\n5. Yêu cầu chi tiết: {user_input}"
+}

@@ -1,0 +1,6 @@
+{
+  "type": "prompt",
+  "name": "test",
+  "description": "Chạy Unit Test và Verification (QA)",
+  "prompt": "1. Nạp SKILL `salesforce-e2e-tester`.\n2. BẮT BUỘC dùng MCP Tool hoặc Terminal (`sf apex run test` / `sf project deploy start`) để chạy Unit Test hoặc xác thực tính đúng đắn của Metadata.\n3. Nếu có lỗi (FAIL/Validation Error), tự động lấy Log, phân tích nguyên nhân và đề xuất cách fix.\n4. Yêu cầu chi tiết: {user_input}"
+}

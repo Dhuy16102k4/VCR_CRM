@@ -1,0 +1,6 @@
+{
+  "type": "prompt",
+  "name": "ship",
+  "description": "Triển khai (Deploy) và hoàn tất (Close Task)",
+  "prompt": "1. Nạp SKILL `salesforce-org-manager`.\n2. Triển khai dứt điểm lên Org (`sf project deploy start`).\n3. Cập nhật `MEMORY.md` để tick DONE [x] cho task hiện tại.\n4. Thông báo hoàn tất và đề xuất Next Action cho Sprint.\n5. Yêu cầu chi tiết: {user_input}"
+}

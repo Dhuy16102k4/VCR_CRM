@@ -1,0 +1,6 @@
+{
+  "type": "prompt",
+  "name": "build",
+  "description": "Thực thi viết code và cấu hình (Implementation)",
+  "prompt": "1. Đọc `MEMORY.md`.\n2. Áp dụng SKILL phù hợp (`salesforce-apex-dev`, v.v.).\n3. Sử dụng Tool (write_to_file) để tạo và sửa đổi các file dự án theo kế hoạch.\n4. Tập trung hoàn toàn vào việc Implementation. Không tự chạy deploy/test ở bước này trừ khi cần verify nhanh.\n5. Yêu cầu chi tiết: {user_input}"
+}
