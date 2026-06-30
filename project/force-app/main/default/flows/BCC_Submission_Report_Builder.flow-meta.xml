@@ -58,40 +58,9 @@
             <targetReference>Create_Submission_Report</targetReference>
         </connector>
         <fields>
-            <name>Input_RO_Name</name>
-            <dataType>String</dataType>
-            <fieldText>RO Name (Tên gian hàng/Mã mặt bằng)</fieldText>
-            <fieldType>InputField</fieldType>
-            <isRequired>true</isRequired>
-        </fields>
-        <fields>
-            <name>Input_Area</name>
-            <dataType>Number</dataType>
-            <fieldText>Area (Diện tích chốt - m2)</fieldText>
-            <fieldType>InputField</fieldType>
-            <isRequired>true</isRequired>
-            <scale>2</scale>
-        </fields>
-
-        <fields>
-            <name>Input_Construction_Fee</name>
-            <dataType>Currency</dataType>
-            <fieldText>Construction Fee (Phí thi công/quản lý)</fieldText>
-            <fieldType>InputField</fieldType>
-            <isRequired>true</isRequired>
-            <scale>0</scale>
-        </fields>
-        <fields>
-            <name>Input_RO_Diagram</name>
-            <fieldText>RO Diagram (Mã sơ đồ gian hàng / URL)</fieldText>
-            <fieldType>LargeTextArea</fieldType>
-            <isRequired>false</isRequired>
-        </fields>
-        <fields>
-            <name>Input_Description</name>
-            <fieldText>Description (Ghi chú/Điều khoản đặc biệt)</fieldText>
-            <fieldType>LargeTextArea</fieldType>
-            <isRequired>false</isRequired>
+            <name>Info_SyncText</name>
+            <fieldText>&lt;p&gt;Các thông tin sau sẽ được tự động đồng bộ từ Cơ Hội Hỏi Thuê (Opportunity) sang Báo cáo chốt (BCC):&lt;/p&gt;&lt;ul&gt;&lt;li&gt;RO Name&lt;/li&gt;&lt;li&gt;Area&lt;/li&gt;&lt;li&gt;Construction Fee&lt;/li&gt;&lt;li&gt;RO Diagram&lt;/li&gt;&lt;li&gt;Description&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Vui lòng nhấn &lt;b&gt;Next&lt;/b&gt; để tạo BCC.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
         </fields>
         <showFooter>true</showFooter>
         <showHeader>true</showHeader>
@@ -129,32 +98,32 @@
         <inputAssignments>
             <field>RO_Name__c</field>
             <value>
-                <elementReference>Input_RO_Name</elementReference>
+                <elementReference>Get_Opportunity.RO_Name__r.Name</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
             <field>Area__c</field>
             <value>
-                <elementReference>Input_Area</elementReference>
+                <elementReference>Get_Opportunity.Rental_Area__c</elementReference>
             </value>
         </inputAssignments>
 
         <inputAssignments>
             <field>Construction_Fee_By_Number__c</field>
             <value>
-                <elementReference>Input_Construction_Fee</elementReference>
+                <elementReference>Get_Opportunity.Construction_Fee__c</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
             <field>RO_Diagram__c</field>
             <value>
-                <elementReference>Input_RO_Diagram</elementReference>
+                <elementReference>Get_Opportunity.RO__r.Name</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
             <field>Description__c</field>
             <value>
-                <elementReference>Input_Description</elementReference>
+                <elementReference>Get_Opportunity.Description</elementReference>
             </value>
         </inputAssignments>
         <object>Submission_Report__c</object>
