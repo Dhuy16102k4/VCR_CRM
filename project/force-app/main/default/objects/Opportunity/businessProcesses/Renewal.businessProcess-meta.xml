@@ -3,23 +3,23 @@
     <fullName>Renewal</fullName>
     <isActive>true</isActive>
     <values>
-        <fullName>Chao Khach</fullName>
+        <fullName>Prospecting</fullName>
         <default>false</default>
     </values>
     <values>
-        <fullName>Khao Sat</fullName>
+        <fullName>Site Survey</fullName>
         <default>false</default>
     </values>
     <values>
-        <fullName>Dam Phan</fullName>
+        <fullName>Negotiation</fullName>
         <default>false</default>
     </values>
     <values>
-        <fullName>Chot Khach</fullName>
+        <fullName>Closing</fullName>
         <default>false</default>
     </values>
     <values>
-        <fullName>Coc</fullName>
+        <fullName>Contract Deposit</fullName>
         <default>false</default>
     </values>
     <values>

@@ -3,23 +3,15 @@
     <fullName>New_Lease_TTTM</fullName>
     <isActive>true</isActive>
     <values>
-        <fullName>Chao Khach</fullName>
+        <fullName>Prospecting</fullName>
         <default>false</default>
     </values>
     <values>
-        <fullName>Khao Sat</fullName>
+        <fullName>Closing</fullName>
         <default>false</default>
     </values>
     <values>
-        <fullName>Dam Phan</fullName>
-        <default>false</default>
-    </values>
-    <values>
-        <fullName>Chot Khach</fullName>
-        <default>false</default>
-    </values>
-    <values>
-        <fullName>Coc</fullName>
+        <fullName>Closed Lost</fullName>
         <default>false</default>
     </values>
     <values>
@@ -27,7 +19,15 @@
         <default>false</default>
     </values>
     <values>
-        <fullName>Closed Lost</fullName>
+        <fullName>Contract Deposit</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Negotiation</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Site Survey</fullName>
         <default>false</default>
     </values>
 </BusinessProcess>
