@@ -74,8 +74,26 @@ Opportunity opp = new Opportunity(
     Customer_Interest_Level__c = 'High',
     LeadSource = 'Partner Referral',
     RO_Handover_Date__c = Date.today().addDays(30),
+    Construction_Fee__c = 5000000,
     Description = 'Khách hàng quan tâm thuê mặt bằng rộng để làm Flagship Store tại Vincom Ba Triệu.'
 );
+// Gán RO Diagram (Lookup tới Product2) nếu có
+try {
+    Product2 ro = new Product2(
+        Name = 'ZARA-BT-L1-01', 
+        IsActive = true, 
+        ProductCode = 'RO-ZARA',
+        Area__c = 500,
+        Total_Area__c = 500,
+        Used_Area__c = 0
+    );
+    insert ro;
+    opp.RO__c = ro.Id;
+    opp.RO_Name__c = ro.Id;
+    System.debug('✅ RO (Product2) ID: ' + ro.Id);
+} catch (Exception e) {
+    System.debug('⚠️ Không tạo được RO: ' + e.getMessage());
+}
 insert opp;
 System.debug('✅ Opportunity ID: ' + opp.Id);
 

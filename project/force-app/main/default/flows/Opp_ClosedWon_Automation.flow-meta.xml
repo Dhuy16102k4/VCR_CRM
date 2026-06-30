@@ -78,6 +78,18 @@
                 <elementReference>$Record.Start_Date__c</elementReference>
             </value>
         </inputAssignments>
+        <inputAssignments>
+            <field>RO_Handover_Date__c</field>
+            <value>
+                <elementReference>$Record.RO_Handover_Date__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Duration_LED_Screen_Rental_Contracts__c</field>
+            <value>
+                <elementReference>$Record.Duration_Month__c</elementReference>
+            </value>
+        </inputAssignments>
         <object>Contract</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordCreates>
@@ -150,6 +162,7 @@
         <connector>
             <targetReference>Get_Queue</targetReference>
         </connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
         <filterLogic>and</filterLogic>
         <filters>
             <field>StageName</field>
