@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Customer_Pay_Price_Vs_Budget_Price__c</fullName>
+    <externalId>false</externalId>
+    <formula>&quot;TBD&quot;</formula>
     <label>Customer Pay Price Vs. Budget Price</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
     <type>Text</type>
-    <formula>"TBD"</formula>
+    <unique>false</unique>
 </CustomField>

@@ -6,30 +6,34 @@
         <editHeading>true</editHeading>
         <label>Information</label>
         <layoutColumns>
-        <layoutItems>
-            <behavior>Readonly</behavior>
-            <field>Name</field>
-        </layoutItems>
-        <layoutItems>
-            <behavior>Edit</behavior>
-            <field>Status__c</field>
-        </layoutItems>
-        <layoutItems>
-            <behavior>Edit</behavior>
-            <field>Sales_Man__c</field>
-        </layoutItems>
-        <layoutItems>
-            <behavior>Edit</behavior>
-            <field>Date__c</field>
-        </layoutItems>
-        <layoutItems>
-            <behavior>Edit</behavior>
-            <field>New_Account_Target__c</field>
-        </layoutItems>
-        <layoutItems>
-            <behavior>Edit</behavior>
-            <field>Sales_Call_Target__c</field>
-        </layoutItems>
+            <layoutItems>
+                <behavior>Required</behavior>
+                <field>Target_Month__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Name</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Status__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Sales_Man__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Date__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>New_Account_Target__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Sales_Call_Target__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns/>
         <style>TwoColumnsTopToBottom</style>
@@ -63,4 +67,12 @@
         <layoutColumns/>
         <style>CustomLinks</style>
     </layoutSections>
+    <miniLayout>
+        <fields>Target_Month__c</fields>
+    </miniLayout>
+    <showEmailCheckbox>false</showEmailCheckbox>
+    <showHighlightsPanel>false</showHighlightsPanel>
+    <showInteractionLogPanel>false</showInteractionLogPanel>
+    <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
+    <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
 </Layout>

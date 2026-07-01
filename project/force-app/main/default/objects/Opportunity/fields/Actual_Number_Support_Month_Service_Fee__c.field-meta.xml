@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Actual_Number_Support_Month_Service_Fee__c</fullName>
-    <label>Actual Number Support Month Service Fee</label>
     <description>- Read only  
 -  Help Text: Số Tháng Hỗ Trợ PDV Thực Tế = (Ngày Kết Thúc Hỗ Trợ PDV Thực Tế - Ngày Bắt Đầu Hỗ Trợ PDV Thực Tế)/30</description>
-    <type>Number</type>
+    <externalId>false</externalId>
+    <label>Actual Number Support Month Service Fee</label>
     <precision>18</precision>
+    <required>false</required>
     <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
 </CustomField>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Move Opportunity to Closed Won stage. Prompts user to enter Duration (Month) and RO Handover Date, then auto-creates Contract and RO Handover via automation flow.</description>
+    <flowDefinition>Opp_Move_To_ClosedWon</flowDefinition>
+    <label>Win Deal (Closed Won)</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>Flow</type>
+</QuickAction>

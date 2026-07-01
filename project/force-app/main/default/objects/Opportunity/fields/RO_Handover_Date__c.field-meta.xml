@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>RO_Handover_Date__c</fullName>
-    <label>RO Handover Date</label>
     <description>Bắt buộc phải có Ngày Bàn Giao Mặt Bằng mới được chuyển sang Trạng Thái = Cọc</description>
+    <externalId>false</externalId>
+    <label>RO Handover Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
     <type>Date</type>
 </CustomField>

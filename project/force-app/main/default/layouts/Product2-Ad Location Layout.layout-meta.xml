@@ -108,27 +108,84 @@
         <editHeading>true</editHeading>
         <label>Generated Custom Fields</label>
         <layoutColumns>
-            <layoutItems><behavior>Readonly</behavior><field>Company_Code__c</field></layoutItems>
-            <layoutItems><behavior>Edit</behavior><field>RecordTypeId</field></layoutItems>
-            <layoutItems><behavior>Edit</behavior><field>Valid_From__c</field></layoutItems>
-            <layoutItems><behavior>Edit</behavior><field>Valid_To__c</field></layoutItems>
-            <layoutItems><behavior>Edit</behavior><field>IsActive</field></layoutItems>
-            <layoutItems><behavior>Edit</behavior><field>Rental_Status__c</field></layoutItems>
-            <layoutItems><behavior>Edit</behavior><field>RO_Advertising_Type_Level_1__c</field></layoutItems>
-            <layoutItems><behavior>Edit</behavior><field>RO_Advertising_Type_Level_2__c</field></layoutItems>
-            <layoutItems><behavior>Edit</behavior><field>Location_Evaluation__c</field></layoutItems>
-            <layoutItems><behavior>Edit</behavior><field>Budget_AD_Unit_Price_USD_Unit__c</field></layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Company_Code__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>RecordTypeId</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Valid_From__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Valid_To__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>IsActive</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Rental_Status__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>RO_Advertising_Type_Level_1__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>RO_Advertising_Type_Level_2__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Location_Evaluation__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Budget_AD_Unit_Price_USD_Unit__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
-            <layoutItems><behavior>Readonly</behavior><field>Budget_AD_Unit_Price_VND_Unit__c</field></layoutItems>
-            <layoutItems><behavior>Edit</behavior><field>Area_Type__c</field></layoutItems>
-            <layoutItems><behavior>Edit</behavior><field>RO_Unit__c</field></layoutItems>
-            <layoutItems><behavior>Edit</behavior><field>Integration_Source__c</field></layoutItems>
-            <layoutItems><behavior>Edit</behavior><field>Official_Confirmation_Status__c</field></layoutItems>
-            <layoutItems><behavior>Edit</behavior><field>SAP_RO_Id__c</field></layoutItems>
-            <layoutItems><behavior>Edit</behavior><field>RO_Advertising_Unit__c</field></layoutItems>
-            <layoutItems><behavior>Edit</behavior><field>Building_Owner__c</field></layoutItems>
-            <layoutItems><behavior>Edit</behavior><field>Unit__c</field></layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Budget_AD_Unit_Price_VND_Unit__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Area_Type__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>RO_Unit__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Integration_Source__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Official_Confirmation_Status__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>SAP_RO_Id__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>RO_Advertising_Unit__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Building_Owner__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Unit__c</field>
+            </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>
@@ -136,6 +193,8 @@
         <customLabel>false</customLabel>
         <detailHeading>false</detailHeading>
         <editHeading>false</editHeading>
+        <layoutColumns/>
+        <layoutColumns/>
         <layoutColumns/>
         <style>CustomLinks</style>
     </layoutSections>

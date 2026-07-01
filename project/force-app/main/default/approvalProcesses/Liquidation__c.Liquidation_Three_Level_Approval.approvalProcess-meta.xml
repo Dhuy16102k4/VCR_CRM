@@ -20,7 +20,6 @@
         <assignedApprover>
             <approver>
                 <type>userHierarchyField</type>
-                <name>Approver_Level_1__c</name>
             </approver>
         </assignedApprover>
         <description>Level 1 Approval - Team Lead or BU Manager (TP, GĐBQL)</description>
@@ -28,23 +27,17 @@
             <criteriaItems>
                 <field>Liquidation__c.Liquidation_Type__c</field>
                 <operation>notEqual</operation>
-                <value></value>
             </criteriaItems>
-
         </entryCriteria>
         <ifCriteriaNotMet>RejectRecord</ifCriteriaNotMet>
         <label>Level 1 Approval</label>
         <name>Level_1_Approval</name>
-        <rejectBehavior>
-            <type>RejectRequest</type>
-        </rejectBehavior>
     </approvalStep>
     <approvalStep>
         <allowDelegate>true</allowDelegate>
         <assignedApprover>
             <approver>
                 <type>userHierarchyField</type>
-                <name>Approver_Level_2__c</name>
             </approver>
         </assignedApprover>
         <description>Level 2 Approval - Sales Director or Operations Director (GĐKD, GĐV)</description>
@@ -67,7 +60,6 @@
         <assignedApprover>
             <approver>
                 <type>userHierarchyField</type>
-                <name>Approver_Level_3__c</name>
             </approver>
         </assignedApprover>
         <description>Level 3 Approval - Deputy General Director or VP (PTGĐKD, PTGĐVH)</description>
@@ -90,7 +82,6 @@
         </rejectBehavior>
     </approvalStep>
     <description>Three-level approval process for Liquidation requests. L1 (Team Lead) → L2 (Director) → L3 (VP/Deputy GD for high-risk cases)</description>
-
     <enableMobileDeviceAccess>true</enableMobileDeviceAccess>
     <entryCriteria>
         <formula>AND(
@@ -115,22 +106,22 @@
     <finalApprovalRecordLock>false</finalApprovalRecordLock>
     <finalRejectionActions>
         <action>
-            <name>Update_Approval_Status_to_Denied</name>
+            <name>Unlock_Record_on_Rejection</name>
             <type>FieldUpdate</type>
         </action>
         <action>
-            <name>Unlock_Record_on_Rejection</name>
+            <name>Update_Approval_Status_to_Denied</name>
             <type>FieldUpdate</type>
         </action>
     </finalRejectionActions>
     <finalRejectionRecordLock>false</finalRejectionRecordLock>
     <initialSubmissionActions>
         <action>
-            <name>Update_Approval_Status_to_Submitted</name>
+            <name>Lock_Record_for_Approval</name>
             <type>FieldUpdate</type>
         </action>
         <action>
-            <name>Lock_Record_for_Approval</name>
+            <name>Update_Approval_Status_to_Submitted</name>
             <type>FieldUpdate</type>
         </action>
     </initialSubmissionActions>
@@ -139,6 +130,7 @@
         <useApproverFieldOfRecordOwner>false</useApproverFieldOfRecordOwner>
         <userHierarchyField>Manager</userHierarchyField>
     </nextAutomatedApprover>
+    <processOrder>1</processOrder>
     <recordEditability>AdminOnly</recordEditability>
     <showApprovalHistory>true</showApprovalHistory>
 </ApprovalProcess>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>60.0</apiVersion>
+    <description>Screen Flow: Collect Duration (Month) and RO Handover Date, then move Opportunity to Closed Won. This triggers Opp_ClosedWon_Automation to auto-create Contract and RO Handover records.</description>
+    <interviewLabel>Move Opportunity to Closed Won {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Move Opportunity to Closed Won</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <status>Active</status>
+
+    <variables>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+
+    <recordLookups>
+        <name>Get_Opportunity</name>
+        <label>Get Opportunity</label>
+        <locationX>176</locationX>
+        <locationY>110</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Screen_Enter_WinInfo</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Opportunity</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+
+    <screens>
+        <name>Screen_Enter_WinInfo</name>
+        <label>Enter Win Details to Proceed</label>
+        <locationX>176</locationX>
+        <locationY>218</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Update_Opp_WinFields</targetReference>
+        </connector>
+        <fields>
+            <name>Info_Header</name>
+            <fieldText>&lt;p&gt;&lt;b&gt;Moving to Closed Won&lt;/b&gt;&lt;/p&gt;&lt;p&gt;To win this deal and auto-create the &lt;b&gt;Contract &amp;amp; RO Handover&lt;/b&gt;, please fill in the required details below.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Input_Duration</name>
+            <dataType>Number</dataType>
+            <defaultValue>
+                <elementReference>Get_Opportunity.Duration_Month__c</elementReference>
+            </defaultValue>
+            <fieldText>Duration (Month)</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+            <scale>0</scale>
+        </fields>
+        <fields>
+            <name>Input_RO_Handover_Date</name>
+            <dataType>Date</dataType>
+            <defaultValue>
+                <elementReference>Get_Opportunity.RO_Handover_Date__c</elementReference>
+            </defaultValue>
+            <fieldText>RO Handover Date</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+
+    <!-- Update Opportunity: Duration + RO Handover Date + Stage = Closed Won -->
+    <recordUpdates>
+        <name>Update_Opp_WinFields</name>
+        <label>Update Opportunity Win Fields and Stage</label>
+        <locationX>176</locationX>
+        <locationY>326</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Duration_Month__c</field>
+            <value>
+                <elementReference>Input_Duration</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>RO_Handover_Date__c</field>
+            <value>
+                <elementReference>Input_RO_Handover_Date</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>StageName</field>
+            <value>
+                <stringValue>Closed Won</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Opportunity</object>
+    </recordUpdates>
+
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Opportunity</targetReference>
+        </connector>
+    </start>
+</Flow>

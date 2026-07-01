@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Is_Sync_Submission_Report__c</fullName>
-    <label>Is Sync Submission Report</label>
+    <defaultValue>false</defaultValue>
     <description>- Read Only
 - Tự động đánh dấu khi có BCC được đồng bộ giá lên Opp
 - Tự động reset khi chuyển từ các Giai Đoạn: Chốt Khách, OTL, Cọc, Hợp Đồng, Đóng Thất Bại về Chào Khách, Khảo Sát, Đàm Phán</description>
+    <externalId>false</externalId>
+    <label>Is Sync Submission Report</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
     <type>Checkbox</type>
-    <defaultValue>false</defaultValue>
 </CustomField>

@@ -79,7 +79,7 @@
                 <field>Number_Of_Support_Months__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Required</behavior>
                 <field>Opportunity_Submission_Report__c</field>
             </layoutItems>
             <layoutItems>
@@ -189,7 +189,7 @@
                 <field>Sort_Submission_Line__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Required</behavior>
                 <field>Submission_Report_Number__c</field>
             </layoutItems>
             <layoutItems>

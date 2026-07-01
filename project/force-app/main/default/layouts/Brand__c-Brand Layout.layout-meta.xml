@@ -1,138 +1,242 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <Layout xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Brand__c-Brand Layout</fullName>
-
     <layoutSections>
         <customLabel>true</customLabel>
         <detailHeading>true</detailHeading>
         <editHeading>true</editHeading>
         <label>I. Brand Information</label>
         <layoutColumns>
-            <layoutItems><behavior>Required</behavior><field>Name</field></layoutItems>
-            <layoutItems><behavior>Edit</behavior><field>Brand_Ranking__c</field></layoutItems>
-            <layoutItems><behavior>Edit</behavior><field>Main_Category__c</field></layoutItems>
-            <layoutItems><behavior>Edit</behavior><field>Sub_Category__c</field></layoutItems>
-            <layoutItems><behavior>Edit</behavior><field>Is_a_Chain__c</field></layoutItems>
+            <layoutItems>
+                <behavior>Required</behavior>
+                <field>Brand_Name__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Required</behavior>
+                <field>Name</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Brand_Ranking__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Main_Category__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Sub_Category__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Is_a_Chain__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
-            <layoutItems><behavior>Edit</behavior><field>Equivalent_Brands_In_Vincom__c</field></layoutItems>
-            <layoutItems><behavior>Edit</behavior><field>Website_Facebook__c</field></layoutItems>
-            <layoutItems><behavior>Edit</behavior><field>Status__c</field></layoutItems>
-            <layoutItems><behavior>Edit</behavior><field>Note__c</field></layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Equivalent_Brands_In_Vincom__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Website_Facebook__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Status__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Note__c</field>
+            </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>
-
     <layoutSections>
         <customLabel>true</customLabel>
         <detailHeading>true</detailHeading>
         <editHeading>true</editHeading>
         <label>II. Positioning</label>
         <layoutColumns>
-            <layoutItems><behavior>Edit</behavior><field>Customer_Type__c</field></layoutItems>
-            <layoutItems><behavior>Edit</behavior><field>Origin__c</field></layoutItems>
-            <layoutItems><behavior>Edit</behavior><field>Detail_Origin__c</field></layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Customer_Type__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Origin__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Detail_Origin__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
-            <layoutItems><behavior>Edit</behavior><field>Price_Range_Of_Products__c</field></layoutItems>
-            <layoutItems><behavior>Edit</behavior><field>Customer_Group__c</field></layoutItems>
-            <layoutItems><behavior>Edit</behavior><field>Target_Customer__c</field></layoutItems>
-            <layoutItems><behavior>Edit</behavior><field>Suitable_Market_Project__c</field></layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Price_Range_Of_Products__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Customer_Group__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Target_Customer__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Suitable_Market_Project__c</field>
+            </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>
-
     <layoutSections>
         <customLabel>true</customLabel>
         <detailHeading>true</detailHeading>
         <editHeading>true</editHeading>
         <label>III. Scale Information</label>
         <layoutColumns>
-            <layoutItems><behavior>Edit</behavior><field>Market_Usual_Rental_Area__c</field></layoutItems>
-            <layoutItems><behavior>Readonly</behavior><field>Vincom_Usual_Rental_Area__c</field></layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Market_Usual_Rental_Area__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Vincom_Usual_Rental_Area__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
-            <layoutItems><behavior>Edit</behavior><field>Investment_Cost_m2__c</field></layoutItems>
-            <layoutItems><behavior>Edit</behavior><field>RO_Model__c</field></layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Investment_Cost_m2__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>RO_Model__c</field>
+            </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>
-
     <layoutSections>
         <customLabel>true</customLabel>
         <detailHeading>true</detailHeading>
         <editHeading>true</editHeading>
         <label>IV. Capacity and Expansion Strategy</label>
         <layoutColumns>
-            <layoutItems><behavior>Edit</behavior><field>Number_Of_RO_Worldwide__c</field></layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Number_Of_RO_Worldwide__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
-            <layoutItems><behavior>Edit</behavior><field>Number_Of_RO_In_Vietnam__c</field></layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Number_Of_RO_In_Vietnam__c</field>
+            </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>
-
     <layoutSections>
         <customLabel>true</customLabel>
         <detailHeading>true</detailHeading>
         <editHeading>true</editHeading>
         <label>V. Contact Information</label>
         <layoutColumns>
-            <layoutItems><behavior>Edit</behavior><field>Contact__c</field></layoutItems>
-            <layoutItems><behavior>Edit</behavior><field>Contact_Name__c</field></layoutItems>
-            <layoutItems><behavior>Edit</behavior><field>Salutation__c</field></layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Contact__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Contact_Name__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Salutation__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
-            <layoutItems><behavior>Edit</behavior><field>Mobile__c</field></layoutItems>
-            <layoutItems><behavior>Edit</behavior><field>Email__c</field></layoutItems>
-            <layoutItems><behavior>Edit</behavior><field>Title__c</field></layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Mobile__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Email__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Title__c</field>
+            </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>
-
     <layoutSections>
         <customLabel>true</customLabel>
         <detailHeading>true</detailHeading>
         <editHeading>true</editHeading>
         <label>VI. Vincom Operations</label>
         <layoutColumns>
-            <layoutItems><behavior>Readonly</behavior><field>Number_Of_RO_In_Vincom__c</field></layoutItems>
-            <layoutItems><behavior>Readonly</behavior><field>Number_Of_RO_In_Shop_House__c</field></layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Number_Of_RO_In_Vincom__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Number_Of_RO_In_Shop_House__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
-            <layoutItems><behavior>Readonly</behavior><field>Total_Area_Renting_At_Vincom__c</field></layoutItems>
-            <layoutItems><behavior>Readonly</behavior><field>Revenue__c</field></layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Total_Area_Renting_At_Vincom__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Revenue__c</field>
+            </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>
-
     <layoutSections>
         <customLabel>true</customLabel>
         <detailHeading>true</detailHeading>
         <editHeading>true</editHeading>
         <label>VII. System Information</label>
         <layoutColumns>
-            <layoutItems><behavior>Edit</behavior><field>OwnerId</field></layoutItems>
-            <layoutItems><behavior>Readonly</behavior><field>CreatedById</field></layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>OwnerId</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>CreatedById</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
-            <layoutItems><behavior>Readonly</behavior><field>LastModifiedById</field></layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>LastModifiedById</field>
+            </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>
-
     <layoutSections>
         <customLabel>false</customLabel>
         <detailHeading>false</detailHeading>
         <editHeading>false</editHeading>
         <label>Custom Links</label>
-        <layoutColumns />
-        <layoutColumns />
-        <layoutColumns />
+        <layoutColumns/>
+        <layoutColumns/>
+        <layoutColumns/>
         <style>CustomLinks</style>
     </layoutSections>
-
+    <miniLayout>
+        <fields>Brand_Name__c</fields>
+    </miniLayout>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>true</showHighlightsPanel>
+    <showInteractionLogPanel>false</showInteractionLogPanel>
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
+    <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
 </Layout>

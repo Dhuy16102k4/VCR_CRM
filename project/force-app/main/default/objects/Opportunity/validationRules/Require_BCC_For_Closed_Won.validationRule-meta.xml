@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_BCC_For_Closed_Won</fullName>
+    <active>true</active>
+    <description>Ngăn không cho chuyển Stage sang Closed Won nếu chưa có phiếu BCC nào được tạo.</description>
+    <errorConditionFormula>AND(
+  ISPICKVAL(StageName, &quot;Closed Won&quot;),
+  Active_BCC_Count__c &lt;= 0
+)</errorConditionFormula>
+    <errorMessage>LỖI NGHIỆP VỤ: Bắt buộc phải tạo Báo Cáo Chốt (BCC) trước khi Win Deal (Closed Won). Vui lòng tạo và trình duyệt BCC!</errorMessage>
+</ValidationRule>

@@ -6,38 +6,38 @@
         <editHeading>true</editHeading>
         <label>Information</label>
         <layoutColumns>
-        <layoutItems>
-            <behavior>Required</behavior>
-            <field>Name</field>
-        </layoutItems>
-        <layoutItems>
-            <behavior>Edit</behavior>
-            <field>Sales_Man__c</field>
-        </layoutItems>
-        <layoutItems>
-            <behavior>Required</behavior>
-            <field>Business_Entity__c</field>
-        </layoutItems>
-        <layoutItems>
-            <behavior>Required</behavior>
-            <field>Start_Date__c</field>
-        </layoutItems>
-        <layoutItems>
-            <behavior>Edit</behavior>
-            <field>End_Date__c</field>
-        </layoutItems>
-        <layoutItems>
-            <behavior>Edit</behavior>
-            <field>Target_Revenue__c</field>
-        </layoutItems>
-        <layoutItems>
-            <behavior>Edit</behavior>
-            <field>Time_Metrics__c</field>
-        </layoutItems>
-        <layoutItems>
-            <behavior>Edit</behavior>
-            <field>Completion_Rate_Type__c</field>
-        </layoutItems>
+            <layoutItems>
+                <behavior>Required</behavior>
+                <field>Name</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Sales_Man__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Required</behavior>
+                <field>Business_Entity__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Required</behavior>
+                <field>Start_Date__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>End_Date__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Target_Revenue__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Time_Metrics__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Completion_Rate_Type__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns/>
         <style>TwoColumnsTopToBottom</style>
@@ -71,4 +71,9 @@
         <layoutColumns/>
         <style>CustomLinks</style>
     </layoutSections>
+    <showEmailCheckbox>false</showEmailCheckbox>
+    <showHighlightsPanel>false</showHighlightsPanel>
+    <showInteractionLogPanel>false</showInteractionLogPanel>
+    <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
+    <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
 </Layout>

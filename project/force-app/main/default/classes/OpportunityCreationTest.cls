@@ -28,7 +28,7 @@ public class OpportunityCreationTest {
         
         Opportunity opp = new Opportunity(
             Name = 'Test Opportunity from Wizard',
-            StageName = 'Chào Khách',
+            StageName = 'Prospecting',
             CloseDate = Date.today().addDays(30),
             AccountId = acc.Id,
             Brand_Name__c = brand.Id
@@ -42,6 +42,6 @@ public class OpportunityCreationTest {
         // Assert that the Opportunity was successfully created
         Opportunity insertedOpp = [SELECT Id, StageName FROM Opportunity WHERE Id = :opp.Id];
         System.assertNotEquals(null, insertedOpp.Id, 'Opportunity should be created successfully.');
-        System.assertEquals('Chào Khách', insertedOpp.StageName, 'Stage should be Chào Khách.');
+        System.assertEquals('Prospecting', insertedOpp.StageName, 'Stage should be Prospecting.');
     }
 }

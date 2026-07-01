@@ -1,11 +1,121 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>New_Lease_TTTM</fullName>
     <active>true</active>
     <businessProcess>New_Lease_TTTM</businessProcess>
     <label>New Lease Shopping Mall</label>
     <picklistValues>
+        <picklist>Actual_Support_Type__c</picklist>
+        <values>
+            <fullName>Free Rent Price %26 Service Fee%3B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Free Rent Price%3B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Free Service Fee%3B</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Customer_Interest_Level__c</picklist>
+        <values>
+            <fullName>Cold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hot%3B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warm%3B</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>DeliveryInstallationStatus__c</picklist>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yet to begin</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Discovery_Status__c</picklist>
+        <values>
+            <fullName>Customers Not Surveyed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Surveyed%3B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Surveyed%3B</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ForecastCategoryName</picklist>
+        <values>
+            <fullName>Best Case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Omitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pipeline</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LeadSource</picklist>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Purchased List</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>Lost_Reason__c</picklist>
+        <values>
+            <fullName>Customer changed mind</fullName>
+            <default>false</default>
+        </values>
         <values>
             <fullName>High rental price</fullName>
             <default>false</default>
@@ -15,11 +125,78 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Customer changed mind</fullName>
+            <fullName>Lost to competitor</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Payment_Tracking__c</picklist>
+        <values>
+            <fullName>Pay 100%25</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Lost to competitor</fullName>
+            <fullName>Pay 30%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pay 50%25</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Rental_Area_Including_ShopWindow__c</picklist>
+        <values>
+            <fullName>Included%3B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not included</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Rental_Options__c</picklist>
+        <values>
+            <fullName>Rent Entire House</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rent Floor 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rent Floor 1 %2B 2</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Service_Fee_Include_Air_Conditioning_Fee__c</picklist>
+        <values>
+            <fullName>Included%3B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not included</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Existing Customer - Downgrade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Existing Customer - Replacement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Existing Customer - Upgrade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Customer</fullName>
             <default>false</default>
         </values>
     </picklistValues>

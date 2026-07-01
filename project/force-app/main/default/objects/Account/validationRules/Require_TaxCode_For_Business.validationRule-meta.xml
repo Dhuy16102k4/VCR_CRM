@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_TaxCode_For_Business</fullName>
+    <active>true</active>
+    <description>Business Tenants must have a Tax Code.</description>
+    <errorConditionFormula>AND(
+    RecordType.DeveloperName = &apos;Business_Tenant&apos;,
+    ISBLANK(Tax_Code__c)
+)</errorConditionFormula>
+    <errorDisplayField>Tax_Code__c</errorDisplayField>
+    <errorMessage>Tax Code is required for Business Tenants.</errorMessage>
+</ValidationRule>

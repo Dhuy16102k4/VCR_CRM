@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Revenue_Shared__c</fullName>
-    <label>% Revenue Shared</label>
     <description>- Bắt buộc nhập nếu Opp. Type = Chia Sẻ Doanh Thu Theo Không Chặn Dưới; Chia Sẻ Doanh Thu Có Chặn Dưới; Chia Sẻ Doanh Thu Cộng Giá Cố Định;
 - Dynamic layout tương ứng trường bắt buộc nhập</description>
-    <type>Percent</type>
+    <externalId>false</externalId>
+    <label>% Revenue Shared</label>
     <precision>16</precision>
+    <required>false</required>
     <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
 </CustomField>

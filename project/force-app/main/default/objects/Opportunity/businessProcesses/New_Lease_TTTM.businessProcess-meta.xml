@@ -3,11 +3,11 @@
     <fullName>New_Lease_TTTM</fullName>
     <isActive>true</isActive>
     <values>
-        <fullName>Prospecting</fullName>
+        <fullName>Chao Khach</fullName>
         <default>false</default>
     </values>
     <values>
-        <fullName>Closing</fullName>
+        <fullName>Chot Khach</fullName>
         <default>false</default>
     </values>
     <values>
@@ -19,11 +19,31 @@
         <default>false</default>
     </values>
     <values>
+        <fullName>Closing</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Coc</fullName>
+        <default>false</default>
+    </values>
+    <values>
         <fullName>Contract Deposit</fullName>
         <default>false</default>
     </values>
     <values>
+        <fullName>Dam Phan</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Khao Sat</fullName>
+        <default>false</default>
+    </values>
+    <values>
         <fullName>Negotiation</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Prospecting</fullName>
         <default>false</default>
     </values>
     <values>

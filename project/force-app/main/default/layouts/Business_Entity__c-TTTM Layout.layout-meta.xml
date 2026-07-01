@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <Layout xmlns="http://soap.sforce.com/2006/04/metadata">
     <excludeButtons>Submit</excludeButtons>
     <layoutSections>
@@ -7,17 +7,44 @@
         <editHeading>true</editHeading>
         <label>General Information</label>
         <layoutColumns>
-            <layoutItems><behavior>Required</behavior><field>Name</field></layoutItems>
-            <layoutItems><behavior>Required</behavior><field>BE_Type__c</field></layoutItems>
-            <layoutItems><behavior>Edit</behavior><field>Shopping_Mall_Model__c</field></layoutItems>
-            <layoutItems><behavior>Edit</behavior><field>Province_1__c</field></layoutItems>
-            <layoutItems><behavior>Edit</behavior><field>Opening_Date__c</field></layoutItems>
+            <layoutItems>
+                <behavior>Required</behavior>
+                <field>Name</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Required</behavior>
+                <field>BE_Type__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Shopping_Mall_Model__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Province_1__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Opening_Date__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
-            <layoutItems><behavior>Edit</behavior><field>SAP_BE_ID__c</field></layoutItems>
-            <layoutItems><behavior>Edit</behavior><field>Company_Code__c</field></layoutItems>
-            <layoutItems><behavior>Edit</behavior><field>VCR_Tax_Code__c</field></layoutItems>
-            <layoutItems><behavior>Edit</behavior><field>OwnerId</field></layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>SAP_BE_ID__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Company_Code__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>VCR_Tax_Code__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>OwnerId</field>
+            </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>
@@ -27,7 +54,10 @@
         <editHeading>true</editHeading>
         <label>Address</label>
         <layoutColumns>
-            <layoutItems><behavior>Edit</behavior><field>Address_1__c</field></layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Address_1__c</field>
+            </layoutItems>
         </layoutColumns>
         <style>OneColumn</style>
     </layoutSections>
@@ -37,15 +67,36 @@
         <editHeading>true</editHeading>
         <label>Area</label>
         <layoutColumns>
-            <layoutItems><behavior>Edit</behavior><field>Land_Area__c</field></layoutItems>
-            <layoutItems><behavior>Edit</behavior><field>GFA__c</field></layoutItems>
-            <layoutItems><behavior>Edit</behavior><field>NLA_Indoor__c</field></layoutItems>
-            <layoutItems><behavior>Edit</behavior><field>NLA_Outdoor__c</field></layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Land_Area__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>GFA__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>NLA_Indoor__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>NLA_Outdoor__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
-            <layoutItems><behavior>Edit</behavior><field>Parking_Area__c</field></layoutItems>
-            <layoutItems><behavior>Edit</behavior><field>Car_Slots__c</field></layoutItems>
-            <layoutItems><behavior>Edit</behavior><field>Motorbike_Slots__c</field></layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Parking_Area__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Car_Slots__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Motorbike_Slots__c</field>
+            </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>
@@ -55,10 +106,16 @@
         <editHeading>true</editHeading>
         <label>System Information</label>
         <layoutColumns>
-            <layoutItems><behavior>Readonly</behavior><field>CreatedById</field></layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>CreatedById</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
-            <layoutItems><behavior>Readonly</behavior><field>LastModifiedById</field></layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>LastModifiedById</field>
+            </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>
@@ -67,24 +124,43 @@
         <detailHeading>false</detailHeading>
         <editHeading>true</editHeading>
         <label>Custom Links</label>
-        <layoutColumns /><layoutColumns /><layoutColumns />
+        <layoutColumns/>
+        <layoutColumns/>
+        <layoutColumns/>
         <style>CustomLinks</style>
     </layoutSections>
-    
     <layoutSections>
         <customLabel>true</customLabel>
         <detailHeading>true</detailHeading>
         <editHeading>true</editHeading>
         <label>Occupancy &amp; Operations</label>
         <layoutColumns>
-            <layoutItems><behavior>Edit</behavior><field>Total_RO_In_Shopping_Mall__c</field></layoutItems>
-            <layoutItems><behavior>Edit</behavior><field>Total_Committed_Leased_Area__c</field></layoutItems>
-            <layoutItems><behavior>Readonly</behavior><field>Occupation_For_Leasing__c</field></layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Total_RO_In_Shopping_Mall__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Total_Committed_Leased_Area__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Occupation_For_Leasing__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
-            <layoutItems><behavior>Edit</behavior><field>Total_Ad_Location_Count__c</field></layoutItems>
-            <layoutItems><behavior>Edit</behavior><field>Committed_Ad_Location_Count__c</field></layoutItems>
-            <layoutItems><behavior>Readonly</behavior><field>Occupation_For_Advertising__c</field></layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Total_Ad_Location_Count__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Committed_Ad_Location_Count__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Occupation_For_Advertising__c</field>
+            </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>

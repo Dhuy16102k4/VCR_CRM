@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Deposited__c</fullName>
-    <label>Deposited</label>
-    <description>Bắt buộc nhập khi chuyển sang giai đoạn Cọc</description>
-    <type>Checkbox</type>
     <defaultValue>false</defaultValue>
+    <description>Bắt buộc nhập khi chuyển sang giai đoạn Cọc</description>
+    <externalId>false</externalId>
+    <label>Deposited</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
 </CustomField>

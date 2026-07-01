@@ -15,32 +15,35 @@
     </approvalPageFields>
     <approvalStep>
         <allowDelegate>true</allowDelegate>
-        <assignedApprover>
-            <approver>
-                <type>relatedUserField</type>
-                <name>Approver_Level_1__c</name>
-            </approver>
-            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
-        </assignedApprover>
-        <description>Level 1 Approval - Sales Manager</description>
-        <label>Level 1 Approval</label>
-        <name>Level_1_Approval</name>
-        <rejectBehavior>
-            <type>RejectRequest</type>
-        </rejectBehavior>
         <approvalActions>
             <action>
                 <name>Update_BCC_Approval_Status_L1</name>
                 <type>FieldUpdate</type>
             </action>
         </approvalActions>
+        <assignedApprover>
+            <approver>
+                <name>Approver_Level_1__c</name>
+                <type>relatedUserField</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>Level 1 Approval - Sales Manager</description>
+        <label>Level 1 Approval</label>
+        <name>Level_1_Approval</name>
     </approvalStep>
     <approvalStep>
         <allowDelegate>true</allowDelegate>
+        <approvalActions>
+            <action>
+                <name>Update_BCC_Approval_Status_L2</name>
+                <type>FieldUpdate</type>
+            </action>
+        </approvalActions>
         <assignedApprover>
             <approver>
-                <type>relatedUserField</type>
                 <name>Approver_Level_2__c</name>
+                <type>relatedUserField</type>
             </approver>
             <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
         </assignedApprover>
@@ -49,7 +52,6 @@
             <criteriaItems>
                 <field>Submission_Report__c.Approver_Level_2__c</field>
                 <operation>notEqual</operation>
-                <value></value>
             </criteriaItems>
         </entryCriteria>
         <ifCriteriaNotMet>ApproveRecord</ifCriteriaNotMet>
@@ -58,19 +60,19 @@
         <rejectBehavior>
             <type>RejectRequest</type>
         </rejectBehavior>
-        <approvalActions>
-            <action>
-                <name>Update_BCC_Approval_Status_L2</name>
-                <type>FieldUpdate</type>
-            </action>
-        </approvalActions>
     </approvalStep>
     <approvalStep>
         <allowDelegate>true</allowDelegate>
+        <approvalActions>
+            <action>
+                <name>Update_BCC_Approval_Status_Final</name>
+                <type>FieldUpdate</type>
+            </action>
+        </approvalActions>
         <assignedApprover>
             <approver>
-                <type>relatedUserField</type>
                 <name>Approver_Level_3__c</name>
+                <type>relatedUserField</type>
             </approver>
             <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
         </assignedApprover>
@@ -79,7 +81,6 @@
             <criteriaItems>
                 <field>Submission_Report__c.Approver_Level_3__c</field>
                 <operation>notEqual</operation>
-                <value></value>
             </criteriaItems>
         </entryCriteria>
         <label>Level 3 Approval</label>
@@ -87,12 +88,6 @@
         <rejectBehavior>
             <type>RejectRequest</type>
         </rejectBehavior>
-        <approvalActions>
-            <action>
-                <name>Update_BCC_Approval_Status_Final</name>
-                <type>FieldUpdate</type>
-            </action>
-        </approvalActions>
     </approvalStep>
     <description>Multi-level approval process for Submission Report (BCC)</description>
     <enableMobileDeviceAccess>true</enableMobileDeviceAccess>
@@ -100,7 +95,6 @@
         <criteriaItems>
             <field>Submission_Report__c.Approver_Level_1__c</field>
             <operation>notEqual</operation>
-            <value></value>
         </criteriaItems>
         <criteriaItems>
             <field>Submission_Report__c.Status__c</field>
@@ -137,6 +131,7 @@
         </action>
     </initialSubmissionActions>
     <label>BCC Multi Level Approval</label>
+    <processOrder>1</processOrder>
     <recordEditability>AdminOnly</recordEditability>
     <showApprovalHistory>true</showApprovalHistory>
 </ApprovalProcess>

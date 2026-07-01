@@ -9,12 +9,12 @@
             <value>
                 <fullName>Qualified</fullName>
                 <default>false</default>
-                <label>Qualified</label>
+                <label>Đạt</label>
             </value>
             <value>
                 <fullName>Not Qualified</fullName>
                 <default>false</default>
-                <label>Not Qualified</label>
+                <label>Không Đạt</label>
             </value>
         </valueSetDefinition>
     </valueSet>
